@@ -71,7 +71,7 @@ gitalk:
     # 应用秘钥
     clientSecret: '48b64f26ed3d70c05010ec18c9aa8dd24af58826'
     # issue仓库名
-    repo: 'wangxiangnan.github.io '
+    repo: 'wangxiangnan.github.io'
     # Github名
     owner: 'wangxiangnan'
     # Github名
