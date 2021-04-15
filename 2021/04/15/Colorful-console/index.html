@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>归档: 2021</title>
+    <title>Colorful-console - 三点水</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="三点水,"> 
-    
+    <meta name="description" content="Node.js中console.log()输出彩色字体的方法示例
+代码样例1console.log(&amp;#x27;\033[42;30m DONE \033[40;32m Compiled succe,"> 
     <meta name="author" content="Wangyuda"> 
     <link rel="alternative" href="atom.xml" title="三点水" type="application/atom+xml"> 
     <link rel="icon" href="/assets/images/favicon.jpg"> 
@@ -25,51 +26,109 @@
 <body class="loading">
     <span id="config-title" style="display:none">三点水</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <div class="timeline">
-                      <h2 class="timeline-title">归档: 4篇</h2><hr>
-                      
-                      
-                        
-                          <h3 class="timeline-subtitle">2021</h3>
-                        
-                        <div class="timeline-item">
-                          <time>2021-04-15</time>
-                          <a target="_self" href="/2021/04/15/Colorful-console/">Colorful-console</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2021-04-15</time>
-                          <a target="_self" href="/2021/04/15/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%80%E8%8A%82/">操作系统第一节</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2021-04-15</time>
-                          <a target="_self" href="/2021/04/15/hello-world/">Hello World</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2021-04-15</time>
-                          <a target="_self" href="/2021/04/15/My-Post/">My Post</a>
-                        </div>
-                      
-                    </div>
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://wangxiangnan.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Colorful-console</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Colorful-console</h1>
+        <div class="stuff">
+            <span>四月 15, 2021</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="Node-js中console-log-输出彩色字体的方法示例"><a href="#Node-js中console-log-输出彩色字体的方法示例" class="headerlink" title="Node.js中console.log()输出彩色字体的方法示例"></a>Node.js中console.log()输出彩色字体的方法示例</h3><ol>
+<li>代码样例<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;\033[42;30m DONE \033[40;32m Compiled successfully in 19987ms\033[0m&#x27;</span>);</span><br></pre></td></tr></table></figure></li>
+<li>解释</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">不难发现样例中的关键的代码是类似 \033[42;30m 这种格式的，换成大白话的写法就是 \033[背景色编号;字色编号m 。</span><br><span class="line">字色编号：30黑，31红，32绿，33黄，34蓝，35紫，36深绿，37白色</span><br><span class="line">背景编号：40黑，41红，42绿，43黄，44蓝，45紫，46深绿，47白色</span><br><span class="line"></span><br><span class="line">发现规律了没有？</span><br><span class="line">对照色号我们就可以对上面那段代码进行解释：用绿底（42）黑字（30）显示“DONE”，然后使用黑底（40）绿字（32）显示余下的信息，最后还原属性（\033[0m）</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p>标记列表</p>
+</li>
+<li><p> \033[0m 关闭所有属性</p>
+</li>
+<li><p>\033[1m 设置高亮度</p>
+</li>
+<li><p>\033[4m 下划线</p>
+</li>
+<li><p>\033[5m 闪烁</p>
+</li>
+<li><p>\033[7m 反显</p>
+</li>
+<li><p>\033[8m 消隐</p>
+</li>
+<li><p>\033[nA 光标上移n行</p>
+</li>
+<li><p>\033[nB 光标下移n行</p>
+</li>
+<li><p>\033[nC 光标右移n列</p>
+</li>
+<li><p>\033[nD 光标左移n列</p>
+</li>
+<li><p>\033[y;xH 设置光标位置（y列x行）</p>
+</li>
+<li><p>\033[2J 清屏</p>
+</li>
+<li><p>\033[K 清除从光标到行尾的内容</p>
+</li>
+</ol>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='true'
+        data-ae='true'
+        data-ci='8bda464817925711684d'
+        data-cs='48b64f26ed3d70c05010ec18c9aa8dd24af58826'
+        data-r='wangxiangnan.github.io'
+        data-o='wangxiangnan'
+        data-a='wangxiangnan'
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
