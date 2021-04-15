@@ -103,3 +103,15 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+#本地搜索,请将索引文件放在网站根目录
+local_search:
+    #是否启用
+    enable: true
