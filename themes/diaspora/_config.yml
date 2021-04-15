@@ -46,7 +46,7 @@ links:
     facebook: /
     twitter: /
     github: /
-    wechat: /assets/images/logo.png
+    wechat: /assets/images/logo.jpg
     email: 393640834@qq.com
   
 # 备案
@@ -88,7 +88,7 @@ keywords: 三点水
 google_analytics: 
 
 # 网站ico
-favicon: /assets/images/favicon.png
+favicon: /assets/images/favicon.jpg
 
 # rss文件
 rss: atom.xml
