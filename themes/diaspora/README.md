@@ -171,7 +171,7 @@ links:
     facebook: /
     twitter: /
     github: /
-    wechat: /img/logo.png
+    wechat: /assets/images/logo.jpg
     email: mailto:xxxx@gmail.com
   
 # 备案
