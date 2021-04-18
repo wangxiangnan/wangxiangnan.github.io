@@ -50,8 +50,33 @@
     <content><![CDATA[<h2 id="Hello-Post"><a href="#Hello-Post" class="headerlink" title="Hello Post"></a>Hello Post</h2>]]></content>
   </entry>
   <entry>
+    <title>OS-section7</title>
+    <url>/2021/04/18/OS-section7/</url>
+    <content><![CDATA[<h2 id="第四章-存储器管理-—-操作系统第七节"><a href="#第四章-存储器管理-—-操作系统第七节" class="headerlink" title="第四章-存储器管理 — 操作系统第七节"></a>第四章-存储器管理 — 操作系统第七节</h2><h3 id="1-存储器的重要性"><a href="#1-存储器的重要性" class="headerlink" title="1. 存储器的重要性"></a>1. 存储器的重要性</h3><p>现在的计算机体系由过去的以运算器为中心的冯诺依曼机，变成了以存储器为中心的体系。以前以运算器为中心，所有东西都要经过运算器，加重了运算器的负担。所以以存储器为核心，数据的大集中，欲主机系统的无关性，可被大量主机设备共用。</p>
+<h3 id="2-存储器的五大功能"><a href="#2-存储器的五大功能" class="headerlink" title="2. 存储器的五大功能"></a>2. 存储器的五大功能</h3><ol>
+<li>存储器分配。主要解决多道程序或多进程如何共享内存的问题。</li>
+<li>地址转换或重定位。研究各种地址变换方法及相应的地址变换机构。</li>
+<li>存储器保护。研究采用什么方法，防止故障程序破坏操作系统和存储器内的其他各种信息问题。</li>
+<li>存储器扩充。 研究采用多级存储技术实现虚拟存储器及所用的各种管理算法。</li>
+<li>存储器共享。研究并发执行的进程如何共享主存中的程序和数据问题。</li>
+</ol>
+<h3 id="3-存储器涉及的重要概念"><a href="#3-存储器涉及的重要概念" class="headerlink" title="3. 存储器涉及的重要概念"></a>3. 存储器涉及的重要概念</h3><ol>
+<li>地址空间<br>在用汇编语言或高级语言编写的程序中。通常用符号名访问程序中的语句和变量。把程序中的各种符号名的集合所限定的空间叫符号名字空间。汇编或编译程序将源程序中的各种符号名转换成机器指令和数据租场的目标程序。由于程序在主存中的位置是不可预知的，编译或汇编时，程序中各个地址总是以“0”作为参考地址，其他所有地址都是以0位起始的地址顺序编码的。因此把程序限定的空间叫做逻辑地址空间。其中的地址叫做相对地址或逻辑地址。</li>
+<li>存储空间</li>
+<li>地址重定位</li>
+<li>存储器保护</li>
+<li>存储器共享</li>
+</ol>
+<h3 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h3><p>简述符号名字地址和物理地址的差异？<br>答：符号名字地址：源程序中的各种符号名的集合所限定的空间。如源程序中的数据和子程序通常是用符号名来访问的，当程序编译后，由逻辑地址码替换符号地址。也就是说相对于物理地址，符号地址是相对的地址，是一种逻辑地址，也是虚地址。<br>物理地址：物理存储器中全部物理存储单元的集合所限定的空间。存储空间是由子或字节组成的一个大的阵列，每一个字或字节都有它自己的编号地址。也就是说相对于符号名字地址，物理地址是绝对地址，真实的物理地址。</p>
+]]></content>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
-    <url>/2021/04/16/hello-world/</url>
+    <url>/2021/04/18/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
