@@ -1,110 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Colorful-console</title>
-    <url>/2021/04/15/Colorful-console/</url>
-    <content><![CDATA[<h3 id="Node-js中console-log-输出彩色字体的方法示例"><a href="#Node-js中console-log-输出彩色字体的方法示例" class="headerlink" title="Node.js中console.log()输出彩色字体的方法示例"></a>Node.js中console.log()输出彩色字体的方法示例</h3><ol>
-<li>代码样例<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;\033[42;30m DONE \033[40;32m Compiled successfully in 19987ms\033[0m&#x27;</span>);</span><br></pre></td></tr></table></figure></li>
-<li>解释</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">不难发现样例中的关键的代码是类似 \033[42;30m 这种格式的，换成大白话的写法就是 \033[背景色编号;字色编号m 。</span><br><span class="line">字色编号：30黑，31红，32绿，33黄，34蓝，35紫，36深绿，37白色</span><br><span class="line">背景编号：40黑，41红，42绿，43黄，44蓝，45紫，46深绿，47白色</span><br><span class="line"></span><br><span class="line">发现规律了没有？</span><br><span class="line">对照色号我们就可以对上面那段代码进行解释：用绿底（42）黑字（30）显示“DONE”，然后使用黑底（40）绿字（32）显示余下的信息，最后还原属性（\033[0m）</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li><p>标记列表</p>
-</li>
-<li><p> \033[0m 关闭所有属性</p>
-</li>
-<li><p>\033[1m 设置高亮度</p>
-</li>
-<li><p>\033[4m 下划线</p>
-</li>
-<li><p>\033[5m 闪烁</p>
-</li>
-<li><p>\033[7m 反显</p>
-</li>
-<li><p>\033[8m 消隐</p>
-</li>
-<li><p>\033[nA 光标上移n行</p>
-</li>
-<li><p>\033[nB 光标下移n行</p>
-</li>
-<li><p>\033[nC 光标右移n列</p>
-</li>
-<li><p>\033[nD 光标左移n列</p>
-</li>
-<li><p>\033[y;xH 设置光标位置（y列x行）</p>
-</li>
-<li><p>\033[2J 清屏</p>
-</li>
-<li><p>\033[K 清除从光标到行尾的内容</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Node.js</category>
-      </categories>
-      <tags>
-        <tag>console</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>My Post</title>
-    <url>/2021/04/15/My-Post/</url>
-    <content><![CDATA[<h2 id="Hello-Post"><a href="#Hello-Post" class="headerlink" title="Hello Post"></a>Hello Post</h2>]]></content>
-  </entry>
-  <entry>
-    <title>OS-section1.md</title>
-    <url>/2021/04/19/OS-section1/</url>
-    <content><![CDATA[<h3 id="第一章-操作系统概述-—-操作系统第一节"><a href="#第一章-操作系统概述-—-操作系统第一节" class="headerlink" title="第一章-操作系统概述 — 操作系统第一节"></a>第一章-操作系统概述 — 操作系统第一节</h3>]]></content>
-      <categories>
-        <category>操作系统</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OS-section7</title>
-    <url>/2021/04/18/OS-section7/</url>
-    <content><![CDATA[<h3 id="第四章-存储器管理-—-操作系统第七节"><a href="#第四章-存储器管理-—-操作系统第七节" class="headerlink" title="第四章-存储器管理 — 操作系统第七节"></a>第四章-存储器管理 — 操作系统第七节</h3><h3 id="1-存储器的重要性"><a href="#1-存储器的重要性" class="headerlink" title="1. 存储器的重要性"></a>1. 存储器的重要性</h3><p>现在的计算机体系由过去的以运算器为中心的冯诺依曼机，变成了以存储器为中心的体系。以前以运算器为中心，所有东西都要经过运算器，加重了运算器的负担。所以以存储器为核心，数据的大集中，欲主机系统的无关性，可被大量主机设备共用。</p>
-<h3 id="2-存储器的五大功能"><a href="#2-存储器的五大功能" class="headerlink" title="2. 存储器的五大功能"></a>2. 存储器的五大功能</h3><ol>
-<li>存储器分配。主要解决多道程序或多进程如何共享内存的问题。</li>
-<li>地址转换或重定位。研究各种地址变换方法及相应的地址变换机构。</li>
-<li>存储器保护。研究采用什么方法，防止故障程序破坏操作系统和存储器内的其他各种信息问题。</li>
-<li>存储器扩充。 研究采用多级存储技术实现虚拟存储器及所用的各种管理算法。</li>
-<li>存储器共享。研究并发执行的进程如何共享主存中的程序和数据问题。</li>
-</ol>
-<h3 id="3-存储器涉及的重要概念"><a href="#3-存储器涉及的重要概念" class="headerlink" title="3. 存储器涉及的重要概念"></a>3. 存储器涉及的重要概念</h3><ol>
-<li>地址空间<br>在用汇编语言或高级语言编写的程序中。通常用符号名访问程序中的语句和变量。把程序中的各种符号名的集合所限定的空间叫符号名字空间。汇编或编译程序将源程序中的各种符号名转换成机器指令和数据租场的目标程序。由于程序在主存中的位置是不可预知的，编译或汇编时，程序中各个地址总是以“0”作为参考地址，其他所有地址都是以0位起始的地址顺序编码的。因此把程序限定的空间叫做逻辑地址空间。其中的地址叫做相对地址或逻辑地址。</li>
-<li>存储空间</li>
-<li>地址重定位</li>
-<li>存储器保护</li>
-<li>存储器共享</li>
-</ol>
-<h3 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h3><p>简述符号名字地址和物理地址的差异？<br>答：符号名字地址：源程序中的各种符号名的集合所限定的空间。如源程序中的数据和子程序通常是用符号名来访问的，当程序编译后，由逻辑地址码替换符号地址。也就是说相对于物理地址，符号地址是相对的地址，是一种逻辑地址，也是虚地址。<br>物理地址：物理存储器中全部物理存储单元的集合所限定的空间。存储空间是由子或字节组成的一个大的阵列，每一个字或字节都有它自己的编号地址。也就是说相对于符号名字地址，物理地址是绝对地址，真实的物理地址。</p>
-]]></content>
-      <categories>
-        <category>操作系统</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/04/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shorthand - 三点水</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="三点水,"> 
+    <meta name="description" content="一些英文词的标准缩写ps: 有些词可能共用一些缩写。带星号的缩写或词来源于PeopleSoft标准。
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Shorthand</title>
-    <url>/2021/04/19/Shorthand/</url>
-    <content><![CDATA[<h3 id="一些英文词的标准缩写"><a href="#一些英文词的标准缩写" class="headerlink" title="一些英文词的标准缩写"></a>一些英文词的标准缩写</h3><p>ps: 有些词可能共用一些缩写。带星号的缩写或词来源于PeopleSoft标准。</p>
+Word(s)
+Abbreviation
+Description
+
+
+
+Abbreviat,"> 
+    <meta name="author" content="Wangyuda"> 
+    <link rel="alternative" href="atom.xml" title="三点水" type="application/atom+xml"> 
+    <link rel="icon" href="/assets/images/favicon.jpg"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">三点水</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://wangxiangnan.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Shorthand</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Shorthand</h1>
+        <div class="stuff">
+            <span>四月 19, 2021</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%A0%87%E8%AF%86%E7%AC%A6/" rel="tag">标识符</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="一些英文词的标准缩写"><a href="#一些英文词的标准缩写" class="headerlink" title="一些英文词的标准缩写"></a>一些英文词的标准缩写</h3><p>ps: 有些词可能共用一些缩写。带星号的缩写或词来源于PeopleSoft标准。</p>
 <table>
 <thead>
 <tr>
@@ -5389,12 +5349,166 @@
 <td></td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-      </categories>
-      <tags>
-        <tag>标识符</tag>
-      </tags>
-  </entry>
-</search>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/1400256289.mp3'></li>
+                        
+                    
+                        
+                            <li title='2' data-url='http://link.hhtjim.com/163/1808492017.mp3'></li>
+                        
+                    
+                        
+                            <li title='3' data-url='http://link.hhtjim.com/163/1807537867.mp3'></li>
+                        
+                    
+                        
+                            <li title='4' data-url='http://link.hhtjim.com/163/1811921555.mp3'></li>
+                        
+                    
+                        
+                            <li title='5' data-url='http://link.hhtjim.com/163/133034806.mp3'></li>
+                        
+                    
+                        
+                            <li title='6' data-url='http://link.hhtjim.com/163/1804320463.mp3'></li>
+                        
+                    
+                        
+                            <li title='7' data-url='http://link.hhtjim.com/163/569213220.mp3'></li>
+                        
+                    
+                        
+                            <li title='8' data-url='http://link.hhtjim.com/163/569200213.mp3'></li>
+                        
+                    
+                        
+                            <li title='9' data-url='http://link.hhtjim.com/163/513360721.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='true'
+        data-ae='true'
+        data-ci='8bda464817925711684d'
+        data-cs='48b64f26ed3d70c05010ec18c9aa8dd24af58826'
+        data-r='wangxiangnan.github.io'
+        data-o='wangxiangnan'
+        data-a='wangxiangnan'
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+</html>
