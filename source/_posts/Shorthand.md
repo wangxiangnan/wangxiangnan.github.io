@@ -1,5 +1,5 @@
 ---
-title: Shorthand
+title: 英文缩写
 date: 2021-04-19 17:08:50
 categories:
   - 编程语言
@@ -12,174 +12,168 @@ ps: 有些词可能共用一些缩写。带星号的缩写或词来源于PeopleS
 | Word(s) | Abbreviation | Description |
 | ------- | ------------ | ----------- |
 | Abbreviate<br/>Abbreviation | ABRV |  |
-| Academic	ACAD	 
-| Accept<br/>Acceptance<br/>Accepted	ACPT	 
-| Access	ACCS	 
-| Accident	ACDNT	 
-| Accomplish<br/>Accomplishment<br/>Accomplishments	ACMP	 
-| Account*	ACCT*	 
-| Accounting*	ACCTG*	 
-| Accounts Payable
-| Advanced Placement	AP	 
-| Accounts Receivable	AR	 
-| Accredited	ACRD	 
-| Accrual	ACRL	 
-| Accumulated*	ACCUM*	 
-| Accumulation<br/>Accumulative	ACUM	 
-| Achieve<br/>Achievement	ACHV	 
-| Acquisition*	ACQ*	 
-| Act<br/>Active<br/>Activity<br/>American College Test	     ACT	 
-| Action*	ACTN*	 
-| Actual	ACTL	 
-| Add<br/>Added	ADD	 
-| Additional*	ADDL*	 
-| Address*	ADDR*	Narrative data which describes a person, place or thing's location
-| Ad hoc	ADHC	 
-| Adjudicate<br/>Adjudicated<br/>Adjudication	ADJD	 
-| Adjusted Gross Income	AGI	 
-| Adjustment*	ADJ*	 
-| Administered<br/>Administrated<br/>Administration	ADM	 
-| Admissible<br/>Admission	ADMS	 
-| Admittance<br/>Admitted	ADMT	 
-| Advanced Placement
-| Accounts Payable	AP	 
-| Advice	ADVC	 
-| Affiliation	AFFL	 
-| After	AFT	 
-| Age	AGE	 
-| Agency	AGCY	 
-| Agent	AGNT	 
-| Aid	AID	 
-| Alien	ALN	 
-| All	ALL	 
-| Allocate
-| Allocation*	ALLOC*	 
-| Alpha	ALPH	 
-| Alter<br/>Alternate	ALT	 
-| Alumni<br/>Alumnus	ALMN	 
-| AM	AM	"Ante Meridiem" (morning)
-| American College Test<br/>Act<br/>Active<br/>Activity	ACT	 
-| Amount*	AMT*	Monetary value(s)
-| Analysis	ANLS	 
-| Annual*	ANNL*	 
-| Anonymous	ANON	 
-| Answer	ANS	 
-| Apartment	APT	 
-| Appeal<br/>Appealed	APEL	 
-| Applicant*	APP*	 
-| Application*	APPL*	 
-| Appointment	APPT	 
-| Approval<br/>Approve	APRV	 
-| Area	AREA	 
-| Array	ARAY	 
-| Arrears	ARRS	 
-| Ascending	ASC	 
-| Assign<br/>Assigned
-| Assignment	ASGN	 
-| Association	ASSC	 
-| Assumption	ASMP	 
-| Athlete<br/>Athletic	ATHL	 
-| Attach	ATCH	 
-| Attempt	ATMPT	 
-| Attend<br/>Attendance	ATND	 
-| Attention	ATTN	 
-| Attribute	ATTR	 
-| Audit<br/>Audited	ADT	 
-| Authority<br/>Authorize	AUTH	 
-| Auxiliary	AUX	 
-| Availability
-| Available	AVL	 
-| Average	AVG	The mean of two or more numbers
-| Average Cumulative Grade	ACG	 
-| Award<br/>Awarded	AWRD	 
-| Balance*	BAL*	The net value (balance) of an account
-| Bank	BNK	 
-| Bargain	BARG	 
-| Base<br/>Basic	BAS	 
-| Batch	BTCH	 
-| Before	BEF	 
-| Begin<br/>Beginning	BEGN	 
-| Beginning of Term	BOT	 
-| Benefits	BEN	 
-| Bid	BID	 
-| Bill<br/>Billing	BILL	 
-| Billing and Receivables System	BRS	 
-| Birth	BRTH	 
-| Board	BRD	 
-| Break	BRK	 
-| Budget<br/>Budgetable	BUD	 
-| Budget Balance Account	BBA	 
-| Build<br/>Building	BLD	 
-| Business	BUS	 
-| Business Unit*	BU*	 
-| Buy<br/>Buyer	BUY	 
-| Calculate<br/>Calculated<br/>Calculation*	CALC*	 
-| Calendar*	CAL*	 
-| Call	CALL	 
-| Campaign	CMPN	 
-| Campus	CMPS	 
-| Cancel<br/>Canceled	CAN	 
-| Capacity	CAP	 
-| Capitalization	CPLZ	 
-| Card	CRD	 
-| Career	CAR	 
-| Carrier	CRIR	 
-| Cartridge	CART	 
-| Case	CSE	 
-| Cash	CSH	 
-| Catalog	CTLG	 
-| Category*	CATG*	 
-| Census	CENS	 
-| Center	CTR	 
-| Certificate<br/>Certification	CERT	 
-| Change<br/>Changed	CHG	 
-| Chapter	CHAP	 
-| Charge	CRG	 
-| Chartfield	CHARTF	 
-| Check<br/>Checked	CHK	 
-| Citizen<br/>Citizenship	CTZN	 
-| City	CTY	 
-| Class	CLAS	 
-| Clear<br/>Cleared	CLR	 
-| CLEP	CLEP	 
-| Close	CLO	 
-| Club	CLB	 
-| COBRA*	CBR*	 
-| Code*	CD*	Data which represents encoded values (translate or code table)
-| Collect<br/>Collection	CLCT	 
-| College	COLG	 
-| Column	CLMN	 
-| Combination
-| Combine	COMB	 
-| Command	CMD	 
-| Comment	CMT	An explanatory, illustrative or critical note, remark or observation
-| Committee	CMMTTEE	 
-| Company*	CO*	 
-| Comparative*	COMPA*	 
-| Competitor	CPTR	 
-| Complete<br/>Completion<br/>Compliance	CMPL	 
-| Component	CMPT	When the meaning is "part", use abbreviation "PRT".
-| Composite<br/>Compensation	COMP	 
-| Conditional	COND	 
-| Confidential	CNFD	 
-| Confirm<br/>Confirmation*	CONF*	 
-| Constant	CNST<br/>CST	Data which is unchanging or invariable
-| Contact	CTCT	 
-| Continue<br/>Continuing<br/>Continuous	CONT	 
-| Contract<br/>Contractor	CNTR	 
-| Control*	CNTL*	 
-| Conversation*	CONVR*	 
-| Conversion*<br/>Convert*<br/>Converted	CNV*	 
-| Correspondence	CRSP	 
-| Cost	COST	 
-| Count<br/>Counter	CNT	A number of people or things that have been "counted", such as inventory cycle count
-| Country	CTRY	 
-| County	CNTY	 
-| Course*	CRSE*	 
-| Coverage*	COVRG*	 
-| Create	CRE	 
-| Credential	CRDL	 
-| Credit*	CR*
+| Academic |	ACAD |	  |
+| Accept<br/>Acceptance<br/>Accepted |	ACPT |	  |
+| Access |	ACCS |	  |
+| Accident |	ACDNT |	  |
+| Accomplish<br/>Accomplishment<br/>Accomplishments |	ACMP |	  |
+| Account* |	ACCT* |	  |
+| Accounting* |	ACCTG* |	  |
+| Accounts | Payable | |
+| Advanced Placement |	AP	  |
+| Accounts Receivable |	AR	  |
+| Accredited |	ACRD |	  |
+| Accrual |	ACRL |	  |
+| Accumulated* |	ACCUM* |	  |
+| Accumulation<br/>Accumulative |	ACUM	  |
+| Achieve<br/>Achievement |	ACHV |	  |
+| Acquisition* |	ACQ* |	  |
+| Act<br/>Active<br/>Activity<br/>American College Test |	     ACT	  |
+| Action* |	ACTN* |	  |
+| Actual |	ACTL |	  |
+| Add<br/>Added |	ADD |	  |
+| Additional* |	ADDL* |	  |
+| Address* |	ADDR* |	Narrative data which describes a person, place or thing's location |
+| Ad hoc |	ADHC	 | | 
+| Adjudicate<br/>Adjudicated<br/>Adjudication	 |	ADJD	 |	 |	 
+| Adjusted Gross Income	 |	AGI	 	 |	 |
+| Adjustment*	 |	ADJ*	 	 |	 |
+| Administered<br/>Administrated<br/>Administration	 |	ADM	 	 |	 |
+| Admissible<br/>Admission	 |	ADMS	 	 |	 |
+| Admittance<br/>Admitted	 |	ADMT	 	 |	 |
+| Advanced Placement<br/>Accounts Payable	 |	AP	 	 |	 |
+| Advice	 |	ADVC	 	 |	 |
+| Affiliation	 |	AFFL	 |	 |	 
+| After	 |	AFT	 	 |	 |
+| Age	 |	AGE	 	 |	 |
+| Agency	 |	AGCY	 	 |	 |
+| Agent	 |	AGNT	 |	 |	 
+| Aid	 |	AID	 	 |	 |
+| Alien	 |	ALN	 	 |	 |
+| All	 |	ALL	 	 |	 |
+| Allocate<br>Allocation*	 |	ALLOC*	 	 |	 |
+| Alpha	 |	ALPH		 |	 | 
+| Alter<br/>Alternate	 |	ALT	 	 |	 |
+| Alumni<br/>Alumnus<br/>ALMN	 |AM	 |	"Ante Meridiem" (morning)	 |
+| American College Test<br/>Act<br/>Active<br/>Activity	 |	ACT	 	 |	 |
+| Amount*	 |	AMT*	 |	Monetary value(s)	 |
+| Analysis	 |	ANLS	 	 |	 |
+| Annual*	 |	ANNL*		 |	 | 
+| Anonymous	 |	ANON	 	 |	 |
+| Answer	 |	ANS	 	 |	 |
+| Apartment	 |	APT	 	 |	 |
+| Appeal<br/>Appealed	 |	APEL	 	 |	 |
+| Applicant*	 |	APP*	 |	 |	 
+| Application*	 |	APPL*	 	 |	 |
+| Appointment	 |	APPT	 	 |	 |
+| Approval<br/>Approve	 |	APRV		 |	 | 
+| Area	 |	AREA	 	 |	 |
+| Array	 |	ARAY	 	 |	 |
+| Arrears	 |	ARRS	 |	 |	 
+| Ascending	 |	ASC	 |	 |	 
+| Assign<br/>Assigned<br/>Assignment	 |	ASGN	 	 |	 |
+| Association	 |	ASSC	 	 |	 |
+| Assumption	 |	ASMP	 	 |	 |
+| Athlete<br/>Athletic	 |	ATHL	 	 |	 |
+| Attach	 |	ATCH	 	 |	 |
+| Attempt	 |	ATMPT	 	 |	 |
+| Attend<br/>Attendance	 |	ATND	 	 |	 |
+| Attention	 |	ATTN		 | 	 |
+| Attribute	 |	ATTR	 	 |	 |
+| Audit<br/>Audited	 |	ADT	 	 |	 |
+| Authority<br/>Authorize	 |	AUTH	 	 |	 |
+| Auxiliary	 |	AUX	 	 |	 |
+| Availability<br/>Available	 |	AVL	 	 |	 |
+| Average	 |	AVG	 |	The mean of two or more numbers	 |
+| Average Cumulative Grade	 |	ACG	 	 |	 |
+| Award<br/>Awarded	 |	AWRD	 	 |	 |
+| Balance*	 |	BAL*	 |	The net value (balance) of an account	 |
+| Bank	 |	BNK		 |	 | 
+| Bargain	 |	BARG	 |	 |	 
+| Base<br/>Basic	 |	BAS	 |	 |	 
+| Batch	 |	BTCH	 |	 |	 
+| Before	 |	BEF	 |	 |	 
+| Begin<br/>Beginnin	 |	BEGN	 |	 |	 
+| Beginning of Term	 |	BOT	 |	 |	 
+| Benefits	 |	BEN	 |	 |	 
+| Bid	 |	BID	 |	 |	 
+| Bill<br/>Billing	 |	BILL	 |	 |	 
+| Billing and Receivables System	 |	BRS	 |	 |	 
+| Birth 	 |	BRTH 	 |	 	 |
+| Board 	 |	BRD 	 |		 | 
+| Break 	 |	BRK	 	 | 	 |
+| Budget<br/>Budgetable	 |	BUD	 |	 |	 
+| Budget Balance Account	 |	BBA	 |	 |	 
+| Build<br/>Building	 |	BLD	 |	 |	 
+| Business	 |	BUS	 |	 |	 
+| Business Unit*	 |	BU*	 |	 |	 
+| Buy<br/>Buyer	 |	BUY	 |	 |	 
+| Calculate<br/>Calculated<br/>Calculation*	 |	CALC*	 |	 |	 
+| Calendar*	 |	CAL*	 |	 |	 
+| Call	 |	CALL	 |	 |	 
+| Campaign	 |	CMPN	 |	 |	 
+| Campus	 |	CMPS	 |	 |	 
+| Cancel<br/>Canceled	 |	CAN	 |	 |	 
+| Capacity	 |	CAP	 |	 |	 
+| Capitalization	 |	CPLZ	 |	 |	 
+| Card	 |	CRD	 |	 |	 
+| Career	 |	CAR	 |	 |	 
+| Carrier	 |	CRIR	 |	 |	 
+| Cartridge	 |	CART	 |	 |	 
+| Case	 |	CSE	 |	 |	 
+| Cash	 |	CSH		 |	 | 
+| Catalog	 |	CTLG	 |	 |	 
+| Category*		 | CATG*		 |	 | 
+| Census	 |	CENS		 |	 | 
+| Center	 |	CTR		 |	 | 
+| Certificate<br/>Certification	 |	CERT	 |	 |	 
+| Change<br/>Changed	 |	CHG		 |	 | 
+| Chapter	 |	CHAP	 |	 |	 
+| Charge	 |	CRG	 	 |	 |
+| Chartfield	 |	CHARTF		 |	 | 
+| Check<br/>Checked	 |	CHK		 |	 | 
+| Citizen<br/>Citizenship	 |	CTZN	 	 |	 |
+| City	 |	CTY	 	 |	 |
+| Class	 |	CLAS	 	 |	 |
+| Clear<br/>Cleared	 |	CLR		 |	 | 
+| CLEP	 |	CLEP	 |	 |	 
+| Close	 |	CLO	 |	 |	 
+| Club	 |	CLB	 |	 |	 
+| COBRA*	 |	CBR*	 |	 |	 
+| Code*	 |	CD*	 |	Data which represents encoded values (translate or code table)	 |
+| Collect<br/>Collection	 |	CLCT	 |	 |	 
+| College	 |	COLG	 |	 |	 
+| Column	 |	CLMN	 |	 |	 
+| Combination<br/>Combine	 |	COMB	 |	 |	 
+| Command	 |	CMD	 |	 |	 
+| Comment	 |	CMT	 |	An explanatory, illustrative or critical note, remark or observation	 |
+| Committee	 |	CMMTTEE	 |	 |	 
+| Company*	 |	CO*		 |	 | 
+| Comparative*	 |	COMPA*	 |	 |	 
+| Competitor	 |	CPTR	 |	 |	 
+| Complete<br/>Completion<br/>Compliance	 |	CMPL	 |	 |	 
+| Component	 |	CMPT	 |	When the meaning is "part", use abbreviation "PRT".	 |
+| Composite<br/>Compensation	 |	COMP	 |	 |	 
+| Conditional	 |	COND	 |	 |	 
+| Confidential	 |	CNFD	 |	 |	 
+| Confirm<br/>Confirmation*	 |	CONF*	 |	 |	 
+| Constant	 |	CNST<br/>CST	 |	Data which is unchanging or invariable	 |
+| Contact	 |	CTCT	 |	 |	 
+| Continue<br/>Continuing<br/>Continuous	 |	CONT	 |	 |	 
+| Contract<br/>Contractor	 |	CNTR	 |	 |	 
+| Control*	 |	CNTL*	 |	 |	 
+| Conversation*	 |	CONVR*	 |	 |	 
+| Conversion*<br/>Convert*<br/>Converted	 |	CNV*	 |	 |	 
+| Correspondence	 |	CRSP	 |	 |	 
+| Cost	 |	COST	 |	 |	 
+| Count<br/>Counter	 |	CNT	 |	A number of people or things that have been "counted", such as inventory cycle count	 |
+| Country	 |	CTRY	 |	 |	 
+| County	 |	CNTY	 |	 |	 
+| Course*	 |	CRSE*		 |	 | 
+| Coverage*	 |	COVRG*	 |	 |	 
+| Create	 |	CRE	 |	 |	 
+| Credential	 |	CRDL	 |	 |	 
+| Credit*	 |	CR*	 |	 |
 | CRDT	Use "CR" for field names relating to financial data
 | Use "CRDT" for field names relating to academic work
 | CREF	CREF	 
@@ -1065,4 +1059,3 @@ ps: 有些词可能共用一些缩写。带星号的缩写或词来源于PeopleS
 | Year-to-Date*	YTD*	 
 | Zip	ZIP	 
 | Zone	ZN
-| 
