@@ -47,12 +47,32 @@
       </tags>
   </entry>
   <entry>
+    <title>安装Mysql</title>
+    <url>/2021/04/19/Install-mysql/</url>
+    <content><![CDATA[<p>mysql安装：<br>下载地址： <a href="http://mirrors.sohu.com/mysql/MySQL-8.0/mysql-8.0.11-winx64.zip">http://mirrors.sohu.com/mysql/MySQL-8.0/mysql-8.0.11-winx64.zip</a></p>
+<p>mysqld –initialize –user=wangyuda –basedir=E:\soft\mysql –datadir=E:\soft\mysql\data<br>// 添加服务<br>mysqld install mysql<br>// 添加服务<br>mysqld remove mysql<br>// 启动/停止服务<br>net start/stop mysql<br>注释：yourusername：你的用户名字</p>
+<p>初始化密码：DESKTOP-V8LTKIB.err<br>A temporary password is generated for root@localhost: A_mBvrbnD0*r（你的密码）<br>修改密码：./mysqladmin -u root -p password 输入原始的 两次新的</p>
+<p>配置环境变量<br>// 解压操作： tar -xzvf ${filename}<br>启动/停止服务：./support-files/mysql.server start/stop</p>
+<p>// 配置环境变量<br>1.打开终端,输入： cd ~<br>会进入~文件夹<br>2.然后输入：touch .bash_profile<br>回车执行后，<br>2.再输入：open -e .bash_profile<br>会在TextEdit中打开这个文件（如果以前没有配置过环境变量，那么这应该是一个空白文档）。如果有内容，请在结束符前输入，如果没有内容，请直接输入如下语句：<br>export PATH=${PATH}:/usr/local/mysql/bin<br>然后，保存，退出TextEdit（一定是退出），关闭终端并退出。</p>
+<p>git bash不能登录mysql的问题，前面加上winpty就可以了</p>
+<p>mysqld –initialize –user=wangyuda –basedir=E:\soft\mysql –datadir=E:\soft\mysql\data</p>
+<p>mysqld –install Mysql –defaults-file=E:\soft\mysql\my.ini<br>navicat链接失败：报2509</p>
+<p>在8版本以后的MySql默认的加密方式都改为了caching_sha2_password</p>
+<p>因此进入mysql的命令行更改加密方式即可</p>
+<p>ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘password’ PASSWORD EXPIRE NEVER;   #更改加密方式
+ </p>
+<p>ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘新密码’;   #更新用户密码
+ </p>
+<p>FLUSH PRIVILEGES;   #刷新权限</p>
+]]></content>
+  </entry>
+  <entry>
     <title>My Post</title>
     <url>/2021/04/15/My-Post/</url>
     <content><![CDATA[<h2 id="Hello-Post"><a href="#Hello-Post" class="headerlink" title="Hello Post"></a>Hello Post</h2>]]></content>
   </entry>
   <entry>
-    <title>OS-section1.md</title>
+    <title>操作系统第一节</title>
     <url>/2021/04/19/OS-section1/</url>
     <content><![CDATA[<h3 id="第一章-操作系统概述-—-操作系统第一节"><a href="#第一章-操作系统概述-—-操作系统第一节" class="headerlink" title="第一章-操作系统概述 — 操作系统第一节"></a>第一章-操作系统概述 — 操作系统第一节</h3>]]></content>
       <categories>
@@ -60,7 +80,7 @@
       </categories>
   </entry>
   <entry>
-    <title>OS-section7</title>
+    <title>操作系统第七节</title>
     <url>/2021/04/18/OS-section7/</url>
     <content><![CDATA[<h3 id="第四章-存储器管理-—-操作系统第七节"><a href="#第四章-存储器管理-—-操作系统第七节" class="headerlink" title="第四章-存储器管理 — 操作系统第七节"></a>第四章-存储器管理 — 操作系统第七节</h3><h3 id="1-存储器的重要性"><a href="#1-存储器的重要性" class="headerlink" title="1. 存储器的重要性"></a>1. 存储器的重要性</h3><p>现在的计算机体系由过去的以运算器为中心的冯诺依曼机，变成了以存储器为中心的体系。以前以运算器为中心，所有东西都要经过运算器，加重了运算器的负担。所以以存储器为核心，数据的大集中，欲主机系统的无关性，可被大量主机设备共用。</p>
 <h3 id="2-存储器的五大功能"><a href="#2-存储器的五大功能" class="headerlink" title="2. 存储器的五大功能"></a>2. 存储器的五大功能</h3><ol>
@@ -102,7 +122,42 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Shorthand</title>
+    <title>英语单词词根</title>
+    <url>/2021/04/19/wordroot/</url>
+    <content><![CDATA[<h3 id="hum-潮湿的-泥土"><a href="#hum-潮湿的-泥土" class="headerlink" title="hum - 潮湿的 泥土"></a>hum - 潮湿的 泥土</h3><ol>
+<li>human：人类（西方认为人类是用泥土捏成的）</li>
+<li>humid：潮湿的、湿热的</li>
+<li>humble：adj-虚心的、卑微的 v-贬低、虚心</li>
+<li>inhume: 埋葬</li>
+<li>exhume：挖出</li>
+<li>humiliate：羞辱、侮辱</li>
+</ol>
+<h3 id="sid-sit-坐着"><a href="#sid-sit-坐着" class="headerlink" title="sid sit 坐着"></a>sid sit 坐着</h3><ol>
+<li>preside： 主持</li>
+<li>president：主席，校长，院长</li>
+<li>consider: 考虑</li>
+<li>consider： 考虑</li>
+<li>considered：经过深思熟虑的</li>
+<li>considerable： 相当多的</li>
+</ol>
+<h3 id="st-stant-stand-站着"><a href="#st-stant-stand-站着" class="headerlink" title="st stant stand 站着"></a>st stant stand 站着</h3><ol>
+<li>stable： adj-稳定的、沉稳的 n-马厩、马房 v-把马拴在马厩</li>
+<li>understand: 理解</li>
+<li>constant: adj-不变的 n-常量</li>
+<li>distant: 遥远的、不同的</li>
+<li>distance：距离</li>
+<li>substance：物质基础</li>
+</ol>
+]]></content>
+      <categories>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>词根</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英文缩写</title>
     <url>/2021/04/19/Shorthand/</url>
     <content><![CDATA[<h3 id="一些英文词的标准缩写"><a href="#一些英文词的标准缩写" class="headerlink" title="一些英文词的标准缩写"></a>一些英文词的标准缩写</h3><p>ps: 有些词可能共用一些缩写。带星号的缩写或词来源于PeopleSoft标准。</p>
 <table>
@@ -119,843 +174,813 @@
 <td></td>
 </tr>
 <tr>
-<td>Academic    ACAD</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Accept<br/>Acceptance<br/>Accepted    ACPT</td>
-<td></td>
+<td>Academic</td>
+<td>ACAD</td>
 <td></td>
 </tr>
 <tr>
-<td>Access    ACCS</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Accident    ACDNT</td>
-<td></td>
+<td>Accept<br/>Acceptance<br/>Accepted</td>
+<td>ACPT</td>
 <td></td>
 </tr>
 <tr>
-<td>Accomplish<br/>Accomplishment<br/>Accomplishments    ACMP</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Account*    ACCT*</td>
-<td></td>
+<td>Access</td>
+<td>ACCS</td>
 <td></td>
 </tr>
 <tr>
-<td>Accounting*    ACCTG*</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Accounts Payable</td>
-<td></td>
+<td>Accident</td>
+<td>ACDNT</td>
 <td></td>
 </tr>
 <tr>
-<td>Advanced Placement    AP</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Accounts Receivable    AR</td>
-<td></td>
+<td>Accomplish<br/>Accomplishment<br/>Accomplishments</td>
+<td>ACMP</td>
 <td></td>
 </tr>
 <tr>
-<td>Accredited    ACRD</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Accrual    ACRL</td>
-<td></td>
+<td>Account*</td>
+<td>ACCT*</td>
 <td></td>
 </tr>
 <tr>
-<td>Accumulated*    ACCUM*</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Accumulation<br/>Accumulative    ACUM</td>
-<td></td>
+<td>Accounting*</td>
+<td>ACCTG*</td>
 <td></td>
 </tr>
 <tr>
-<td>Achieve<br/>Achievement    ACHV</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Acquisition*    ACQ*</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Act<br/>Active<br/>Activity<br/>American College Test         ACT</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Action*    ACTN*</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Actual    ACTL</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Add<br/>Added    ADD</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Additional*    ADDL*</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Address*    ADDR*    Narrative data which describes a person, place or thing’s location</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ad hoc    ADHC</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Adjudicate<br/>Adjudicated<br/>Adjudication    ADJD</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Adjusted Gross Income    AGI</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Adjustment*    ADJ*</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Administered<br/>Administrated<br/>Administration    ADM</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Admissible<br/>Admission    ADMS</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Admittance<br/>Admitted    ADMT</td>
-<td></td>
+<td>Accounts</td>
+<td>Payable</td>
 <td></td>
 </tr>
 <tr>
 <td>Advanced Placement</td>
+<td>AP</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Accounts Payable    AP</td>
-<td></td>
+<td>Accounts Receivable</td>
+<td>AR</td>
 <td></td>
 </tr>
 <tr>
-<td>Advice    ADVC</td>
+<td>Accredited</td>
+<td>ACRD</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Affiliation    AFFL</td>
+<td>Accrual</td>
+<td>ACRL</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>After    AFT</td>
-<td></td>
+<td>Accumulated*</td>
+<td>ACCUM*</td>
 <td></td>
 </tr>
 <tr>
-<td>Age    AGE</td>
+<td>Accumulation<br/>Accumulative</td>
+<td>ACUM</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Agency    AGCY</td>
-<td></td>
+<td>Achieve<br/>Achievement</td>
+<td>ACHV</td>
 <td></td>
 </tr>
 <tr>
-<td>Agent    AGNT</td>
+<td>Acquisition*</td>
+<td>ACQ*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Aid    AID</td>
+<td>Act<br/>Active<br/>Activity<br/>American College Test</td>
+<td>ACT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Alien    ALN</td>
-<td></td>
+<td>Action*</td>
+<td>ACTN*</td>
 <td></td>
 </tr>
 <tr>
-<td>All    ALL</td>
+<td>Actual</td>
+<td>ACTL</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Allocate</td>
-<td></td>
+<td>Add<br/>Added</td>
+<td>ADD</td>
 <td></td>
 </tr>
 <tr>
-<td>Allocation*    ALLOC*</td>
+<td>Additional*</td>
+<td>ADDL*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Alpha    ALPH</td>
-<td></td>
-<td></td>
+<td>Address*</td>
+<td>ADDR*</td>
+<td>Narrative data which describes a person, place or thing’s location</td>
 </tr>
 <tr>
-<td>Alter<br/>Alternate    ALT</td>
+<td>Ad hoc</td>
+<td>ADHC</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Alumni<br/>Alumnus    ALMN</td>
-<td></td>
+<td>Adjudicate<br/>Adjudicated<br/>Adjudication</td>
+<td>ADJD</td>
 <td></td>
 </tr>
 <tr>
-<td>AM    AM    “Ante Meridiem” (morning)</td>
+<td>Adjusted Gross Income</td>
+<td>AGI</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>American College Test<br/>Act<br/>Active<br/>Activity    ACT</td>
+<td>Adjustment*</td>
+<td>ADJ*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Amount*    AMT*    Monetary value(s)</td>
-<td></td>
+<td>Administered<br/>Administrated<br/>Administration</td>
+<td>ADM</td>
 <td></td>
 </tr>
 <tr>
-<td>Analysis    ANLS</td>
+<td>Admissible<br/>Admission</td>
+<td>ADMS</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Annual*    ANNL*</td>
-<td></td>
+<td>Admittance<br/>Admitted</td>
+<td>ADMT</td>
 <td></td>
 </tr>
 <tr>
-<td>Anonymous    ANON</td>
+<td>Advanced Placement<br/>Accounts Payable</td>
+<td>AP</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Answer    ANS</td>
+<td>Advice</td>
+<td>ADVC</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Apartment    APT</td>
-<td></td>
+<td>Affiliation</td>
+<td>AFFL</td>
 <td></td>
 </tr>
 <tr>
-<td>Appeal<br/>Appealed    APEL</td>
+<td>After</td>
+<td>AFT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Applicant*    APP*</td>
-<td></td>
+<td>Age</td>
+<td>AGE</td>
 <td></td>
 </tr>
 <tr>
-<td>Application*    APPL*</td>
+<td>Agency</td>
+<td>AGCY</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Appointment    APPT</td>
+<td>Agent</td>
+<td>AGNT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Approval<br/>Approve    APRV</td>
-<td></td>
+<td>Aid</td>
+<td>AID</td>
 <td></td>
 </tr>
 <tr>
-<td>Area    AREA</td>
+<td>Alien</td>
+<td>ALN</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Array    ARAY</td>
-<td></td>
+<td>All</td>
+<td>ALL</td>
 <td></td>
 </tr>
 <tr>
-<td>Arrears    ARRS</td>
+<td>Allocate<br>Allocation*</td>
+<td>ALLOC*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Ascending    ASC</td>
+<td>Alpha</td>
+<td>ALPH</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Assign<br/>Assigned</td>
-<td></td>
+<td>Alter<br/>Alternate</td>
+<td>ALT</td>
 <td></td>
 </tr>
 <tr>
-<td>Assignment    ASGN</td>
-<td></td>
-<td></td>
+<td>Alumni<br/>Alumnus<br/>ALMN</td>
+<td>AM</td>
+<td>“Ante Meridiem” (morning)</td>
 </tr>
 <tr>
-<td>Association    ASSC</td>
-<td></td>
+<td>American College Test<br/>Act<br/>Active<br/>Activity</td>
+<td>ACT</td>
 <td></td>
 </tr>
 <tr>
-<td>Assumption    ASMP</td>
-<td></td>
-<td></td>
+<td>Amount*</td>
+<td>AMT*</td>
+<td>Monetary value(s)</td>
 </tr>
 <tr>
-<td>Athlete<br/>Athletic    ATHL</td>
-<td></td>
+<td>Analysis</td>
+<td>ANLS</td>
 <td></td>
 </tr>
 <tr>
-<td>Attach    ATCH</td>
+<td>Annual*</td>
+<td>ANNL*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Attempt    ATMPT</td>
-<td></td>
+<td>Anonymous</td>
+<td>ANON</td>
 <td></td>
 </tr>
 <tr>
-<td>Attend<br/>Attendance    ATND</td>
+<td>Answer</td>
+<td>ANS</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Attention    ATTN</td>
+<td>Apartment</td>
+<td>APT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Attribute    ATTR</td>
-<td></td>
+<td>Appeal<br/>Appealed</td>
+<td>APEL</td>
 <td></td>
 </tr>
 <tr>
-<td>Audit<br/>Audited    ADT</td>
+<td>Applicant*</td>
+<td>APP*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Authority<br/>Authorize    AUTH</td>
-<td></td>
+<td>Application*</td>
+<td>APPL*</td>
 <td></td>
 </tr>
 <tr>
-<td>Auxiliary    AUX</td>
+<td>Appointment</td>
+<td>APPT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Availability</td>
+<td>Approval<br/>Approve</td>
+<td>APRV</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Available    AVL</td>
-<td></td>
+<td>Area</td>
+<td>AREA</td>
 <td></td>
 </tr>
 <tr>
-<td>Average    AVG    The mean of two or more numbers</td>
+<td>Array</td>
+<td>ARAY</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Average Cumulative Grade    ACG</td>
-<td></td>
+<td>Arrears</td>
+<td>ARRS</td>
 <td></td>
 </tr>
 <tr>
-<td>Award<br/>Awarded    AWRD</td>
+<td>Ascending</td>
+<td>ASC</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Balance*    BAL*    The net value (balance) of an account</td>
+<td>Assign<br/>Assigned<br/>Assignment</td>
+<td>ASGN</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Bank    BNK</td>
-<td></td>
+<td>Association</td>
+<td>ASSC</td>
 <td></td>
 </tr>
 <tr>
-<td>Bargain    BARG</td>
+<td>Assumption</td>
+<td>ASMP</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Base<br/>Basic    BAS</td>
-<td></td>
+<td>Athlete<br/>Athletic</td>
+<td>ATHL</td>
 <td></td>
 </tr>
 <tr>
-<td>Batch    BTCH</td>
+<td>Attach</td>
+<td>ATCH</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Before    BEF</td>
+<td>Attempt</td>
+<td>ATMPT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Begin<br/>Beginning    BEGN</td>
-<td></td>
+<td>Attend<br/>Attendance</td>
+<td>ATND</td>
 <td></td>
 </tr>
 <tr>
-<td>Beginning of Term    BOT</td>
+<td>Attention</td>
+<td>ATTN</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Benefits    BEN</td>
-<td></td>
+<td>Attribute</td>
+<td>ATTR</td>
 <td></td>
 </tr>
 <tr>
-<td>Bid    BID</td>
+<td>Audit<br/>Audited</td>
+<td>ADT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Bill<br/>Billing    BILL</td>
+<td>Authority<br/>Authorize</td>
+<td>AUTH</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Billing and Receivables System    BRS</td>
-<td></td>
+<td>Auxiliary</td>
+<td>AUX</td>
 <td></td>
 </tr>
 <tr>
-<td>Birth    BRTH</td>
+<td>Availability<br/>Available</td>
+<td>AVL</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Board    BRD</td>
-<td></td>
-<td></td>
+<td>Average</td>
+<td>AVG</td>
+<td>The mean of two or more numbers</td>
 </tr>
 <tr>
-<td>Break    BRK</td>
+<td>Average Cumulative Grade</td>
+<td>ACG</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Budget<br/>Budgetable    BUD</td>
-<td></td>
+<td>Award<br/>Awarded</td>
+<td>AWRD</td>
 <td></td>
 </tr>
 <tr>
-<td>Budget Balance Account    BBA</td>
-<td></td>
-<td></td>
+<td>Balance*</td>
+<td>BAL*</td>
+<td>The net value (balance) of an account</td>
 </tr>
 <tr>
-<td>Build<br/>Building    BLD</td>
+<td>Bank</td>
+<td>BNK</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Business    BUS</td>
+<td>Bargain</td>
+<td>BARG</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Business Unit*    BU*</td>
-<td></td>
+<td>Base<br/>Basic</td>
+<td>BAS</td>
 <td></td>
 </tr>
 <tr>
-<td>Buy<br/>Buyer    BUY</td>
+<td>Batch</td>
+<td>BTCH</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Calculate<br/>Calculated<br/>Calculation*    CALC*</td>
+<td>Before</td>
+<td>BEF</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Calendar*    CAL*</td>
-<td></td>
+<td>Begin<br/>Beginnin</td>
+<td>BEGN</td>
 <td></td>
 </tr>
 <tr>
-<td>Call    CALL</td>
+<td>Beginning of Term</td>
+<td>BOT</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Campaign    CMPN</td>
+<td>Benefits</td>
+<td>BEN</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Campus    CMPS</td>
-<td></td>
+<td>Bid</td>
+<td>BID</td>
 <td></td>
 </tr>
 <tr>
-<td>Cancel<br/>Canceled    CAN</td>
+<td>Bill<br/>Billing</td>
+<td>BILL</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Capacity    CAP</td>
-<td></td>
+<td>Billing and Receivables System</td>
+<td>BRS</td>
 <td></td>
 </tr>
 <tr>
-<td>Capitalization    CPLZ</td>
+<td>Birth</td>
+<td>BRTH</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Card    CRD</td>
+<td>Board</td>
+<td>BRD</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Career    CAR</td>
-<td></td>
+<td>Break</td>
+<td>BRK</td>
 <td></td>
 </tr>
 <tr>
-<td>Carrier    CRIR</td>
+<td>Budget<br/>Budgetable</td>
+<td>BUD</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Cartridge    CART</td>
-<td></td>
+<td>Budget Balance Account</td>
+<td>BBA</td>
 <td></td>
 </tr>
 <tr>
-<td>Case    CSE</td>
+<td>Build<br/>Building</td>
+<td>BLD</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Cash    CSH</td>
+<td>Business</td>
+<td>BUS</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Catalog    CTLG</td>
-<td></td>
+<td>Business Unit*</td>
+<td>BU*</td>
 <td></td>
 </tr>
 <tr>
-<td>Category*    CATG*</td>
+<td>Buy<br/>Buyer</td>
+<td>BUY</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Census    CENS</td>
-<td></td>
+<td>Calculate<br/>Calculated<br/>Calculation*</td>
+<td>CALC*</td>
 <td></td>
 </tr>
 <tr>
-<td>Center    CTR</td>
+<td>Calendar*</td>
+<td>CAL*</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Certificate<br/>Certification    CERT</td>
+<td>Call</td>
+<td>CALL</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Change<br/>Changed    CHG</td>
-<td></td>
+<td>Campaign</td>
+<td>CMPN</td>
 <td></td>
 </tr>
 <tr>
-<td>Chapter    CHAP</td>
+<td>Campus</td>
+<td>CMPS</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Charge    CRG</td>
-<td></td>
+<td>Cancel<br/>Canceled</td>
+<td>CAN</td>
 <td></td>
 </tr>
 <tr>
-<td>Chartfield    CHARTF</td>
+<td>Capacity</td>
+<td>CAP</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Check<br/>Checked    CHK</td>
+<td>Capitalization</td>
+<td>CPLZ</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Citizen<br/>Citizenship    CTZN</td>
-<td></td>
+<td>Card</td>
+<td>CRD</td>
 <td></td>
 </tr>
 <tr>
-<td>City    CTY</td>
+<td>Career</td>
+<td>CAR</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Class    CLAS</td>
-<td></td>
+<td>Carrier</td>
+<td>CRIR</td>
 <td></td>
 </tr>
 <tr>
-<td>Clear<br/>Cleared    CLR</td>
+<td>Cartridge</td>
+<td>CART</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>CLEP    CLEP</td>
+<td>Case</td>
+<td>CSE</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Close    CLO</td>
-<td></td>
+<td>Cash</td>
+<td>CSH</td>
 <td></td>
 </tr>
 <tr>
-<td>Club    CLB</td>
+<td>Catalog</td>
+<td>CTLG</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>COBRA*    CBR*</td>
-<td></td>
+<td>Category*</td>
+<td>CATG*</td>
 <td></td>
 </tr>
 <tr>
-<td>Code*    CD*    Data which represents encoded values (translate or code table)</td>
+<td>Census</td>
+<td>CENS</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Collect<br/>Collection    CLCT</td>
+<td>Center</td>
+<td>CTR</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>College    COLG</td>
-<td></td>
+<td>Certificate<br/>Certification</td>
+<td>CERT</td>
 <td></td>
 </tr>
 <tr>
-<td>Column    CLMN</td>
+<td>Change<br/>Changed</td>
+<td>CHG</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Combination</td>
-<td></td>
+<td>Chapter</td>
+<td>CHAP</td>
 <td></td>
 </tr>
 <tr>
-<td>Combine    COMB</td>
+<td>Charge</td>
+<td>CRG</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Command    CMD</td>
+<td>Chartfield</td>
+<td>CHARTF</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Comment    CMT    An explanatory, illustrative or critical note, remark or observation</td>
-<td></td>
+<td>Check<br/>Checked</td>
+<td>CHK</td>
 <td></td>
 </tr>
 <tr>
-<td>Committee    CMMTTEE</td>
+<td>Citizen<br/>Citizenship</td>
+<td>CTZN</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Company*    CO*</td>
+<td>City</td>
+<td>CTY</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Comparative*    COMPA*</td>
-<td></td>
+<td>Class</td>
+<td>CLAS</td>
 <td></td>
 </tr>
 <tr>
-<td>Competitor    CPTR</td>
+<td>Clear<br/>Cleared</td>
+<td>CLR</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Complete<br/>Completion<br/>Compliance    CMPL</td>
+<td>CLEP</td>
+<td>CLEP</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Component    CMPT    When the meaning is “part”, use abbreviation “PRT”.</td>
-<td></td>
+<td>Close</td>
+<td>CLO</td>
 <td></td>
 </tr>
 <tr>
-<td>Composite<br/>Compensation    COMP</td>
+<td>Club</td>
+<td>CLB</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Conditional    COND</td>
-<td></td>
+<td>COBRA*</td>
+<td>CBR*</td>
 <td></td>
 </tr>
 <tr>
-<td>Confidential    CNFD</td>
-<td></td>
-<td></td>
+<td>Code*</td>
+<td>CD*</td>
+<td>Data which represents encoded values (translate or code table)</td>
 </tr>
 <tr>
-<td>Confirm<br/>Confirmation*    CONF*</td>
-<td></td>
+<td>Collect<br/>Collection</td>
+<td>CLCT</td>
 <td></td>
 </tr>
 <tr>
-<td>Constant    CNST<br/>CST    Data which is unchanging or invariable</td>
+<td>College</td>
+<td>COLG</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Contact    CTCT</td>
-<td></td>
+<td>Column</td>
+<td>CLMN</td>
 <td></td>
 </tr>
 <tr>
-<td>Continue<br/>Continuing<br/>Continuous    CONT</td>
+<td>Combination<br/>Combine</td>
+<td>COMB</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Contract<br/>Contractor    CNTR</td>
+<td>Command</td>
+<td>CMD</td>
 <td></td>
-<td></td>
 </tr>
 <tr>
-<td>Control*    CNTL*</td>
-<td></td>
-<td></td>
+<td>Comment</td>
+<td>CMT</td>
+<td>An explanatory, illustrative or critical note, remark or observation</td>
 </tr>
 <tr>
-<td>Conversation*    CONVR*</td>
+<td>Committee</td>
+<td>CMMTTEE</td>
 <td></td>
+</tr>
+<tr>
+<td>Company*</td>
+<td>CO*</td>
 <td></td>
 </tr>
 <tr>
-<td>Conversion*<br/>Convert*<br/>Converted    CNV*</td>
+<td>Comparative*</td>
+<td>COMPA*</td>
 <td></td>
+</tr>
+<tr>
+<td>Competitor</td>
+<td>CPTR</td>
 <td></td>
 </tr>
 <tr>
-<td>Correspondence    CRSP</td>
+<td>Complete<br/>Completion<br/>Compliance</td>
+<td>CMPL</td>
 <td></td>
+</tr>
+<tr>
+<td>Component</td>
+<td>CMPT</td>
+<td>When the meaning is “part”, use abbreviation “PRT”.</td>
+</tr>
+<tr>
+<td>Composite<br/>Compensation</td>
+<td>COMP</td>
 <td></td>
 </tr>
 <tr>
-<td>Cost    COST</td>
+<td>Conditional</td>
+<td>COND</td>
 <td></td>
+</tr>
+<tr>
+<td>Confidential</td>
+<td>CNFD</td>
 <td></td>
 </tr>
 <tr>
-<td>Count<br/>Counter    CNT    A number of people or things that have been “counted”, such as inventory cycle count</td>
+<td>Confirm<br/>Confirmation*</td>
+<td>CONF*</td>
 <td></td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>CNST<br/>CST</td>
+<td>Data which is unchanging or invariable</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>CTCT</td>
 <td></td>
 </tr>
 <tr>
-<td>Country    CTRY</td>
+<td>Continue<br/>Continuing<br/>Continuous</td>
+<td>CONT</td>
 <td></td>
+</tr>
+<tr>
+<td>Contract<br/>Contractor</td>
+<td>CNTR</td>
 <td></td>
 </tr>
 <tr>
-<td>County    CNTY</td>
+<td>Control*</td>
+<td>CNTL*</td>
 <td></td>
+</tr>
+<tr>
+<td>Conversation*</td>
+<td>CONVR*</td>
 <td></td>
 </tr>
 <tr>
-<td>Course*    CRSE*</td>
+<td>Conversion*<br/>Convert*<br/>Converted</td>
+<td>CNV*</td>
 <td></td>
+</tr>
+<tr>
+<td>Correspondence</td>
+<td>CRSP</td>
 <td></td>
 </tr>
 <tr>
-<td>Coverage*    COVRG*</td>
+<td>Cost</td>
+<td>COST</td>
 <td></td>
+</tr>
+<tr>
+<td>Count<br/>Counter</td>
+<td>CNT</td>
+<td>A number of people or things that have been “counted”, such as inventory cycle count</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>CTRY</td>
 <td></td>
 </tr>
 <tr>
-<td>Create    CRE</td>
+<td>County</td>
+<td>CNTY</td>
 <td></td>
+</tr>
+<tr>
+<td>Course*</td>
+<td>CRSE*</td>
 <td></td>
 </tr>
 <tr>
-<td>Credential    CRDL</td>
+<td>Coverage*</td>
+<td>COVRG*</td>
 <td></td>
+</tr>
+<tr>
+<td>Create</td>
+<td>CRE</td>
 <td></td>
 </tr>
 <tr>
-<td>Credit*    CR*</td>
+<td>Credential</td>
+<td>CRDL</td>
 <td></td>
+</tr>
+<tr>
+<td>Credit*</td>
+<td>CR*</td>
 <td></td>
 </tr>
 <tr>
@@ -5380,11 +5405,6 @@
 </tr>
 <tr>
 <td>Zone    ZN</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
 <td></td>
 <td></td>
 </tr>
