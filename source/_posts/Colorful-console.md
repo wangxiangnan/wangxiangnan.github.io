@@ -1,7 +1,10 @@
 ---
 title: Colorful-console
 date: 2021-04-15 18:36:50
-tags: [Node.js, Javascript]
+categories:
+  - Node.js
+tags:
+  - console
 ---
 
 ### Node.js中console.log()输出彩色字体的方法示例
