@@ -104,8 +104,19 @@
       </categories>
   </entry>
   <entry>
+    <title>函数式编程-初来乍到</title>
+    <url>/2021/04/21/functional-programming1/</url>
+    <content><![CDATA[<h3 id="出来乍到"><a href="#出来乍到" class="headerlink" title="出来乍到"></a>出来乍到</h3>]]></content>
+      <categories>
+        <category>Javascript</category>
+      </categories>
+      <tags>
+        <tag>函数式编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
-    <url>/2021/04/20/hello-world/</url>
+    <url>/2021/04/21/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
