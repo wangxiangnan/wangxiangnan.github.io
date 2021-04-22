@@ -106,7 +106,9 @@
   <entry>
     <title>函数式编程-初来乍到</title>
     <url>/2021/04/21/functional-programming1/</url>
-    <content><![CDATA[<h3 id="出来乍到"><a href="#出来乍到" class="headerlink" title="出来乍到"></a>出来乍到</h3>]]></content>
+    <content><![CDATA[<p>—-人生若只如初见,何事秋风悲画扇 清·纳兰性德 《木兰花·拟古决绝词柬友》</p>
+<h3 id="Why-functional-programming-matters"><a href="#Why-functional-programming-matters" class="headerlink" title="Why functional programming matters?"></a>Why functional programming matters?</h3><p>认识一种新事物，只有产生强烈的火花，才能被铭记！对于函数式编程</p>
+]]></content>
       <categories>
         <category>Javascript</category>
       </categories>
@@ -116,7 +118,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2021/04/21/hello-world/</url>
+    <url>/2021/04/22/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -131,6 +133,17 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>koa2-cors</title>
+    <url>/2021/04/22/koa2-cors/</url>
+    <content><![CDATA[<h3 id="koa2-cors配置"><a href="#koa2-cors配置" class="headerlink" title="koa2-cors配置"></a>koa2-cors配置</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Koa = <span class="built_in">require</span>(<span class="string">&#x27;koa&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> bodyParser = <span class="built_in">require</span>(<span class="string">&#x27;koa-bodyparser&#x27;</span>); <span class="comment">//post数据处理</span></span><br><span class="line"><span class="keyword">const</span> router = <span class="built_in">require</span>(<span class="string">&#x27;koa-router&#x27;</span>)(); <span class="comment">//路由模块</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> cors = <span class="built_in">require</span>(<span class="string">&#x27;koa2-cors&#x27;</span>); <span class="comment">//跨域处理</span></span><br><span class="line"><span class="keyword">const</span> app = <span class="keyword">new</span> Koa();</span><br><span class="line">app.use(</span><br><span class="line">    cors(&#123;</span><br><span class="line">        origin: <span class="function"><span class="keyword">function</span>(<span class="params">ctx</span>) </span>&#123; <span class="comment">//设置允许来自指定域名请求</span></span><br><span class="line">            <span class="keyword">if</span> (ctx.url === <span class="string">&#x27;/test&#x27;</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">&#x27;*&#x27;</span>; <span class="comment">// 允许来自所有域名请求</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&#x27;http://localhost:8080&#x27;</span>; <span class="comment">//只允许http://localhost:8080这个域名的请求</span></span><br><span class="line">        &#125;,</span><br><span class="line">        maxAge: <span class="number">5</span>, <span class="comment">//指定本次预检请求的有效期，单位为秒。</span></span><br><span class="line">        credentials: <span class="literal">true</span>, <span class="comment">//是否允许发送Cookie  当客户端使用 withCredentials: true时，必须配置</span></span><br><span class="line">        allowMethods: [<span class="string">&#x27;GET&#x27;</span>, <span class="string">&#x27;POST&#x27;</span>, <span class="string">&#x27;PUT&#x27;</span>, <span class="string">&#x27;DELETE&#x27;</span>, <span class="string">&#x27;OPTIONS&#x27;</span>], <span class="comment">//设置所允许的HTTP请求方法</span></span><br><span class="line">        allowHeaders: [<span class="string">&#x27;Content-Type&#x27;</span>, <span class="string">&#x27;Authorization&#x27;</span>, <span class="string">&#x27;Accept&#x27;</span>], <span class="comment">//设置服务器支持的所有头信息字段</span></span><br><span class="line">        exposeHeaders: [<span class="string">&#x27;WWW-Authenticate&#x27;</span>, <span class="string">&#x27;Server-Authorization&#x27;</span>] <span class="comment">//设置获取其他自定义字段</span></span><br><span class="line">    &#125;)</span><br><span class="line">);</span><br><span class="line">router.post(<span class="string">&#x27;/&#x27;</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">ctx</span>) </span>&#123;</span><br><span class="line">    ctx.body = <span class="string">&#x27;请求成功了&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">3000</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Node.js</category>
+      </categories>
+      <tags>
+        <tag>跨域</tag>
+      </tags>
   </entry>
   <entry>
     <title>英语单词词根</title>
