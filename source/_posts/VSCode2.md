@@ -1,5 +1,5 @@
 ---
-title: VSCode2
+title: VSCode-调试
 date: 2021-04-22 17:34:43
 categories:
   - 编辑器
@@ -8,4 +8,3 @@ tags:
   - VSCode
 cover: /assets/images/VSCode.jpg
 ---
-VSCode2

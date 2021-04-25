@@ -5,6 +5,7 @@ categories:
   - 书籍
 tags:
   - 道德经
+cover: /assets/images/ddj.jpg
 ---
 ### 原文
 > 1. 道冲，而用之或不盈。

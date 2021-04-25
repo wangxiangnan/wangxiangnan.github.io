@@ -5,6 +5,7 @@ categories:
   - 书籍
 tags:
   - 道德经
+cover: /assets/images/ddj.jpg
 ---
 ### 原文
 > 1. 不尚贤，使民不争；不贵难得之货，使民不为盗；不见可欲，使民心不乱。

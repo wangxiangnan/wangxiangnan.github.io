@@ -5,6 +5,7 @@ categories:
   - 书籍
 tags:
   - 道德经
+cover: /assets/images/ddj.jpg
 ---
 #### 原文
 > 1. 天下皆知美之为美，斯恶矣

@@ -5,6 +5,7 @@ categories:
   - 书籍
 tags:
   - 道德经
+cover: /assets/images/ddj.jpg
 ---
 ### 原文
 > 1. 天地不仁 以万物为刍狗。
