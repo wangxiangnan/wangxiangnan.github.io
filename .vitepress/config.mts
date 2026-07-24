@@ -21,6 +21,7 @@ export default defineConfig({
         items: [
           { text: 'go语言', link: '/golang/ch01' },
           { text: 'Redis 完全教程', link: '/redis/ch00' },
+          { text: 'Mysql 完全教程', link: '/mysql/ch00' },
         ]
       },
       {
@@ -182,6 +183,38 @@ export default defineConfig({
             { text: '第二十二章 排行榜与计数器', link: '/redis/ch22' },
             { text: '第二十三章 会话管理与限流', link: '/redis/ch23' },
             { text: '第二十四章 生产环境最佳实践与总结', link: '/redis/ch24' },
+          ]
+        }
+      ],
+
+      '/mysql/': [
+        {
+          text: 'mysql 完全教程',
+          items: [
+            { text: '第0章 Mysql概览', link: '/mysql/ch00' },
+            { text: '第一章 MySQL 简介与安装', link: '/mysql/ch01' },
+            { text: '第二章 数据库与表的设计', link: '/mysql/ch02' },
+            { text: '第三章 CRUD 操作', link: '/mysql/ch03' },
+            { text: '第四章 SELECT 查询进阶', link: '/mysql/ch04' },
+            { text: '第五章 聚合函数与分组', link: '/mysql/ch05' },
+            { text: '第六章 多表连接（JOIN）', link: '/mysql/ch06' },
+            { text: '第七章 索引原理与优化', link: '/mysql/ch07' },
+            { text: '第八章 视图、存储过程与触发器', link: '/mysql/ch08' },
+            { text: '第九章 事务与锁机制', link: '/mysql/ch09' },
+            { text: '第十章 用户管理与权限控制', link: '/mysql/ch10' },
+            { text: '第十一章 备份与恢复', link: '/mysql/ch11' },
+            { text: '第十二章 日志与监控', link: '/mysql/ch12' },
+            { text: '第十三章 查询优化器深度解析', link: '/mysql/ch13' },
+            { text: '第十四章 分库分表策略', link: '/mysql/ch14' },
+            { text: '第十五章 主从复制与读写分离', link: '/mysql/ch15' },
+            { text: '第十六章 高可用集群架构', link: '/mysql/ch16' },
+            { text: '第十七章 性能调优实战', link: '/mysql/ch17' },
+            { text: '第十八章 安全加固与审计', link: '/mysql/ch18' },
+            { text: '第十九章 电商系统数据库设计', link: '/mysql/ch19' },
+            { text: '第二十章 社交平台数据库设计', link: '/mysql/ch20' },
+            { text: '第二十一章 数据迁移与版本升级', link: '/mysql/ch21' },
+            { text: '第二十二章 云数据库服务对比与选型', link: '/mysql/ch22' },
+            { text: '第二十三章 DBA日常工作与故障排查', link: '/mysql/ch23' },
           ]
         }
       ],
