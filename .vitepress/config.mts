@@ -21,6 +21,12 @@ export default defineConfig({
         items: [
           { text: 'go语言', link: '/golang/ch01' },
         ]
+      },
+      {
+        text: '工具类',
+        items: [
+          { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
+        ]
       }
     ],
 
@@ -86,6 +92,31 @@ export default defineConfig({
             { text: '第十六章 状态管理进阶', link: '/react/ch16' },
             { text: '第十七章 实战项目', link: '/react/ch17' },
             { text: '第十八章 测试与部署', link: '/react/ch18' },
+          ]
+        }
+      ],
+
+      '/github-actions/': [
+        {
+          text: 'GitHub Actions 教程',
+          items: [
+            { text: '第一章 什么是 GitHub Actions？', link: '/github-actions/ch01' },
+            { text: '第二章 YAML 语法速查', link: '/github-actions/ch02' },
+            { text: '第三章 Workflow 核心概念', link: '/github-actions/ch03' },
+            { text: '第四章 你的第一个 Workflow', link: '/github-actions/ch04' },
+            { text: '第五章 事件触发器深度解析', link: '/github-actions/ch05' },
+            { text: '第六章 环境变量与 Secrets 管理', link: '/github-actions/ch06' },
+            { text: '第七章 Actions Marketplace', link: '/github-actions/ch07' },
+            { text: '第八章 构建矩阵', link: '/github-actions/ch08' },
+            { text: '第九章 Artifacts与缓存', link: '/github-actions/ch09' },
+            { text: '第十章 缓存依赖', link: '/github-actions/ch10' },
+            { text: '第十一章 Reusable Workflows', link: '/github-actions/ch11' },
+            { text: '第十二章 自定义 Action', link: '/github-actions/ch12' },
+            { text: '第十三章 完整实战——Node.js 项目从测试到部署', link: '/github-actions/ch13' },
+            { text: '第十四章 完整实战——Python 项目 CI/CD', link: '/github-actions/ch14' },
+            { text: '第十五章 部署到云平台', link: '/github-actions/ch15' },
+            { text: '第十六章 Workflow 调试与排错指南', link: '/github-actions/ch16' },
+            { text: '第十七章 最佳实践与安全', link: '/github-actions/ch17' },
           ]
         }
       ],
