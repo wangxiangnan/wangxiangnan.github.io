@@ -1,6 +1,6 @@
 # 第八章：导航与路由
 
-![Chapter08_Navigation](./assets/images/Chapter08_Navigation.png)
+![Chapter08_Navigation](./images/Chapter08_Navigation.png)
 
 导航是移动应用的核心骨架。Flutter 提供了一套以 `Navigator` 为中心的路由体系，从命令式的 `push/pop`（Navigator 1.0）到声明式的 `Router`（Navigator 2.0），再到社区标准的 `GoRouter`，形成了完整的路由解决方案。本章将从底层原理出发，逐层剖析这些 Widget 的设计与实现。
 

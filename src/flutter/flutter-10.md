@@ -1,6 +1,6 @@
 # 第十章：Cupertino (iOS 风格) 组件
 
-![Chapter10_Cupertino](./assets/images/Chapter10_Cupertino.png)
+![Chapter10_Cupertino](./images/Chapter10_Cupertino.png)
 
 Flutter 提供了两套平行的 UI 库：Material（Android 风格）和 Cupertino（iOS 风格）。Cupertino 系列 Widget 使开发者能够构建原生感的 iOS 应用。两套库共享底层的 `widgets` 层，但在视觉表现和交互模式上有显著差异。
 

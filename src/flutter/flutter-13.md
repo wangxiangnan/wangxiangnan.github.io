@@ -1,6 +1,6 @@
 # 第十三章：状态管理与 InheritedWidget 原理
 
-![Chapter13_StateManagement](./assets/images/Chapter13_StateManagement.png)
+![Chapter13_StateManagement](./images/Chapter13_StateManagement.png)
 
 状态管理是 Flutter 开发中最受关注的话题之一。本章从 `InheritedWidget` 的底层机制出发，解析 Provider 等状态管理库的工作原理，并对主流方案进行原理级对比。
 

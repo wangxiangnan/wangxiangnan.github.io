@@ -1,6 +1,6 @@
 # 第九章：对话框与浮层
 
-![Chapter09_Dialogs](./assets/images/Chapter09_Dialogs.png)
+![Chapter09_Dialogs](./images/Chapter09_Dialogs.png)
 
 对话框和浮层是 UI 中用于临时展示信息或收集用户输入的覆盖式组件。Flutter 通过 Navigator + Overlay 机制实现这些功能。
 

@@ -11,12 +11,15 @@ export default defineConfig({
       {
         text: '前端',
         items: [
-          { text: 'Flutter', link: '/flutter/flutter' }
+          { text: 'Flutter常用 Widget', link: '/flutter/flutter' },
+          { text: '深入理解Flutter主题', link: '/flutter/flutter-theme' },
+          { text: 'React从零到实战', link: '/react/ch00' },
         ]
       },
       {
         text: '后端',
         items: [
+          { text: 'go语言', link: '/golang/ch01' },
         ]
       }
     ],
@@ -39,14 +42,57 @@ export default defineConfig({
             { text: '第十章：Cupertino (iOS)', link: '/flutter/flutter-10' },
             { text: '第十一章：异步与数据', link: '/flutter/flutter-11' },
             { text: '第十二章：工具与辅助', link: '/flutter/flutter-12' },
-            { text: '第十三章：状态管理与InheritedWidget原理', link: '/flutter/flutter-13' }
+            { text: '第十三章：状态管理与InheritedWidget原理', link: '/flutter/flutter-13' },
+            { text: '专题一：深入理解Flutter主题', link: '/flutter/flutter-theme' },
+          ]
+        }
+      ],
+      '/golang/': [
+        {
+          text: 'Go语言入门教程',
+          items: [
+            { text: '第一章 Go 语言初识', link: '/golang/ch01' },
+            { text: '第二章 变量、类型与基础语法', link: '/golang/ch02' },
+            { text: '第三章 函数', link: '/golang/ch03' },
+            { text: '第四章 复合类型', link: '/golang/ch04' },
+            { text: '第五章 接口与类型系统', link: '/golang/ch05' },
+            { text: '第六章 并发编程', link: '/golang/ch06' },
+            { text: '第七章 错误处理与工程实践', link: '/golang/ch07' },
+            { text: '第八章 实战项目', link: '/golang/ch08' },
+          ]
+        }
+      ],
+
+      '/react/': [
+        {
+          text: 'React 完全教程：从零到实战',
+          items: [
+            { text: '第0章 React概览', link: '/react/ch00' },
+            { text: '第一章 React 是什么', link: '/react/ch01' },
+            { text: '第二章 环境搭建', link: '/react/ch02' },
+            { text: '第三章 JSX', link: '/react/ch03' },
+            { text: '第四章 组件', link: '/react/ch04' },
+            { text: '第五章 事件处理与条件渲染', link: '/react/ch05' },
+            { text: '第六章 useState', link: '/react/ch06' },
+            { text: '第七章 useEffect', link: '/react/ch07' },
+            { text: '第八章 表单处理', link: '/react/ch08' },
+            { text: '第九章 useRef 与 DOM 操作', link: '/react/ch09' },
+            { text: '第十章 React Router', link: '/react/ch10' },
+            { text: '第十一章 Context', link: '/react/ch11' },
+            { text: '第十二章 自定义 Hooks', link: '/react/ch12' },
+            { text: '第十三章 样式方案大比拼', link: '/react/ch13' },
+            { text: '第十四章 与后端 API 对话', link: '/react/ch14' },
+            { text: '第十五章 性能优化', link: '/react/ch15' },
+            { text: '第十六章 状态管理进阶', link: '/react/ch16' },
+            { text: '第十七章 实战项目', link: '/react/ch17' },
+            { text: '第十八章 测试与部署', link: '/react/ch18' },
           ]
         }
       ],
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/wangxiangnan/wangxiangnan.github.io' }
     ]
   },
   outDir: 'dist',

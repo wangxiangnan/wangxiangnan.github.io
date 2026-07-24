@@ -1,6 +1,6 @@
 # 第十二章：工具与辅助 Widget
 
-![Chapter12_Utility](./assets/images/Chapter12_Utility.png)
+![Chapter12_Utility](./images/Chapter12_Utility.png)
 
 这些 Widget 不提供直接的视觉表现，而是为其他 Widget 提供行为增强、性能优化或辅助功能支持。它们往往是构建高质量应用的关键工具。
 

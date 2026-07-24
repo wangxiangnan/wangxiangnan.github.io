@@ -1,6 +1,6 @@
 # 第十一章：异步与数据 Widget
 
-![Chapter11_Async](./assets/images/Chapter11_Async.png)
+![Chapter11_Async](./images/Chapter11_Async.png)
 
 在移动应用中，数据获取几乎都是异步的。Flutter 提供了 `FutureBuilder` 和 `StreamBuilder` 将异步数据流与 UI 构建无缝衔接，`InheritedWidget` 则提供了高效的跨层级数据传递机制。
 

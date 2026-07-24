@@ -1,6 +1,6 @@
 # 第五章：文本与样式类 Widget
 
-![Chapter05_TextStyle](./assets/images/Chapter05_TextStyle.png)
+![Chapter05_TextStyle](./images/Chapter05_TextStyle.png)
 
 ## 5.1 Text — 文本渲染核心
 

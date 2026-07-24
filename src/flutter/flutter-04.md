@@ -1,6 +1,6 @@
 # 第四章：Material 组件
 
-![Chapter04_Material](./assets/images/Chapter04_Material.png)
+![Chapter04_Material](./images/Chapter04_Material.png)
 
 Material Design 是 Google 推出的设计语言体系，Flutter 对其提供了原生级别的支持。本章深入讲解 Material 组件库中最核心的 Widget，不仅告诉你"怎么用"，更要剖析"为什么这样设计"。
 

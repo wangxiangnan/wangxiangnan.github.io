@@ -1,6 +1,6 @@
 # 第二章：滚动类 Widget
 
-![Chapter02_Scrolling](./assets/images/Chapter02_Scrolling.png)
+![Chapter02_Scrolling](./images/Chapter02_Scrolling.png)
 
 Flutter 的滚动系统由三层组成：**Scrollable**（处理手势和滚动状态）、**Viewport**（可视窗口，裁剪可见区域）、**Sliver**（实际的列表/网格内容渲染）。几乎所有滚动 Widget 都是这三层的不同组合。
 

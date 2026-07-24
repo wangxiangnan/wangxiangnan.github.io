@@ -1,6 +1,6 @@
 # 第一章：布局类 Widget
 
-![Chapter01_Layout](./assets/images/Chapter01_Layout.png)
+![Chapter01_Layout](./images/Chapter01_Layout.png)
 
 布局是 Flutter 渲染系统的核心环节。Flutter 的布局协议基于 **Box Constraints** 模型：父 Widget 向子 Widget 传递约束（`BoxConstraints`，包含 minWidth/maxWidth/minHeight/maxHeight），子 Widget 在约束范围内确定自身尺寸，再由父 Widget 决定子 Widget 的偏移位置。理解这一协议，是掌握所有布局 Widget 的前提。
 

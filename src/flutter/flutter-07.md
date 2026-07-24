@@ -1,6 +1,6 @@
 # 第七章：动画类 Widget
 
-![Chapter07_Animation](./assets/images/Chapter07_Animation.png)
+![Chapter07_Animation](./images/Chapter07_Animation.png)
 
 ## 7.1 隐式动画 Widget 全家族
 

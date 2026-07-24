@@ -1,6 +1,6 @@
 # 第三章：交互类 Widget
 
-![Chapter03_Interaction](./assets/images/Chapter03_Interaction.png)
+![Chapter03_Interaction](./images/Chapter03_Interaction.png)
 
 交互系统建立在 Flutter 的**手势识别管线（Gesture Pipeline）**之上：原始指针事件 → 手势识别器 → 手势竞技场 → 手势回调。理解这条管线是掌握交互 Widget 的关键。
 

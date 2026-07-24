@@ -1,6 +1,6 @@
 # 第六章：图片与图标
 
-![Chapter06_ImageIcon](./assets/images/Chapter06_ImageIcon.png)
+![Chapter06_ImageIcon](./images/Chapter06_ImageIcon.png)
 
 ## 6.1 Image — 图片加载
 
