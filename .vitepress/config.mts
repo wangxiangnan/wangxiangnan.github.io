@@ -20,6 +20,7 @@ export default defineConfig({
         text: '后端',
         items: [
           { text: 'go语言', link: '/golang/ch01' },
+          { text: 'Redis 完全教程', link: '/redis/ch00' },
         ]
       },
       {
@@ -151,6 +152,40 @@ export default defineConfig({
           ]
         }
       ],
+
+      '/redis/': [
+        {
+          text: 'Redis 完全教程',
+          items: [
+            { text: '第0章 Redis概览', link: '/redis/ch00' },
+            { text: '第一章 Redis是什么？', link: '/redis/ch01' },
+            { text: '第二章 安装Redis与Node.js开发环境搭建', link: '/redis/ch02' },
+            { text: '第三章 五大数据类型', link: '/redis/ch03' },
+            { text: '第四章 Key的命名艺术与过期策略', link: '/redis/ch04' },
+            { text: '第五章 事务与管道', link: '/redis/ch05' },
+            { text: '第六章 持久化', link: '/redis/ch06' },
+            { text: '第七章 安全', link: '/redis/ch07' },
+            { text: '第八章 Pub/Sub与Pipeline', link: '/redis/ch08' },
+            { text: '第九章 Redis Stream', link: '/redis/ch09' },
+            { text: '第十章 Lua脚本', link: '/redis/ch10' },
+            { text: '第十一章 RediSearch', link: '/redis/ch11' },
+            { text: '第十二章 RedisJSON', link: '/redis/ch12' },
+            { text: '第十三章 RedisGraph与RedisTimeSeries', link: '/redis/ch13' },
+            { text: '第十四章 主从复制', link: '/redis/ch14' },
+            { text: '第十五章 哨兵模式', link: '/redis/ch15' },
+            { text: '第十六章 Cluster集群', link: '/redis/ch16' },
+            { text: '第十七章 Cluster高级', link: '/redis/ch17' },
+            { text: '第十八章 高可用架构设计', link: '/redis/ch18' },
+            { text: '第十九章 性能调优', link: '/redis/ch19' },
+            { text: '第二十章 缓存模式', link: '/redis/ch20' },
+            { text: '第二十一章 分布式锁', link: '/redis/ch21' },
+            { text: '第二十二章 排行榜与计数器', link: '/redis/ch22' },
+            { text: '第二十三章 会话管理与限流', link: '/redis/ch23' },
+            { text: '第二十四章 生产环境最佳实践与总结', link: '/redis/ch24' },
+          ]
+        }
+      ],
+
     },
 
     socialLinks: [
