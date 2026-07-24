@@ -23,9 +23,10 @@ export default defineConfig({
         ]
       },
       {
-        text: '工具类',
+        text: '运维&工具类',
         items: [
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
+          { text: 'Docker 完全教程', link: '/docker/ch00' },
         ]
       }
     ],
@@ -117,6 +118,36 @@ export default defineConfig({
             { text: '第十五章 部署到云平台', link: '/github-actions/ch15' },
             { text: '第十六章 Workflow 调试与排错指南', link: '/github-actions/ch16' },
             { text: '第十七章 最佳实践与安全', link: '/github-actions/ch17' },
+          ]
+        }
+      ],
+
+      '/docker/': [
+        {
+          text: 'Docker 完全教程：从容器化新手到Kubernetes老手',
+          items: [
+            { text: '第0章 Docker概览', link: '/docker/ch00' },
+            { text: '第一章 Docker是什么？', link: '/docker/ch01' },
+            { text: '第二章 安装Docker与运行第一个容器', link: '/docker/ch02' },
+            { text: '第三章 镜像管理', link: '/docker/ch03' },
+            { text: '第四章 容器生命周期管理', link: '/docker/ch04' },
+            { text: '第五章 Dockerfile完全指南', link: '/docker/ch05' },
+            { text: '第六章 多阶段构建与高级Dockerfile技巧', link: '/docker/ch06' },
+            { text: '第七章 Docker数据持久化', link: '/docker/ch07' },
+            { text: '第八章 Docker Compose 入门', link: '/docker/ch08' },
+            { text: '第九章 Compose 进阶', link: '/docker/ch09' },
+            { text: '第十章 实战：用 Compose 搭建完整 Web 全栈项目', link: '/docker/ch10' },
+            { text: '第十一章 Compose 生产环境实践与替代方案', link: '/docker/ch11' },
+            { text: '第十二章 Docker 网络模型深度解析', link: '/docker/ch12' },
+            { text: '第十三章 Docker 安全：从镜像扫描到运行时防护', link: '/docker/ch13' },
+            { text: '第十四章 Docker 资源管理与性能调优', link: '/docker/ch14' },
+            { text: '第十五章 Docker 与 CI/CD：自动化构建、测试、部署', link: '/docker/ch15' },
+            { text: '第十六章 Docker Registry 私有仓库搭建与管理', link: '/docker/ch16' },
+            { text: '第十七章 实生产环境 Docker 最佳实践与故障排查', link: '/docker/ch17' },
+            { text: '第十八章 Docker Swarm：原生集群编排入门', link: '/docker/ch18' },
+            { text: '第十九章 Kubernetes 架构与核心概念', link: '/docker/ch19' },
+            { text: '第二十章 从 Docker 到 Kubernetes：应用迁移实战', link: '/docker/ch20' },
+            { text: '第二十一章 Kubernetes 进阶与总结回顾', link: '/docker/ch21' },
           ]
         }
       ],
