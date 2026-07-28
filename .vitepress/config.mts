@@ -256,7 +256,7 @@ export default defineConfig({
 
       '/sqlite/': [
         {
-          text: 'NodeJS 完全教程',
+          text: 'SQLite 完全教程',
           items: [
             { text: '第一章 认识 SQLite', link: '/sqlite/ch01' },
             { text: '第二章 安装与工具链', link: '/sqlite/ch02' },
