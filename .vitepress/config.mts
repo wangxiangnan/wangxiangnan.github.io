@@ -19,9 +19,11 @@ export default defineConfig({
       {
         text: '后端',
         items: [
-          { text: 'go语言', link: '/golang/ch01' },
+          { text: 'Go语言', link: '/golang/ch01' },
+          { text: 'NodeJS语言', link: '/nodejs/ch01' },
           { text: 'Redis 完全教程', link: '/redis/ch00' },
           { text: 'Mysql 完全教程', link: '/mysql/ch00' },
+          { text: 'Sqlite 完全教程', link: '/sqlite/ch01' },
         ]
       },
       {
@@ -215,6 +217,69 @@ export default defineConfig({
             { text: '第二十一章 数据迁移与版本升级', link: '/mysql/ch21' },
             { text: '第二十二章 云数据库服务对比与选型', link: '/mysql/ch22' },
             { text: '第二十三章 DBA日常工作与故障排查', link: '/mysql/ch23' },
+          ]
+        }
+      ],
+
+      '/nodejs/': [
+        {
+          text: 'NodeJS 完全教程',
+          items: [
+            { text: '第一章 启程——Node.js 是什么 & 环境搭建', link: '/nodejs/ch01' },
+            { text: '第二章 模块系统', link: '/nodejs/ch02' },
+            { text: '第三章 异步编程（上）', link: '/nodejs/ch03' },
+            { text: '第四章 异步编程（下）', link: '/nodejs/ch04' },
+            { text: '第五章 npm 与包管理', link: '/nodejs/ch05' },
+            { text: '第六章 TypeScript + Node.js', link: '/nodejs/ch06' },
+            { text: '第七章 文件系统(fs)', link: '/nodejs/ch07' },
+            { text: '第八章 Stream', link: '/nodejs/ch08' },
+            { text: '第九章 Buffer 与二进制', link: '/nodejs/ch09' },
+            { text: '第十章 Events', link: '/nodejs/ch10' },
+            { text: '第十一章 网络编程', link: '/nodejs/ch11' },
+            { text: '第十二章 子进程与集群', link: '/nodejs/ch12' },
+            { text: '第十三章 错误处理与调试', link: '/nodejs/ch13' },
+            { text: '第十四章 HTTP模块', link: '/nodejs/ch14' },
+            { text: '第十五章 Express.js', link: '/nodejs/ch15' },
+            { text: '第十六章 Koa.js', link: '/nodejs/ch16' },
+            { text: '第十七章 Fastify', link: '/nodejs/ch17' },
+            { text: '第十八章 认证与鉴权', link: '/nodejs/ch18' },
+            { text: '第十九章 RESTful API设计与最佳实践', link: '/nodejs/ch19' },
+            { text: '第二十章 性能调优', link: '/nodejs/ch20' },
+            { text: '第二十一章 Worker Threads', link: '/nodejs/ch21' },
+            { text: '第二十二章 数据库集成', link: '/nodejs/ch22' },
+            { text: '第二十三章 微服务架构', link: '/nodejs/ch23' },
+            { text: '第二十四章 Docker容器化与CI/CD部署', link: '/nodejs/ch24' },
+            { text: '第二十五章 全栈实战', link: '/nodejs/ch25' },
+          ]
+        }
+      ],
+
+      '/sqlite/': [
+        {
+          text: 'NodeJS 完全教程',
+          items: [
+            { text: '第一章 认识 SQLite', link: '/sqlite/ch01' },
+            { text: '第二章 安装与工具链', link: '/sqlite/ch02' },
+            { text: '第三章 SQL 基础（上）—— DDL 表结构设计', link: '/sqlite/ch03' },
+            { text: '第四章 SQL 基础（中）—— DML 增删改查', link: '/sqlite/ch04' },
+            { text: '第五章 SQL 基础（下）—— JOIN、子查询与聚合', link: '/sqlite/ch05' },
+            { text: '第六章 数据类型与类型亲和性', link: '/sqlite/ch06' },
+            { text: '第七章 约束与索引', link: '/sqlite/ch07' },
+            { text: '第八章 事务与 ACID', link: '/sqlite/ch08' },
+            { text: '第九章 视图、触发器与 CTE', link: '/sqlite/ch09' },
+            { text: '第十章 Flutter 集成（一）——sqflite 上手实战', link: '/sqlite/ch10' },
+            { text: '第十一章 Flutter 集成（二）——Drift 类型安全 ORM', link: '/sqlite/ch11' },
+            { text: '第十二章 FTS5：让SQLite变身Elasticsearch（迷你版）', link: '/sqlite/ch12' },
+            { text: '第十三章 JSON1：让SQLite变身MongoDB（迷你版）', link: '/sqlite/ch13' },
+            { text: '第十四章 R-Tree：让SQLite变身PostGIS（迷你版）', link: '/sqlite/ch14' },
+            { text: '第十五章 虚拟表与UDF', link: '/sqlite/ch15' },
+            { text: '第十六章 窗口函数与递归CTE', link: '/sqlite/ch16' },
+            { text: '第十七章 备份恢复', link: '/sqlite/ch17' },
+            { text: '第十八章 SQLite 内部原理', link: '/sqlite/ch18' },
+            { text: '第十九章 WAL 模式深度解析', link: '/sqlite/ch19' },
+            { text: '第二十章 性能调优', link: '/sqlite/ch20' },
+            { text: '第二十一章 现代生态', link: '/sqlite/ch21' },
+            { text: '第二十二章 实战——Flutter 笔记应用完整项目', link: '/sqlite/ch22' },
           ]
         }
       ],
