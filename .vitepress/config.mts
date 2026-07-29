@@ -1,14 +1,15 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid"
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   title: "My website",
   description: "A VitePress Site",
   markdown: {
     lineNumbers: true,
     image: {
       lazyLoading: true,
-    }
+    },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -297,5 +298,8 @@ export default defineConfig({
     ]
   },
   outDir: 'dist',
-  srcDir: 'src'
+  srcDir: 'src',
+  mermaid: {
+    
+  }
 })
