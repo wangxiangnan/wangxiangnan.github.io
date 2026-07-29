@@ -4,6 +4,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "My website",
   description: "A VitePress Site",
+  markdown: {
+    lineNumbers: true,
+    image: {
+      lazyLoading: true,
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
