@@ -1,0 +1,15 @@
+node_modules/
+.github/
+
+.git
+.gitignore
+
+# Docker相关文件（不需要递归包含）
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# 构建产物
+dist/
+build/
+*.log
