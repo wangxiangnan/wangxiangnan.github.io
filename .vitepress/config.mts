@@ -38,6 +38,7 @@ export default withMermaid({
         items: [
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
           { text: 'Docker 完全教程', link: '/docker/ch00' },
+          { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
         ]
       }
     ],
@@ -257,6 +258,39 @@ export default withMermaid({
             { text: '第二十三章 微服务架构', link: '/nodejs/ch23' },
             { text: '第二十四章 Docker容器化与CI/CD部署', link: '/nodejs/ch24' },
             { text: '第二十五章 全栈实战', link: '/nodejs/ch25' },
+          ]
+        }
+      ],
+
+      '/linux-command/': [
+        {
+          text: 'Linux命令行完全教程',
+          items: [
+            { text: '第一章 走进Linux世界', link: '/linux-command/ch01' },
+            { text: '第二章 文件系统导航', link: '/linux-command/ch02' },
+            { text: '第三章 文件与目录操作', link: '/linux-command/ch03' },
+            { text: '第四章 查看与编辑文件', link: '/linux-command/ch04' },
+            { text: '第五章 用户与权限', link: '/linux-command/ch05' },
+            { text: '第六章 管道与重定向', link: '/linux-command/ch06' },
+            { text: '第七章 进程管理', link: '/linux-command/ch07' },
+            { text: '第八章 软件包管理', link: '/linux-command/ch08' },
+            { text: '第九章 磁盘与存储', link: '/linux-command/ch09' },
+            { text: '第十章 用户与组管理', link: '/linux-command/ch10' },
+            { text: '第十一章 Systemd与服务管理', link: '/linux-command/ch11' },
+            { text: '第十二章 计划任务与自动化', link: '/linux-command/ch12' },
+            { text: '第十三章 系统日志与监控', link: '/linux-command/ch13' },
+            { text: '第十四章 网络基础命令', link: '/linux-command/ch14' },
+            { text: '第十五章 SSH远程访问', link: '/linux-command/ch15' },
+            { text: '第十六章 防火墙与安全', link: '/linux-command/ch16' },
+            { text: '第十七章 Web服务搭建', link: '/linux-command/ch17' },
+            { text: '第十八章 下载与API调用', link: '/linux-command/ch18' },
+            { text: '第十九章 DNS与域名解析', link: '/linux-command/ch19' },
+            { text: '第二十章 Shell脚本入门', link: '/linux-command/ch20' },
+            { text: '第二十一章 Shell脚本进阶', link: '/linux-command/ch21' },
+            { text: '第二十二章 文本处理三剑客——grep、sed、awk', link: '/linux-command/ch22' },
+            { text: '第二十三章 高级文本处理与正则表达式', link: '/linux-command/ch23' },
+            { text: '第二十四章 性能调优与故障排查', link: '/linux-command/ch24' },
+            { text: '第二十五章 Docker容器与Linux现代化', link: '/linux-command/ch25' },
           ]
         }
       ],
