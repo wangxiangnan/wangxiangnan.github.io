@@ -11,8 +11,16 @@ export default withMermaid({
       lazyLoading: true,
     },
   },
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Wang Xiangnan'
+    },
     nav: [
       { text: '首页', link: '/' },
       {
