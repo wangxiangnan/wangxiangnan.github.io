@@ -40,6 +40,12 @@ export default withMermaid({
           { text: 'Docker 完全教程', link: '/docker/ch00' },
           { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
         ]
+      },
+      {
+        text: '其他',
+        items: [
+          { text: '建议&思考', link: '/suggestion/ch01' },
+        ]
       }
     ],
 
