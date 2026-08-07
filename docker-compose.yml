@@ -1,0 +1,18 @@
+services:
+  mysite:
+    container_name: mysite
+    image: mysite:1.0.0
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+  mysql:
+    container_name: mysql
+    image: mysql:9.7.2
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
