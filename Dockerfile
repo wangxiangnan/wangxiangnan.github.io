@@ -1,7 +1,31 @@
-# 构建阶段
-FROM node:26.5.1-slim AS builder
+# ---- 开发阶段 ----
+FROM node:26.7.0-alpine3.24 AS development
 
 WORKDIR /app
+
+# ✅ 使用 apt-get 安装 git
+RUN apk add --no-cache git
+
+# 复制依赖文件并安装
+COPY package*.json .
+RUN npm install
+
+# 挂载不需要复制所有源代码
+# COPY . .
+
+# 暴露Vitepress默认的开发端口
+EXPOSE 5173
+
+# 启动开发服务器
+CMD ["npm", "run", "docs:dev"]
+
+# ---- 构建阶段 ----
+FROM node:26.7.0-alpine3.24 AS builder
+
+WORKDIR /app
+
+# 安装git（Vitepress需要）
+RUN apk add --no-cache git
 
 COPY package*.json ./
 
@@ -11,9 +35,9 @@ COPY . .
 
 RUN npm run docs:build
 
-# 运行阶段
+# ---- 生产阶段（Nginx） ----
 
-FROM nginx:alpine
+FROM nginx:alpine AS production
 
 # 创建普通用户（与之前一致，但注意 nginx:alpine 本身已有 nginx 用户，此处为了演示自定义）
 RUN addgroup --gid 1001 appgroup && \

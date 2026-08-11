@@ -1,18 +1,22 @@
 services:
-  mysite:
-    container_name: mysite
-    image: mysite:1.0.0
+  mysite-dev:
+    build:
+      context: .
+      target: development #指定构建开发阶段
     ports:
-      - "3000:80"
+      - "3000:5173"
+    volumes:
+      - .:/app #挂载代码，实现热重载
+      - /app/node_modules # 避免容器内的node_modules被覆盖
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true   # ✅ 添加此行
+      - CHOKIDAR_INTERVAL=5000      # 可选，轮询间隔（毫秒）
+  mysite-prod:
+    build:
+      context: .
+      target: production # 指定构建生产阶段
+    ports:
+      - "4000:80"
     environment:
       - NODE_ENV=production
-  mysql:
-    container_name: mysql
-    image: mysql:9.7.2
-    environment:
-      - MYSQL_ROOT_PASSWORD=my-secret-pw
-    volumes:
-      - mysql_data:/var/lib/mysql
-
-volumes:
-  mysql_data:
