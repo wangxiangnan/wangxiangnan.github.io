@@ -4,7 +4,7 @@ services:
       context: .
       target: development #指定构建开发阶段
     ports:
-      - "3000:5173"
+      - "3100:5173"
     volumes:
       - .:/app #挂载代码，实现热重载
       - /app/node_modules # 避免容器内的node_modules被覆盖
@@ -17,6 +17,6 @@ services:
       context: .
       target: production # 指定构建生产阶段
     ports:
-      - "4000:80"
+      - "3200:80"
     environment:
       - NODE_ENV=production

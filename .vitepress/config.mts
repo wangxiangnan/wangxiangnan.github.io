@@ -44,6 +44,7 @@ export default withMermaid({
       {
         text: '运维&工具类',
         items: [
+          { text: 'monorepo 教程', link: '/monorepo/ch00' },
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
           { text: 'Docker 完全教程', link: '/docker/ch00' },
           { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
@@ -119,6 +120,30 @@ export default withMermaid({
             { text: '第十六章 状态管理进阶', link: '/react/ch16' },
             { text: '第十七章 实战项目', link: '/react/ch17' },
             { text: '第十八章 测试与部署', link: '/react/ch18' },
+          ]
+        }
+      ],
+
+      '/monorepo/': [
+        {
+          text: 'pnpm + Turborepo Monorepo 完全教程',
+          items: [
+            { text: '第0章 monorepo概览', link: '/monorepo/ch00' },
+            { text: '第一章 什么是 Monorepo', link: '/monorepo/ch01' },
+            { text: '第二章 环境准备与项目初始化', link: '/monorepo/ch02' },
+            { text: '第三章 项目结构设计', link: '/monorepo/ch03' },
+            { text: '第四章 依赖管理深入', link: '/monorepo/ch04' },
+            { text: '第五章 共享包开发', link: '/monorepo/ch05' },
+            { text: '第六章 TypeScript 配置策略', link: '/monorepo/ch06' },
+            { text: '第七章 Vue 3 前端应用', link: '/monorepo/ch07' },
+            { text: '第八章 Node.js 后端应用', link: '/monorepo/ch08' },
+            { text: '第九章 代码规范统一', link: '/monorepo/ch09' },
+            { text: '第十章 Turborepo 入门 — 任务编排', link: '/monorepo/ch10' },
+            { text: '第十一章 构建缓存与远程缓存', link: '/monorepo/ch11' },
+            { text: '第十二章 测试策略', link: '/monorepo/ch12' },
+            { text: '第十三章 版本管理与发布', link: '/monorepo/ch13' },
+            { text: '第十四章 CI/CD 与部署', link: '/monorepo/ch14' },
+            { text: '第十五章 最佳实践、常见陷阱与总结', link: '/monorepo/ch15' },
           ]
         }
       ],
