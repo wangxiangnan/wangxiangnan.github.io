@@ -48,6 +48,7 @@ export default withMermaid({
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
           { text: 'Docker 完全教程', link: '/docker/ch00' },
           { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
+          { text: 'ESLint完全指南', link: '/eslint/ch01' },
         ]
       },
       {
