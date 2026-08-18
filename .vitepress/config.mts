@@ -48,7 +48,7 @@ export default withMermaid({
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
           { text: 'Docker 完全教程', link: '/docker/ch00' },
           { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
-          { text: 'ESLint完全指南', link: '/eslint/ch01' },
+          { text: 'ESLint', link: '/eslint/ch01' },
         ]
       },
       {
@@ -94,6 +94,16 @@ export default withMermaid({
             { text: '第六章 并发编程', link: '/golang/ch06' },
             { text: '第七章 错误处理与工程实践', link: '/golang/ch07' },
             { text: '第八章 实战项目', link: '/golang/ch08' },
+          ]
+        }
+      ],
+
+      '/eslint/': [
+        {
+          text: 'ESLint',
+          items: [
+            { text: '一、ESLint完全指南', link: '/eslint/ch01' },
+            { text: '二、旧版的 .eslintrc存在的问题', link: '/eslint/ch02' },
           ]
         }
       ],
