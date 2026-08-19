@@ -29,6 +29,8 @@ export default withMermaid({
           { text: 'Flutter常用 Widget', link: '/flutter/flutter' },
           { text: '深入理解Flutter主题', link: '/flutter/flutter-theme' },
           { text: 'React从零到实战', link: '/react/ch00' },
+          { text: 'ESLint', link: '/eslint/ch01' },
+          { text: 'ts', link: '/ts/ch01' },
         ]
       },
       {
@@ -48,7 +50,6 @@ export default withMermaid({
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
           { text: 'Docker 完全教程', link: '/docker/ch00' },
           { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
-          { text: 'ESLint', link: '/eslint/ch01' },
         ]
       },
       {
