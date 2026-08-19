@@ -44,6 +44,12 @@ export default withMermaid({
         ]
       },
       {
+        text: 'AI',
+        items: [
+          { text: 'AI Agent 完全教程', link: '/agent/ch00' },
+        ]
+      },
+      {
         text: '运维&工具类',
         items: [
           { text: 'monorepo 教程', link: '/monorepo/ch00' },
@@ -309,6 +315,40 @@ export default withMermaid({
             { text: '第二十三章 微服务架构', link: '/nodejs/ch23' },
             { text: '第二十四章 Docker容器化与CI/CD部署', link: '/nodejs/ch24' },
             { text: '第二十五章 全栈实战', link: '/nodejs/ch25' },
+          ]
+        }
+      ],
+
+      '/agent/': [
+        {
+          text: 'AI Agent 完全教程',
+          items: [
+            { text: '第0章 AI Agent概览', link: '/agent/ch00' },
+            { text: '第一章 什么是AI Agent？', link: '/agent/ch01' },
+            { text: '第二章 LLM', link: '/agent/ch02' },
+            { text: '第三章 Prompt Engineering', link: '/agent/ch03' },
+            { text: '第四章 Agent架构全景', link: '/agent/ch04' },
+            { text: '第五章 Agent的推理策略', link: '/agent/ch05' },
+            { text: '第六章 Embedding与向量搜索', link: '/agent/ch06' },
+            { text: '第七章 环境搭建', link: '/agent/ch07' },
+            { text: '第八章 Model I/O', link: '/agent/ch08' },
+            { text: '第九章 Prompt模板', link: '/agent/ch09' },
+            { text: '第十章 数据连接', link: '/agent/ch10' },
+            { text: '第十一章 Memory', link: '/agent/ch11' },
+            { text: '第十二章 Tools', link: '/agent/ch12' },
+            { text: '第十三章 Function Calling', link: '/agent/ch13' },
+            { text: '第十四章 ReAct', link: '/agent/ch14' },
+            { text: '第十五章 LangGraph入门', link: '/agent/ch15' },
+            { text: '第十六章 LangGraph Agent实战', link: '/agent/ch16' },
+            { text: '第十七章 Human-in-the-Loop', link: '/agent/ch17' },
+            { text: '第十八章 持久化与Checkpointer', link: '/agent/ch18' },
+            { text: '第十九章 多Agent系统', link: '/agent/ch19' },
+            { text: '第二十章 自定义Tool开发', link: '/agent/ch20' },
+            { text: '第二十一章 RAG进阶', link: '/agent/ch21' },
+            { text: '第二十二章 LCEL', link: '/agent/ch22' },
+            { text: '第二十三章 评估与测试', link: '/agent/ch23' },
+            { text: '第二十四章 安全与防护', link: '/agent/ch24' },
+            { text: '第二十五章 生产部署', link: '/agent/ch25' },
           ]
         }
       ],
