@@ -30,7 +30,7 @@ export default withMermaid({
           { text: '深入理解Flutter主题', link: '/flutter/flutter-theme' },
           { text: 'React从零到实战', link: '/react/ch00' },
           { text: 'ESLint', link: '/eslint/ch01' },
-          { text: 'ts', link: '/ts/ch01' },
+          { text: 'TypeScript', link: '/ts/ch00' },
         ]
       },
       {
@@ -162,6 +162,30 @@ export default withMermaid({
             { text: '第十三章 版本管理与发布', link: '/monorepo/ch13' },
             { text: '第十四章 CI/CD 与部署', link: '/monorepo/ch14' },
             { text: '第十五章 最佳实践、常见陷阱与总结', link: '/monorepo/ch15' },
+          ]
+        }
+      ],
+
+      '/ts/': [
+        {
+          text: 'TypeScript 完全教程',
+          items: [
+            { text: '第0章 TS概览', link: '/ts/ch00' },
+            { text: '第一章 TypeScript 到底在解决什么问题', link: '/ts/ch01' },
+            { text: '第二章 环境搭建与第一个 TypeScript 程序', link: '/ts/ch02' },
+            { text: '第三章 基础类型系统', link: '/ts/ch03' },
+            { text: '第四章 数组、元组与对象类型', link: '/ts/ch04' },
+            { text: '第五章 函数类型', link: '/ts/ch05' },
+            { text: '第六章 联合类型、交叉类型与索引类型', link: '/ts/ch06' },
+            { text: '第七章 泛型——类型的函数', link: '/ts/ch07' },
+            { text: '第八章 类型守卫与类型收窄', link: '/ts/ch08' },
+            { text: '第九章 类与面向对象', link: '/ts/ch09' },
+            { text: '第十章 模块系统与声明文件', link: '/ts/ch10' },
+            { text: '第十一章 tsconfig.json 完全指南', link: '/ts/ch11' },
+            { text: '第十二章 类型兼容性与结构类型系统', link: '/ts/ch12' },
+            { text: '第十三章 类型体操入门', link: '/ts/ch13' },
+            { text: '第十四章 常见错误与调试技巧', link: '/ts/ch14' },
+            { text: '第十五章 最佳实践与总结', link: '/ts/ch15' },
           ]
         }
       ],
