@@ -13,6 +13,10 @@ export default withMermaid({
   },
   lastUpdated: true,
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/wangxiangnan/wangxiangnan.github.io/edit/main/src/:path',
+      text: '编辑页面'
+    },
     // https://vitepress.dev/reference/default-theme-config
     search: {
       provider: 'local'
