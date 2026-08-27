@@ -28,13 +28,19 @@ export default withMermaid({
     nav: [
       { text: '首页', link: '/' },
       {
+        text: '编程基础',
+        items: [
+          { text: 'TypeScript', link: '/ts/ch00' },
+          { text: '网络协议完全教程', link: '/network-protocol/ch00' },
+          { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
+        ]
+      },
+      {
         text: '前端',
         items: [
           { text: 'Flutter常用 Widget', link: '/flutter/flutter' },
           { text: '深入理解Flutter主题', link: '/flutter/flutter-theme' },
           { text: 'React从零到实战', link: '/react/ch00' },
-          { text: 'ESLint', link: '/eslint/ch01' },
-          { text: 'TypeScript', link: '/ts/ch00' },
         ]
       },
       {
@@ -54,12 +60,12 @@ export default withMermaid({
         ]
       },
       {
-        text: '运维&工具类',
+        text: '工程化与工具',
         items: [
+          { text: 'ESLint', link: '/eslint/ch01' },
           { text: 'monorepo 教程', link: '/monorepo/ch00' },
           { text: 'GitHub Actions 教程', link: '/github-actions/ch01' },
           { text: 'Docker 完全教程', link: '/docker/ch00' },
-          { text: 'Linux命令行完全教程', link: '/linux-command/ch00' },
         ]
       },
       {
@@ -310,6 +316,40 @@ export default withMermaid({
             { text: '第二十一章 数据迁移与版本升级', link: '/mysql/ch21' },
             { text: '第二十二章 云数据库服务对比与选型', link: '/mysql/ch22' },
             { text: '第二十三章 DBA日常工作与故障排查', link: '/mysql/ch23' },
+          ]
+        }
+      ],
+
+      '/network-protocol/': [
+        {
+          text: '网络协议 完全教程',
+          items: [
+            { text: '第0章 网络协议概览', link: '/network-protocol/ch00' },
+            { text: '第一章 协议是什么——通信的本质问题', link: '/network-protocol/ch01' },
+            { text: '第二章 为什么要分层——OSI 与 TCP/IP 模型', link: '/network-protocol/ch02' },
+            { text: '第三章 比特如何上路——物理层与数据链路层', link: '/network-protocol/ch03' },
+            { text: '第四章 IP——让数据包穿越互联网', link: '/network-protocol/ch04' },
+            { text: '第五章 封装的艺术——数据从应用到网线的旅程', link: '/network-protocol/ch05' },
+            { text: '第六章 网络诊断工具箱', link: '/network-protocol/ch06' },
+            { text: '第七章 UDP——最小化的传输层', link: '/network-protocol/ch07' },
+            { text: '第八章 TCP 基础——建立连接与可靠传输', link: '/network-protocol/ch08' },
+            { text: '第九章 TCP 的可靠性机制——序号、确认与重传', link: '/network-protocol/ch09' },
+            { text: '第十章 TCP 拥塞控制——网络的自我保护', link: '/network-protocol/ch10' },
+            { text: '第十一章 流量控制与 TCP 进阶特性', link: '/network-protocol/ch11' },
+            { text: '第十二章 端口与多路复用——传输层的寻址', link: '/network-protocol/ch12' },
+            { text: '第十三章 HTTP 基础——Web 的基石', link: '/network-protocol/ch13' },
+            { text: '第十四章 HTTP 深入——缓存、内容协商与 Cookie', link: '/network-protocol/ch14' },
+            { text: '第十五章 HTTPS 与 TLS——给 HTTP 穿上铠甲', link: '/network-protocol/ch15' },
+            { text: '第十六章 DNS——互联网的通讯录', link: '/network-protocol/ch16' },
+            { text: '第十七章 WebSocket——全双工实时通信', link: '/network-protocol/ch17' },
+            { text: '第十八章 其他应用层协议——SMTP、FTP、SSH', link: '/network-protocol/ch18' },
+            { text: '第十九章 HTTP/2——HTTP 的大修', link: '/network-protocol/ch19' },
+            { text: '第二十章 QUIC 与 HTTP/3——从 TCP 到 UDP 的跨越', link: '/network-protocol/ch20' },
+            { text: '第二十一章 gRPC 与 Protobuf——高效的 RPC 协议', link: '/network-protocol/ch21' },
+            { text: '第二十二章 网络安全协议——防火墙、VPN 与零信任', link: '/network-protocol/ch22' },
+            { text: '第二十三章 CDN、Anycast 与大规模网络协议', link: '/network-protocol/ch23' },
+            { text: '第二十四章 IoT 协议——MQTT、CoAP 与低功耗网络', link: '/network-protocol/ch24' },
+            { text: '第二十五章 网络编程实战与协议设计', link: '/network-protocol/ch25' },
           ]
         }
       ],
