@@ -69,11 +69,15 @@ export default withMermaid({
           { text: "Excel教程", link: "/excel/ch01" },
           { text: "PowerPoint教程", link: "/ppt/ch01" },
           { text: "Word教程", link: "/word/ch01" },
+          { text: "视频剪辑教程", link: "/davinci/ch01" },
         ],
       },
       {
         text: "其他",
-        items: [{ text: "建议&思考", link: "/suggestion/ch01" }],
+        items: [
+          { text: "建议&思考", link: "/suggestion/ch01" },
+          { text: "理财", link: "/financial/ch01" },
+        ],
       },
     ],
 
@@ -123,6 +127,42 @@ export default withMermaid({
             { text: "第十章：数据处理进阶", link: "/excel/ch10" },
             { text: "第十一章：协作与保护", link: "/excel/ch11" },
             { text: "第十二章：实用技巧集锦", link: "/excel/ch12" },
+          ],
+        },
+      ],
+
+      "/financial/": [
+        {
+          text: "理财教程",
+          items: [
+            { text: "第一章：理财是什么？", link: "/financial/ch01" },
+            { text: "第二章：记账", link: "/financial/ch02" },
+            { text: "第三章：预算与储蓄", link: "/financial/ch03" },
+            { text: "第四章：五险一金", link: "/financial/ch04" },
+            { text: "第五章：投资的基本概念", link: "/financial/ch05" },
+            { text: "第六章：基金入门", link: "/financial/ch06" },
+            { text: "第七章：信用卡与个人信用", link: "/financial/ch07" },
+            { text: "第八章：个人所得税", link: "/financial/ch08" },
+            { text: "第九章：保险入门", link: "/financial/ch09" },
+            { text: "第十章：理财避坑指南", link: "/financial/ch10" },
+          ],
+        },
+      ],
+
+      "/davinci/": [
+        {
+          text: "视频剪辑教程",
+          items: [
+            { text: "第一章：认识DaVinci Resolve", link: "/davinci/ch01" },
+            { text: "第二章：快编页", link: "/davinci/ch02" },
+            { text: "第三章：剪辑页", link: "/davinci/ch03" },
+            { text: "第四章：转场与特效", link: "/davinci/ch04" },
+            { text: "第五章：字幕与文字", link: "/davinci/ch05" },
+            { text: "第六章：调色", link: "/davinci/ch06" },
+            { text: "第七章：音频处理", link: "/davinci/ch07" },
+            { text: "第八章：导出设置", link: "/davinci/ch08" },
+            { text: "第九章：进阶技巧", link: "/davinci/ch09" },
+            { text: "第十章：完整实战", link: "/davinci/ch10" },
           ],
         },
       ],
