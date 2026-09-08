@@ -66,6 +66,9 @@ export default withMermaid({
           { text: "GitHub Actions 教程", link: "/github-actions/ch01" },
           { text: "Docker 完全教程", link: "/docker/ch00" },
           { text: "FFmpeg 完全教程", link: "/ffmpeg/ch00" },
+          { text: "Excel教程", link: "/excel/ch01" },
+          { text: "PowerPoint教程", link: "/ppt/ch01" },
+          { text: "Word教程", link: "/word/ch01" },
         ],
       },
       {
@@ -103,6 +106,70 @@ export default withMermaid({
           ],
         },
       ],
+
+      "/excel/": [
+        {
+          text: "Excel教程",
+          items: [
+            { text: "第一章：认识Excel", link: "/excel/ch01" },
+            { text: "第二章：数据输入与格式化", link: "/excel/ch02" },
+            { text: "第三章：公式入门", link: "/excel/ch03" },
+            { text: "第四章：单元格引用", link: "/excel/ch04" },
+            { text: "第五章：常用函数", link: "/excel/ch05" },
+            { text: "第六章：数据整理", link: "/excel/ch06" },
+            { text: "第七章：条件格式", link: "/excel/ch07" },
+            { text: "第八章：图表制作", link: "/excel/ch08" },
+            { text: "第九章：数据透视表", link: "/excel/ch09" },
+            { text: "第十章：数据处理进阶", link: "/excel/ch10" },
+            { text: "第十一章：协作与保护", link: "/excel/ch11" },
+            { text: "第十二章：实用技巧集锦", link: "/excel/ch12" },
+          ],
+        },
+      ],
+
+      "/word/": [
+        {
+          text: "Word教程",
+          items: [
+            { text: "第一章：认识Word", link: "/word/ch01" },
+            { text: "第二章：文档基本操作", link: "/word/ch02" },
+            { text: "第三章：文字与段落格式", link: "/word/ch03" },
+            { text: "第四章：页面设置与打印", link: "/word/ch04" },
+            { text: "第五章：样式与目录", link: "/word/ch05" },
+            { text: "第六章：表格", link: "/word/ch06" },
+            { text: "第七章：图片与图形", link: "/word/ch07" },
+            { text: "第八章：多级列表与编号", link: "/word/ch08" },
+            { text: "第九章：邮件合并", link: "/word/ch09" },
+            { text: "第十章：修订与批注", link: "/word/ch10" },
+            { text: "第十一章：长文档排版", link: "/word/ch11" },
+            { text: "第十二章：实用技巧集锦", link: "/word/ch12" },
+          ],
+        },
+      ],
+
+      "/ppt/": [
+        {
+          text: "PowerPoint教程",
+          items: [
+            { text: "第一章：认识PowerPoint", link: "/ppt/ch01" },
+            { text: "第二章：幻灯片基础", link: "/ppt/ch02" },
+            { text: "第三章：文字与段落", link: "/ppt/ch03" },
+            { text: "第四章：图片与形状", link: "/ppt/ch04" },
+            { text: "第五章：表格与图表", link: "/ppt/ch05" },
+            { text: "第六章：配色与主题", link: "/ppt/ch06" },
+            { text: "第七章：排版设计", link: "/ppt/ch07" },
+            { text: "第八章：动画效果", link: "/ppt/ch08" },
+            { text: "第九章：切换效果", link: "/ppt/ch09" },
+            { text: "第十章：多媒体集成", link: "/ppt/ch10" },
+            { text: "第十一章：幻灯片母版", link: "/ppt/ch11" },
+            { text: "第十二章：演示技巧", link: "/ppt/ch12" },
+            { text: "第十三章：导出与分享", link: "/ppt/ch13" },
+            { text: "第十四章：高效技巧与插件", link: "/ppt/ch14" },
+            { text: "第十五章：实战", link: "/ppt/ch15" },
+          ],
+        },
+      ],
+
       "/golang/": [
         {
           text: "Go语言入门教程",
