@@ -479,6 +479,7 @@ export default withMermaid({
             { text: "第二十二章 HLS 切片与点播服务", link: "/ffmpeg/ch22" },
             { text: "第二十三章 性能优化与硬件加速", link: "/ffmpeg/ch23" },
             { text: "第二十四章 脚本集成与命令速查表", link: "/ffmpeg/ch24" },
+            { text: "第二十四章 FFmpeg 高频命令速查库", link: "/ffmpeg/ch25" },
           ],
         },
       ],
