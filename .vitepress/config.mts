@@ -52,6 +52,7 @@ export default withMermaid({
           { text: "Redis 完全教程", link: "/redis/ch00" },
           { text: "Mysql 完全教程", link: "/mysql/ch00" },
           { text: "Sqlite 完全教程", link: "/sqlite/ch01" },
+          { text: "Rust编程语言教程", link: "/rust/ch01" },
         ],
       },
       {
@@ -617,6 +618,111 @@ export default withMermaid({
             {
               text: "第二十五章 网络编程实战与协议设计",
               link: "/network-protocol/ch25",
+            },
+          ],
+        },
+      ],
+
+      "/rust/": [
+        {
+          text: "Rust编程语言教程",
+          items: [
+            {
+              text: "第一章 Rust简介与环境搭建",
+              link: "/rust/ch01",
+            },
+            {
+              text: "第二章 变量、可变性与数据类型",
+              link: "/rust/ch02",
+            },
+            {
+              text: "第三章 函数与控制流",
+              link: "/rust/ch03",
+            },
+            {
+              text: "第四章 所有权（Ownership）——Rust的灵魂",
+              link: "/rust/ch04",
+            },
+            {
+              text: "第五章 引用与借用",
+              link: "/rust/ch05",
+            },
+            { text: "第六章 结构体与方法", link: "/rust/ch06" },
+            {
+              text: "第七章 枚举与模式匹配",
+              link: "/rust/ch07",
+            },
+            {
+              text: "第八章 字符串深度解析",
+              link: "/rust/ch08",
+            },
+            {
+              text: "第九章 集合类型",
+              link: "/rust/ch09",
+            },
+            {
+              text: "第十章 错误处理",
+              link: "/rust/ch10",
+            },
+            {
+              text: "第十一章 泛型编程",
+              link: "/rust/ch11",
+            },
+            {
+              text: "第十二章 Trait——共享行为的抽象",
+              link: "/rust/ch12",
+            },
+            {
+              text: "第十三章 生命周期",
+              link: "/rust/ch13",
+            },
+            {
+              text: "第十四章 闭包与迭代器",
+              link: "/rust/ch14",
+            },
+            {
+              text: "第十五章 模块系统与Crate",
+              link: "/rust/ch15",
+            },
+            {
+              text: "第十六章 智能指针",
+              link: "/rust/ch16",
+            },
+            {
+              text: "第十七章 无畏并发",
+              link: "/rust/ch17",
+            },
+            {
+              text: "第十八章 面向对象编程的Rust风格",
+              link: "/rust/ch18",
+            },
+            {
+              text: "第十九章 模式匹配进阶",
+              link: "/rust/ch19",
+            },
+            {
+              text: "第二十章 异步编程基础",
+              link: "/rust/ch20",
+            },
+            {
+              text: "第二十一章 异步进阶",
+              link: "/rust/ch21",
+            },
+            {
+              text: "第二十二章 宏（Macro）",
+              link: "/rust/ch22",
+            },
+            {
+              text: "第二十三章 测试",
+              link: "/rust/ch23",
+            },
+            {
+              text: "第二十四章 Cargo与工具链生态",
+              link: "/rust/ch24",
+            },
+            {
+              text: "第二十五章 FFI、Unsafe与项目实战总结",
+              link: "/rust/ch25",
             },
           ],
         },
