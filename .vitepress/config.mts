@@ -461,7 +461,7 @@ export default withMermaid({
             { text: "第六章 容器格式", link: "/ffmpeg/ch06" },
             { text: "第七章 格式转码", link: "/ffmpeg/ch07" },
             { text: "第八章 提取与合并", link: "/ffmpeg/ch08" },
-            { text: "第九章 视频剪辑", link: "/ffmpeg/ch09" },
+            { text: "第九章 视频时间剪辑", link: "/ffmpeg/ch09" },
             { text: "第十章 视频缩放与裁剪", link: "/ffmpeg/ch10" },
             { text: "第十一章 水印与字幕", link: "/ffmpeg/ch11" },
             { text: "第十二章 截图与GIF", link: "/ffmpeg/ch12" },
