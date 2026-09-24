@@ -71,6 +71,7 @@ export default withMermaid({
           { text: "PowerPoint教程", link: "/ppt/ch01" },
           { text: "Word教程", link: "/word/ch01" },
           { text: "视频剪辑教程", link: "/davinci/ch01" },
+          { text: "VSCode教程", link: "/vscode/ch01" },
         ],
       },
       {
@@ -207,6 +208,35 @@ export default withMermaid({
             { text: "第十三章：导出与分享", link: "/ppt/ch13" },
             { text: "第十四章：高效技巧与插件", link: "/ppt/ch14" },
             { text: "第十五章：实战", link: "/ppt/ch15" },
+          ],
+        },
+      ],
+
+      "/vscode/": [
+        {
+          text: "VSCode教程",
+          items: [
+            { text: "第一章：VSCode架构与工作原理", link: "/vscode/ch01" },
+            { text: "第二章：工作区与多项目管理", link: "/vscode/ch02" },
+            { text: "第三章：设置系统深度解析", link: "/vscode/ch03" },
+            { text: "第四章：高效编辑与导航技巧", link: "/vscode/ch04" },
+            { text: "第五章：内置终端与命令行集成", link: "/vscode/ch05" },
+            { text: "第六章：Git与版本控制深度集成", link: "/vscode/ch06" },
+            { text: "第七章：任务系统与自动化", link: "/vscode/ch07" },
+            { text: "第八章：搜索与替换高级技巧", link: "/vscode/ch08" },
+            { text: "第九章：调试系统基础", link: "/vscode/ch09" },
+            { text: "第十章：高级调试技巧", link: "/vscode/ch10" },
+            { text: "第十一章：多语言开发环境配置", link: "/vscode/ch11" },
+            {
+              text: "第十二章：Dev Containers 容器化开发",
+              link: "/vscode/ch12",
+            },
+            { text: "第十三章：精选插件推荐与配置", link: "/vscode/ch13" },
+            { text: "第十四章：自定义代码片段与模板", link: "/vscode/ch14" },
+            { text: "第十五章：主题、图标与界面定制", link: "/vscode/ch15" },
+            { text: "第十六章：AI辅助编程工具集成", link: "/vscode/ch16" },
+            { text: "第十七章：远程开发完全指南", link: "/vscode/ch17" },
+            { text: "第十八章：性能优化与高级技巧", link: "/vscode/ch18" },
           ],
         },
       ],
