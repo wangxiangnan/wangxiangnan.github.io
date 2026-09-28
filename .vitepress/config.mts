@@ -5,6 +5,11 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 export default withMermaid({
   title: "My website",
   description: "A VitePress Site",
+  vite: {
+    server: {
+      port: 4000,
+    },
+  },
   markdown: {
     lineNumbers: true,
     image: {
@@ -72,6 +77,8 @@ export default withMermaid({
           { text: "Word教程", link: "/word/ch01" },
           { text: "视频剪辑教程", link: "/davinci/ch01" },
           { text: "VSCode教程", link: "/vscode/ch01" },
+          { text: "万用表教程", link: "/multimeter/ch01" },
+          { text: "家庭电路维修教程", link: "/electrician/ch01" },
         ],
       },
       {
@@ -189,6 +196,29 @@ export default withMermaid({
         },
       ],
 
+      "/multimeter/": [
+        {
+          text: "万用表教程",
+          items: [
+            {
+              text: "第一章：万用表到底“万用”在哪里",
+              link: "/multimeter/ch01",
+            },
+            { text: "第二章：认识你的万用表", link: "/multimeter/ch02" },
+            { text: "第三章：电的三个基本量", link: "/multimeter/ch03" },
+            { text: "第四章：第一次开机", link: "/multimeter/ch04" },
+            { text: "第五章：测电压", link: "/multimeter/ch05" },
+            { text: "第六章：测电阻与通断", link: "/multimeter/ch06" },
+            { text: "第七章：测电流", link: "/multimeter/ch07" },
+            { text: "第八章：读数、量程与误差", link: "/multimeter/ch08" },
+            { text: "第九章：测二极管与三极管", link: "/multimeter/ch09" },
+            { text: "第十章：测电容", link: "/multimeter/ch10" },
+            { text: "第十一章：实战", link: "/multimeter/ch11" },
+            { text: "第十二章：万用表的家族", link: "/multimeter/ch12" },
+          ],
+        },
+      ],
+
       "/ppt/": [
         {
           text: "PowerPoint教程",
@@ -237,6 +267,47 @@ export default withMermaid({
             { text: "第十六章：AI辅助编程工具集成", link: "/vscode/ch16" },
             { text: "第十七章：远程开发完全指南", link: "/vscode/ch17" },
             { text: "第十八章：性能优化与高级技巧", link: "/vscode/ch18" },
+          ],
+        },
+      ],
+
+      "/electrician/": [
+        {
+          text: "家庭电路维修教程",
+          items: [
+            { text: "第一章：VSCode架构与工作原理", link: "/electrician/ch01" },
+            { text: "第二章：认识配电箱", link: "/electrician/ch02" },
+            { text: "第三章：电压、电流与功率", link: "/electrician/ch03" },
+            { text: "第四章：安全须知", link: "/electrician/ch04" },
+            { text: "第五章：空气开关", link: "/electrician/ch05" },
+            {
+              text: "第六章：漏电保护器",
+              link: "/electrician/ch06",
+            },
+            { text: "第七章：空气开关与漏保的配合", link: "/electrician/ch07" },
+            { text: "第八章：其他保护器件", link: "/electrician/ch08" },
+            { text: "第九章：选型与参数解读", link: "/electrician/ch09" },
+            { text: "第十章：常见故障分类", link: "/electrician/ch10" },
+            { text: "第十一章：跳闸诊断", link: "/electrician/ch11" },
+            {
+              text: "第十二章：线路故障排查",
+              link: "/electrician/ch12",
+            },
+            { text: "第十三章：开关插座故障", link: "/electrician/ch13" },
+            {
+              text: "第十四章：配电箱巡检",
+              link: "/electrician/ch14",
+            },
+            {
+              text: "第十五章：更换空气开关与漏保的完整步骤",
+              link: "/electrician/ch15",
+            },
+            { text: "第十六章：接线实操", link: "/electrician/ch16" },
+            { text: "第十七章：接地系统", link: "/electrician/ch17" },
+            {
+              text: "第十八章：进阶之路：三相电、智能家居、专业电工",
+              link: "/electrician/ch18",
+            },
           ],
         },
       ],
