@@ -32,7 +32,6 @@ export default withMermaid({
       copyright: "Copyright © 2019-present Wang Xiangnan",
     },
     nav: [
-      { text: "首页", link: "/" },
       {
         text: "编程基础",
         items: [
@@ -65,6 +64,17 @@ export default withMermaid({
         items: [{ text: "AI Agent 核心实战", link: "/agent/ch00" }],
       },
       {
+        text: "电学",
+        items: [
+          { text: "万用表教程", link: "/multimeter/ch01" },
+          { text: "家庭电路维修教程", link: "/electrician/ch01" },
+          {
+            text: "电气规范与识图教程",
+            link: "/electrical-specifications/ch01",
+          },
+        ],
+      },
+      {
         text: "工程化与工具",
         items: [
           { text: "ESLint", link: "/eslint/ch01" },
@@ -77,8 +87,6 @@ export default withMermaid({
           { text: "Word教程", link: "/word/ch01" },
           { text: "视频剪辑教程", link: "/davinci/ch01" },
           { text: "VSCode教程", link: "/vscode/ch01" },
-          { text: "万用表教程", link: "/multimeter/ch01" },
-          { text: "家庭电路维修教程", link: "/electrician/ch01" },
         ],
       },
       {
@@ -136,6 +144,62 @@ export default withMermaid({
             { text: "第十章：数据处理进阶", link: "/excel/ch10" },
             { text: "第十一章：协作与保护", link: "/excel/ch11" },
             { text: "第十二章：实用技巧集锦", link: "/excel/ch12" },
+          ],
+        },
+      ],
+
+      "/electrical-specifications/": [
+        {
+          text: "电气规范与识图教程",
+          items: [
+            {
+              text: "第一章：电气规范",
+              link: "/electrical-specifications/ch01",
+            },
+            {
+              text: "第二章：GB/T 50054 低压配电设计规范",
+              link: "/electrical-specifications/ch02",
+            },
+            {
+              text: "第三章：GB 50303 建筑电气工程施工质量验收规范",
+              link: "/electrical-specifications/ch03",
+            },
+            {
+              text: "第四章：接地与等电位联结规范",
+              link: "/electrical-specifications/ch04",
+            },
+            {
+              text: "第五章：电气安全规范",
+              link: "/electrical-specifications/ch05",
+            },
+            {
+              text: "第六章：规范实战",
+              link: "/electrical-specifications/ch06",
+            },
+            {
+              text: "第七章：电气图纸的基本要素",
+              link: "/electrical-specifications/ch07",
+            },
+            {
+              text: "第八章：读系统图",
+              link: "/electrical-specifications/ch08",
+            },
+            {
+              text: "第九章：读平面图",
+              link: "/electrical-specifications/ch09",
+            },
+            {
+              text: "第十章：读原理图与控制电路图",
+              link: "/electrical-specifications/ch10",
+            },
+            {
+              text: "第十一章：电气计算入门",
+              link: "/electrical-specifications/ch11",
+            },
+            {
+              text: "第十二章：识图实战",
+              link: "/electrical-specifications/ch12",
+            },
           ],
         },
       ],
