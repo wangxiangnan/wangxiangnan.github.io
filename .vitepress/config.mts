@@ -72,6 +72,14 @@ export default withMermaid({
             text: "电气规范与识图教程",
             link: "/electrical-specifications/ch01",
           },
+          {
+            text: "弱电系统入门教程",
+            link: "/lowvoltage-systems/ch01",
+          },
+          {
+            text: "三相电与电机控制教程",
+            link: "/threephase-power/ch01",
+          },
         ],
       },
       {
@@ -204,6 +212,62 @@ export default withMermaid({
         },
       ],
 
+      "/lowvoltage-systems/": [
+        {
+          text: "弱电系统入门教程",
+          items: [
+            {
+              text: "第一章：弱电系统概述",
+              link: "/lowvoltage-systems/ch01",
+            },
+            {
+              text: "第二章：网络布线基础",
+              link: "/lowvoltage-systems/ch02",
+            },
+            {
+              text: "第三章：综合布线系统",
+              link: "/lowvoltage-systems/ch03",
+            },
+            {
+              text: "第四章：光纤入门",
+              link: "/lowvoltage-systems/ch04",
+            },
+            {
+              text: "第五章：无线网络覆盖",
+              link: "/lowvoltage-systems/ch05",
+            },
+            {
+              text: "第六章：网络故障排查",
+              link: "/lowvoltage-systems/ch06",
+            },
+            {
+              text: "第七章：视频监控系统",
+              link: "/lowvoltage-systems/ch07",
+            },
+            {
+              text: "第八章：门禁与考勤系统",
+              link: "/lowvoltage-systems/ch08",
+            },
+            {
+              text: "第九章：入侵报警系统",
+              link: "/lowvoltage-systems/ch09",
+            },
+            {
+              text: "第十章：消防报警系统",
+              link: "/lowvoltage-systems/ch10",
+            },
+            {
+              text: "第十一章：楼宇对讲系统",
+              link: "/lowvoltage-systems/ch11",
+            },
+            {
+              text: "第十二章：弱电工程实战",
+              link: "/lowvoltage-systems/ch12",
+            },
+          ],
+        },
+      ],
+
       "/financial/": [
         {
           text: "理财教程",
@@ -302,6 +366,56 @@ export default withMermaid({
             { text: "第十三章：导出与分享", link: "/ppt/ch13" },
             { text: "第十四章：高效技巧与插件", link: "/ppt/ch14" },
             { text: "第十五章：实战", link: "/ppt/ch15" },
+          ],
+        },
+      ],
+
+      "/threephase-power/": [
+        {
+          text: "三相电与电机控制教程",
+          items: [
+            { text: "第一章：从单相到三相", link: "/threephase-power/ch01" },
+            {
+              text: "第二章：三相电的产生与特性",
+              link: "/threephase-power/ch02",
+            },
+            {
+              text: "第三章：星形与三角形接法",
+              link: "/threephase-power/ch03",
+            },
+            { text: "第四章：三相功率计算", link: "/threephase-power/ch04" },
+            {
+              text: "第五章：三相不平衡与相序",
+              link: "/threephase-power/ch05",
+            },
+            { text: "第六章：三相异步电机", link: "/threephase-power/ch06" },
+            { text: "第七章：电机铭牌与选型", link: "/threephase-power/ch07" },
+            {
+              text: "第八章：接触器与热继电器",
+              link: "/threephase-power/ch08",
+            },
+            { text: "第九章：经典控制电路", link: "/threephase-power/ch09" },
+            {
+              text: "第十章：星三角启动与软启动",
+              link: "/threephase-power/ch10",
+            },
+            {
+              text: "第十一章：电机保护与故障诊断",
+              link: "/threephase-power/ch11",
+            },
+            {
+              text: "第十二章：变频器入门：从调速原理到实际应用",
+              link: "/threephase-power/ch12",
+            },
+            {
+              text: "第十三章：PLC入门：可编程控制器的基本概念",
+              link: "/threephase-power/ch13",
+            },
+            {
+              text: "第十四章：PLC梯形图编程",
+              link: "/threephase-power/ch14",
+            },
+            { text: "第十五章：电机控制实战", link: "/threephase-power/ch15" },
           ],
         },
       ],
