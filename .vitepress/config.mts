@@ -102,6 +102,7 @@ export default withMermaid({
         items: [
           { text: "建议&思考", link: "/suggestion/ch01" },
           { text: "理财", link: "/financial/ch01" },
+          { text: "向量", link: "/vector/ch00" },
         ],
       },
     ],
@@ -152,6 +153,28 @@ export default withMermaid({
             { text: "第十章：数据处理进阶", link: "/excel/ch10" },
             { text: "第十一章：协作与保护", link: "/excel/ch11" },
             { text: "第十二章：实用技巧集锦", link: "/excel/ch12" },
+          ],
+        },
+      ],
+
+      "/vector/": [
+        {
+          text: "向量教程",
+          items: [
+            { text: "目录", link: "/vector/ch00" },
+            { text: "第一章：一个数不够用", link: "/vector/ch01" },
+            { text: "第二章：向量的长相", link: "/vector/ch02" },
+            { text: "第三章：向量的加减法", link: "/vector/ch03" },
+            { text: "第四章：点积——两个向量的'默契度'", link: "/vector/ch04" },
+            {
+              text: "第五章：叉积——三维世界的'垂直工厂'",
+              link: "/vector/ch05",
+            },
+            { text: "第六章：投影——向量的'影子'", link: "/vector/ch06" },
+            { text: "第七章：基向量——空间的'积木'", link: "/vector/ch07" },
+            { text: "第八章：矩阵——空间的'变形术'", link: "/vector/ch08" },
+            { text: "第九章：行列式——变换的'放大率'", link: "/vector/ch09" },
+            { text: "第十章：特征值与特征向量", link: "/vector/ch10" },
           ],
         },
       ],
