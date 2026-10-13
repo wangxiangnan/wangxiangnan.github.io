@@ -6,6 +6,9 @@ export default withMermaid({
   title: "My website",
   description: "A VitePress Site",
   vite: {
+    build: {
+      chunkSizeWarningLimit: 800,
+    },
     server: {
       port: 4000,
     },
