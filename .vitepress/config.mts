@@ -162,7 +162,7 @@ export default withMermaid({
         {
           text: "python教程",
           items: [
-            { text: "第一章：Python引言", link: "/python/ch00" },
+            { text: "Python引言", link: "/python/ch00" },
             { text: "第一章：Python 的安装与环境配置", link: "/python/ch01" },
             {
               text: "第二章：第一个 Python 程序与基本语法",
