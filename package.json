@@ -1,7 +1,7 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev --host",
-    "docs:build": "vitepress build",
+    "docs:build": "node --max-old-space-size=8192 ./node_modules/vitepress/bin/vitepress.js build",
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
