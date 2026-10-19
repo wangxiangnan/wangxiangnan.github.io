@@ -5,7 +5,22 @@
       "label": "start dev",
       "type": "shell",
       "command": "npm run docs:dev",
-      "problemMatcher": []
+      "problemMatcher": {
+        "owner": "vite",
+        "pattern": {
+          "regexp": "."
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "docs:dev"
+          },
+          "endsPattern": {
+            "regexp": "Local:|ERROR"
+          }
+        }
+      },
+      "isBackground": true
     }
   ]
 }
