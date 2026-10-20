@@ -3,7 +3,14 @@
     "allow": [
       "Bash(ls && cat package.json 2>/dev/null | head -60)",
       "Bash(git log --oneline -5 && git status --short | head -30)",
-      "Bash(wc -l -c src/ts/*.md | sort -k2)"
+      "Bash(wc -l -c src/ts/*.md | sort -k2)",
+      "WebFetch(*)",
+      "WebFetch(*)",
+      "WebFetch(*)",
+      "WebFetch(*)",
+      "WebFetch(*)",
+      "WebFetch(*)",
+      "WebFetch(*)"
     ]
   }
 }
