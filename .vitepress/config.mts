@@ -99,6 +99,7 @@ export default withMermaid({
           { text: "Word教程", link: "/word/ch01" },
           { text: "视频剪辑教程", link: "/davinci/ch01" },
           { text: "VSCode教程", link: "/vscode/ch01" },
+          { text: "网页性能优化实战教程", link: "/webpage/optimization" },
         ],
       },
       {
