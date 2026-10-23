@@ -100,6 +100,7 @@ export default withMermaid({
           { text: "视频剪辑教程", link: "/davinci/ch01" },
           { text: "VSCode教程", link: "/vscode/ch01" },
           { text: "网页性能优化实战教程", link: "/webpage/optimization" },
+          { text: "Windows 清理完全手册", link: "/windows/cleanup" },
         ],
       },
       {
