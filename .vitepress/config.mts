@@ -513,7 +513,7 @@ export default withMermaid({
               text: "第十二章：Dev Containers 容器化开发",
               link: "/vscode/ch12",
             },
-            { text: "第十三章：精选插件推荐与配置", link: "/vscode/ch13" },
+            { text: "第十三章：精选扩展推荐与配置", link: "/vscode/ch13" },
             { text: "第十四章：自定义代码片段与模板", link: "/vscode/ch14" },
             { text: "第十五章：主题、图标与界面定制", link: "/vscode/ch15" },
             { text: "第十六章：AI辅助编程工具集成", link: "/vscode/ch16" },
