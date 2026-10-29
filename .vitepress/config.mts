@@ -109,6 +109,7 @@ export default withMermaid({
           { text: "建议&思考", link: "/suggestion/ch01" },
           { text: "理财", link: "/financial/ch01" },
           { text: "向量", link: "/vector/ch00" },
+          { text: "微信公众号", link: "/wechat-official-account/ch00" },
         ],
       },
     ],
@@ -159,6 +160,70 @@ export default withMermaid({
             { text: "第十章：数据处理进阶", link: "/excel/ch10" },
             { text: "第十一章：协作与保护", link: "/excel/ch11" },
             { text: "第十二章：实用技巧集锦", link: "/excel/ch12" },
+          ],
+        },
+      ],
+
+      "/wechat-official-account/": [
+        {
+          text: "微信公众号教程",
+          items: [
+            {
+              text: "引言：这本手册怎么用",
+              link: "/wechat-official-account/ch00",
+            },
+            {
+              text: "第一章：定位——想清楚再动手",
+              link: "/wechat-official-account/ch01",
+            },
+            {
+              text: "第二章：竞品分析——站在前人肩膀上",
+              link: "/wechat-official-account/ch02",
+            },
+            {
+              text: "第三章：账号搭建——把基础设施做好",
+              link: "/wechat-official-account/ch03",
+            },
+            {
+              text: "第四章：视觉系统——让人一眼记住你",
+              link: "/wechat-official-account/ch04",
+            },
+            {
+              text: "第五章：内容选题——永远不缺灵感",
+              link: "/wechat-official-account/ch05",
+            },
+            {
+              text: "第六章：写作技巧——让读者读下去",
+              link: "/wechat-official-account/ch06",
+            },
+            {
+              text: "第七章：排版规范——专业感从细节来",
+              link: "/wechat-official-account/ch07",
+            },
+            {
+              text: "第八章：互动设计——让粉丝留下来",
+              link: "/wechat-official-account/ch08",
+            },
+            {
+              text: "第九章：冷启动——前 1000 个粉丝",
+              link: "/wechat-official-account/ch09",
+            },
+            {
+              text: "第十章：数据分析——用数据驱动决策",
+              link: "/wechat-official-account/ch10",
+            },
+            {
+              text: "第十一章：持续增长——突破瓶颈",
+              link: "/wechat-official-account/ch11",
+            },
+            {
+              text: "第十二章：变现路径——让热爱有回报",
+              link: "/wechat-official-account/ch12",
+            },
+            {
+              text: "第十三章：长期主义——做时间的朋友",
+              link: "/wechat-official-account/ch13",
+            },
           ],
         },
       ],
