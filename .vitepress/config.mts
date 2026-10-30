@@ -1201,7 +1201,7 @@ export default withMermaid({
             { text: "第六章 Agent架构全景", link: "/agent/ch06" },
             { text: "第七章 环境搭建", link: "/agent/ch07" },
             { text: "第八章 LCEL", link: "/agent/ch08" },
-            { text: "第九章 PModel I/O", link: "/agent/ch09" },
+            { text: "第九章 Model I/O", link: "/agent/ch09" },
             { text: "第十章 Prompt模板", link: "/agent/ch10" },
             { text: "第十一章 Memory", link: "/agent/ch11" },
             { text: "第十二章 Tools", link: "/agent/ch12" },
