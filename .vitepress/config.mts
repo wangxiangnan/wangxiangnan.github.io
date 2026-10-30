@@ -49,6 +49,11 @@ export default withMermaid({
           { text: "Flutter常用 Widget", link: "/flutter/flutter" },
           { text: "深入理解Flutter主题", link: "/flutter/flutter-theme" },
           { text: "React从零到实战", link: "/react/ch00" },
+          {
+            text: "移动端像素与viewport完全解析",
+            link: "/pixels-viewport/ch00",
+          },
+          { text: "网页性能优化实战教程", link: "/optimization/" },
         ],
       },
       {
@@ -99,7 +104,6 @@ export default withMermaid({
           { text: "Word教程", link: "/word/ch01" },
           { text: "视频剪辑教程", link: "/davinci/ch01" },
           { text: "VSCode教程", link: "/vscode/ch01" },
-          { text: "网页性能优化实战教程", link: "/webpage/optimization" },
           { text: "Windows 清理完全手册", link: "/windows/cleanup" },
         ],
       },
@@ -224,6 +228,40 @@ export default withMermaid({
               text: "第十三章：长期主义——做时间的朋友",
               link: "/wechat-official-account/ch13",
             },
+          ],
+        },
+      ],
+
+      "/pixels-viewport/": [
+        {
+          text: "移动端像素与 viewport 完全解析",
+          items: [
+            { text: "总览与目录", link: "/pixels-viewport/ch00" },
+            {
+              text: "第1章 物理世界：屏幕的基本事实",
+              link: "/pixels-viewport/ch01",
+            },
+            {
+              text: "第2章 CSS 像素：开发者工作在逻辑世界",
+              link: "/pixels-viewport/ch02",
+            },
+            {
+              text: "第3章 DPR：两个世界之间的汇率",
+              link: "/pixels-viewport/ch03",
+            },
+            {
+              text: "第4章 viewport：浏览器的呈现策略",
+              link: "/pixels-viewport/ch04",
+            },
+            {
+              text: "第5章 用 JS 实测：API 与真机数据",
+              link: "/pixels-viewport/ch05",
+            },
+            {
+              text: "第6章 桌面平行世界：Windows 分辨率与缩放",
+              link: "/pixels-viewport/ch06",
+            },
+            { text: "第7章 实战应用", link: "/pixels-viewport/ch07" },
           ],
         },
       ],
