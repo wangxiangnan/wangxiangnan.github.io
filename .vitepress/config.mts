@@ -42,6 +42,7 @@ export default withMermaid({
           { text: "网络协议完全教程", link: "/network-protocol/ch00" },
           { text: "Linux命令行完全教程", link: "/linux-command/ch00" },
           { text: "软件架构完全教程", link: "/architecture/ch00" },
+          { text: "Git与SSH完全教程", link: "/git-ssh/ch00" },
         ],
       },
       {
@@ -120,6 +121,78 @@ export default withMermaid({
     ],
 
     sidebar: {
+      "/git-ssh/": [
+        {
+          text: "Git 与 SSH 完全教程",
+          items: [
+            { text: "第0章 Git 与 SSH 全景", link: "/git-ssh/ch00" },
+            { text: "第一章 为什么需要版本控制", link: "/git-ssh/ch01" },
+            { text: "第二章 Git 安装与三层配置", link: "/git-ssh/ch02" },
+            {
+              text: "第三章 三个区域：工作区、暂存区与版本库",
+              link: "/git-ssh/ch03",
+            },
+            { text: "第四章 SSH：一条加密的远程通道", link: "/git-ssh/ch04" },
+            { text: "第五章 公钥与私钥：不传秘密的认证", link: "/git-ssh/ch05" },
+            { text: "第六章 known_hosts 与双向认证", link: "/git-ssh/ch06" },
+            { text: "第七章 时光机：log、diff 与 reflog", link: "/git-ssh/ch07" },
+            {
+              text: "第八章 悔棋三件套：restore、reset、revert",
+              link: "/git-ssh/ch08",
+            },
+            { text: "第九章 分支的本质是指针", link: "/git-ssh/ch09" },
+            {
+              text: "第十章 merge 与 rebase：分叉的两种结局",
+              link: "/git-ssh/ch10",
+            },
+            { text: "第十一章 stash、tag 与 cherry-pick", link: "/git-ssh/ch11" },
+            { text: "第十二章 .gitignore 与仓库卫生", link: "/git-ssh/ch12" },
+            {
+              text: "第十三章 ~/.ssh/config：别名与多账户",
+              link: "/git-ssh/ch13",
+            },
+            {
+              text: "第十四章 密钥管理：agent 与 passphrase",
+              link: "/git-ssh/ch14",
+            },
+            { text: "第十五章 端口转发：-L、-R、-D", link: "/git-ssh/ch15" },
+            { text: "第十六章 跳板机：ProxyJump", link: "/git-ssh/ch16" },
+            {
+              text: "第十七章 sshd 服务端：开放与加固",
+              link: "/git-ssh/ch17",
+            },
+            {
+              text: "第十八章 排错手册：Permission denied 的真相",
+              link: "/git-ssh/ch18",
+            },
+            {
+              text: "第十九章 git pull 时究竟发生了什么",
+              link: "/git-ssh/ch19",
+            },
+            {
+              text: "第二十章 GitHub：登记公钥到多人协作",
+              link: "/git-ssh/ch20",
+            },
+            {
+              text: "第二十一章 自建迷你 GitHub：裸仓库",
+              link: "/git-ssh/ch21",
+            },
+            {
+              text: "第二十二章 团队工作流与服务端钩子",
+              link: "/git-ssh/ch22",
+            },
+            {
+              text: "第二十三章 部署衔接：从 push 到上线",
+              link: "/git-ssh/ch23",
+            },
+            {
+              text: "第二十四章 安全复盘与综合排错",
+              link: "/git-ssh/ch24",
+            },
+          ],
+        },
+      ],
+
       // 当用户位于 `flutter` 目录时，会显示此侧边栏
       "/flutter/": [
         {
