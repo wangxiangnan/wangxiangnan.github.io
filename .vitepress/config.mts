@@ -43,6 +43,7 @@ export default withMermaid({
           { text: "Linux命令行完全教程", link: "/linux-command/ch00" },
           { text: "软件架构完全教程", link: "/architecture/ch00" },
           { text: "Git与SSH完全教程", link: "/git-ssh/ch00" },
+          { text: "用游戏学编程完全教程", link: "/coding-games/ch00" },
         ],
       },
       {
@@ -121,6 +122,25 @@ export default withMermaid({
     ],
 
     sidebar: {
+      "/coding-games/": [
+        {
+          text: "用游戏学编程完全教程",
+          items: [
+            { text: "第0章 用游戏学编程全景", link: "/coding-games/ch00" },
+            { text: "第一章 终端闯关：Bandit（上）", link: "/coding-games/ch01" },
+            { text: "第二章 终端闯关：Bandit（下）", link: "/coding-games/ch02" },
+            { text: "第三章 地牢爬行与一行命令", link: "/coding-games/ch03" },
+            { text: "第四章 CSS 三部曲", link: "/coding-games/ch04" },
+            { text: "第五章 正则解谜", link: "/coding-games/ch05" },
+            { text: "第六章 SQL 破案与电梯调度", link: "/coding-games/ch06" },
+            { text: "第七章 Zachtronics 三件套", link: "/coding-games/ch07" },
+            { text: "第八章 Git 沙盘与 ML 拼图", link: "/coding-games/ch08" },
+            { text: "第九章 CodinGame 与 Advent of Code", link: "/coding-games/ch09" },
+            { text: "第十章 picoCTF 与安全闯关", link: "/coding-games/ch10" },
+          ],
+        },
+      ],
+
       "/git-ssh/": [
         {
           text: "Git 与 SSH 完全教程",
