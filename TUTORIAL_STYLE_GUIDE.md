@@ -24,7 +24,8 @@
 - 文件命名：
   - `ch00.md` — 索引页（教程封面 + 目录 + 心智模型）。
   - `ch01.md`、`ch02.md`…… — 正文章节，与索引页目录一一对应。
-- 图片原则上不使用；示意图用 mermaid 或 ASCII（```text 代码块）替代。确需图片时放 `src/<主题>/images/` 并用相对路径引用。
+- 示意图优先用 mermaid 或 ASCII（```text 代码块）表达；mermaid 与 ASCII 表达不了的复杂概念（架构分层、交互流程、框架渲染原理、UI 布局、空间结构等）改用 SVG 图形化解释，规范见第 5 节 SVG 专项规范。
+- 图片文件放 `src/<主题>/images/`，命名用小写英文与连字符（如 `images/react-render-flow.svg`），正文用相对路径引用（`![描述](./images/xxx.svg)`）。位图（png/jpg/gif）仅限截图类素材，能用 SVG 就不用位图。
 - 不写 frontmatter；页面标题由正文一级标题承担。
 - 章内互链用相对路径（`./ch07.md`），跨教程互链用站点绝对路径（`/docker/ch00`）。
 
@@ -139,7 +140,7 @@
 
 ## N.2 <小节名>
 
-……正文（内含表格 / ASCII 图 / 代码 / mermaid）……
+……正文（内含表格 / ASCII 图 / SVG 图 / 代码 / mermaid）……
 
 ## N.x <小节名>
 
@@ -173,6 +174,7 @@
 | ASCII 结构图 | 1 个起 | 放 ```text 围栏内，宽度控制在 60 字符内，避免错位 |
 | 代码示例 | 1-2 个起 | 语言随主题（伪代码 / TS / Java / SQL / yaml）；优先可运行的完整片段 |
 | mermaid 图 | 1 个起 | 见下方 mermaid 专项规范 |
+| SVG 图 | 0-2 个 | 按需：mermaid 与 ASCII 表达不了的复杂概念（交互流程、框架原理、UI 布局）；见下方 SVG 专项规范 |
 | 提示框 | 1-3 个 | `> [!TIP] 标题` / `> [!NOTE] 标题` / `> [!WARNING] 标题`，首行写标签名 |
 | 加粗强调 | 适量 | 每节 1-2 处关键结论加粗，不要整段加粗 |
 
@@ -184,6 +186,27 @@ mermaid 专项规范（违反易导致渲染失败或图不可读）：
 4. 子图（subgraph）嵌套不超过两层。
 5. 提交前自查围栏配对（``` 数量为偶数）与引号括号配对。
 6. 同一张图节点数建议 ≤ 30，超了就拆成两张。
+
+SVG 专项规范（仅用于 mermaid 与 ASCII 表达不了的场景——能用前者就不用 SVG）：
+
+1. 文件放 `src/<主题>/images/`，小写英文与连字符命名（`images/react-render-flow.svg`），用 `![描述](./images/xxx.svg)` 相对路径引用；alt 描述必写，图文裂开时读者仍能理解。
+2. 根元素必须有 `viewBox` 并显式设置画布宽高，建议画布宽 800-960；元素有 id/类名时先在 `<defs>` 里集中定义样式，避免逐个元素重复属性。
+3. 文字显式指定字体栈：`font-family="PingFang SC, Microsoft YaHei, sans-serif"`，不依赖外部字体；最小字号 12（按 viewBox 比例等比缩放）。
+4. 配色与站点 mermaid 主题一致：节点底色 `#112240`、次级底色 `#0A192F` 或 `#1a2f4a`、文字 `#CCD6F6`、强调与连线 `#1E90FF`；整图自带底色块，保证亮色/暗色两种页面主题下均可读。
+5. 禁止 `<script>`、外部图片与外部字体引用；允许简单 CSS/SMIL 动画演示状态流转，但静止状态下图必须自明，动画只是补充。
+6. 单图文件建议 ≤ 100KB；图中要素在正文用一两句话交代（「如图，请求先经过 X 再到 Y」），不靠「看图就懂」。
+
+最小骨架（可复制后改造）：
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <rect x="0" y="0" width="800" height="240" rx="8" fill="#0A192F"/>
+  <rect x="60" y="80" width="180" height="70" rx="8" fill="#112240" stroke="#1E90FF"/>
+  <text x="150" y="120" text-anchor="middle" fill="#CCD6F6"
+        font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16">用户请求</text>
+  <!-- 连线、箭头与其余节点…… -->
+</svg>
+```
 
 禁止项：
 
@@ -249,7 +272,7 @@ sidebar（顶层 key 与教程目录一致）：
 - [ ] 所有 ``` 围栏成对闭合（数量为偶数）
 - [ ] mermaid 图语法自查：双引号标签、`\n` 换行、子图嵌套 ≤ 2 层
 - [ ] 提示框格式正确且每章 1-3 个
-- [ ] 无 frontmatter、无图片引用、无 emoji、无 TODO 占位
+- [ ] 无 frontmatter、无 emoji、无 TODO 占位；位图仅限截图素材，SVG 图已按专项规范自查（viewBox、中文字体栈、站点色板、亮/暗主题可读、无 `<script>`）
 - [ ] 示例项目与数字与 ch00 设定一致
 - [ ] 篇幅在基准区间内
 - [ ] `config.mts` 的 nav 与 sidebar 已注册且条目无缺漏
