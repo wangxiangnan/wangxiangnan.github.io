@@ -1,6 +1,6 @@
 # 教程写作规范
 
-> 本规范从《FFmpeg 完全教程》与《软件架构完全教程》两套成稿中提炼，是新教程的创作基准。违反「硬性」标记的条目会导致排版退化或构建失败，请逐条遵守。
+> 本规范从《FFmpeg 完全教程》《软件架构完全教程》与《移动端像素与 viewport 完全解析》（内嵌 SVG 范本）等成稿中提炼，是新教程的创作基准。违反「硬性」标记的条目会导致排版退化或构建失败，请逐条遵守。
 
 ---
 
@@ -24,8 +24,8 @@
 - 文件命名：
   - `ch00.md` — 索引页（教程封面 + 目录 + 心智模型）。
   - `ch01.md`、`ch02.md`…… — 正文章节，与索引页目录一一对应。
-- 示意图优先用 mermaid 或 ASCII（```text 代码块）表达；mermaid 与 ASCII 表达不了的复杂概念（架构分层、交互流程、框架渲染原理、UI 布局、空间结构等）改用 SVG 图形化解释，规范见第 5 节 SVG 专项规范。
-- 图片文件放 `src/<主题>/images/`，命名用小写英文与连字符（如 `images/react-render-flow.svg`），正文用相对路径引用（`![描述](./images/xxx.svg)`）。位图（png/jpg/gif）仅限截图类素材，能用 SVG 就不用位图。
+- 解释、分析、总结类示意图优先用内嵌 SVG 表达（直接写在 markdown 里，规范见第 5 节内嵌 SVG 专项规范），架构分层、交互流程、框架渲染原理、UI 布局、空间结构等复杂概念一律用它；mermaid 与 ASCII（```text 代码块）仅作简单流程、时序的补充。
+- 位图（png/jpg/gif）仅限截图类素材：文件放 `src/<主题>/images/`，命名用小写英文与连字符（如 `images/safari-ios.jpg`），正文用相对路径引用（`![描述](./images/xxx.png)`）。示意图不用图片文件，一律内嵌 SVG。
 - 不写 frontmatter；页面标题由正文一级标题承担。
 - 章内互链用相对路径（`./ch07.md`），跨教程互链用站点绝对路径（`/docker/ch00`）。
 
@@ -95,13 +95,13 @@
 ## 心智模型
 
 ### 一、核心模型：<一个公式或一条主线>
-（ASCII 图 + 逐条解释）
+（内嵌 SVG 图 + 逐条解释；简单关系可用 ASCII 图）
 
 ### 二、<关键概念辨析>（易混概念）
 （对照表）
 
 ### 三、<分类地图 / 分层模型>
-（表格或 ASCII 分层图）
+（表格；分层结构可配内嵌 SVG 或 ASCII 分层图）
 
 ### 四、<贯穿全书的主线场景>
 （演进路径，与正文章节呼应）
@@ -109,14 +109,14 @@
 ### 五、建议学习路径：用这个模型去学
 （编号列表 + 最小学习路径 + 总结概括）
 
-（结尾附一张 mermaid 全景总览图）
+（结尾附一张内嵌 SVG 全景总览图）
 ```
 
 要点：
 
 - 目录按 **Part 分篇**，每篇 2-6 章左右，篇名带定位标签（基础概念篇 / 模式篇 / 实战篇 / 进阶篇）。
 - 「心智模型」是索引页的灵魂：给读者一套可以带走的概念框架，后续每章都应能挂回这套框架。
-- mermaid 总览图建议带上主题色 init 行（与本站风格一致）：
+- 全景总览图用内嵌 SVG 绘制（规范见第 5 节）；确需用 mermaid 补充其他图时，带上主题色 init 行（与本站风格一致）：
 
 ```text
 %%{init: {'theme': 'light', 'themeVariables': {'primaryColor': '#112240', 'primaryTextColor': '#CCD6F6', 'primaryBorderColor': '#1E90FF', 'lineColor': '#1E90FF', 'secondaryColor': '#0A192F', 'tertiaryColor': '#1a2f4a', 'fontSize': '14px'}}}%%
@@ -140,7 +140,7 @@
 
 ## N.2 <小节名>
 
-……正文（内含表格 / ASCII 图 / SVG 图 / 代码 / mermaid）……
+……正文（内含表格 / 内嵌 SVG 图 / ASCII 图 / 代码，mermaid 备用）……
 
 ## N.x <小节名>
 
@@ -173,12 +173,12 @@
 | markdown 表格 | 2-3 个起 | 用于对比、速查、分类；表头用短句 |
 | ASCII 结构图 | 1 个起 | 放 ```text 围栏内，宽度控制在 60 字符内，避免错位 |
 | 代码示例 | 1-2 个起 | 语言随主题（伪代码 / TS / Java / SQL / yaml）；优先可运行的完整片段 |
-| mermaid 图 | 1 个起 | 见下方 mermaid 专项规范 |
-| SVG 图 | 0-2 个 | 按需：mermaid 与 ASCII 表达不了的复杂概念（交互流程、框架原理、UI 布局）；见下方 SVG 专项规范 |
+| mermaid 图 | 0-2 个 | 备用：仅用于简单流程、时序类图示；见下方 mermaid 专项规范 |
+| 内嵌 SVG 图 | 1-2 个起 | 解释、分析、总结类图示的首选；见下方内嵌 SVG 专项规范 |
 | 提示框 | 1-3 个 | `> [!TIP] 标题` / `> [!NOTE] 标题` / `> [!WARNING] 标题`，首行写标签名 |
 | 加粗强调 | 适量 | 每节 1-2 处关键结论加粗，不要整段加粗 |
 
-mermaid 专项规范（违反易导致渲染失败或图不可读）：
+mermaid 专项规范（备用图型，仅用于简单流程与时序；违反易导致渲染失败或图不可读）：
 
 1. 节点标签一律用双引号包裹：`A["标签文字"]`。
 2. 标签内换行用 `\n`。
@@ -187,24 +187,36 @@ mermaid 专项规范（违反易导致渲染失败或图不可读）：
 5. 提交前自查围栏配对（``` 数量为偶数）与引号括号配对。
 6. 同一张图节点数建议 ≤ 30，超了就拆成两张。
 
-SVG 专项规范（仅用于 mermaid 与 ASCII 表达不了的场景——能用前者就不用 SVG）：
+内嵌 SVG 专项规范（解释、分析、总结类图示的首选；范例见 `src/pixels-viewport/` 各章的 图 2-1、图 3-1、图 4-1、图 4-2）：
 
-1. 文件放 `src/<主题>/images/`，小写英文与连字符命名（`images/react-render-flow.svg`），用 `![描述](./images/xxx.svg)` 相对路径引用；alt 描述必写，图文裂开时读者仍能理解。
-2. 根元素必须有 `viewBox` 并显式设置画布宽高，建议画布宽 800-960；元素有 id/类名时先在 `<defs>` 里集中定义样式，避免逐个元素重复属性。
-3. 文字显式指定字体栈：`font-family="PingFang SC, Microsoft YaHei, sans-serif"`，不依赖外部字体；最小字号 12（按 viewBox 比例等比缩放）。
-4. 配色与站点 mermaid 主题一致：节点底色 `#112240`、次级底色 `#0A192F` 或 `#1a2f4a`、文字 `#CCD6F6`、强调与连线 `#1E90FF`；整图自带底色块，保证亮色/暗色两种页面主题下均可读。
-5. 禁止 `<script>`、外部图片与外部字体引用；允许简单 CSS/SMIL 动画演示状态流转，但静止状态下图必须自明，动画只是补充。
-6. 单图文件建议 ≤ 100KB；图中要素在正文用一两句话交代（「如图，请求先经过 X 再到 Y」），不靠「看图就懂」。
+1. SVG 直接写在 markdown 正文里（`<svg>…</svg>`），不经 mermaid 转译、不用 `<img>` 引用图片文件，构建时原样输出到页面。
+2. 根元素必须有 `viewBox` 与 `xmlns`，并在根元素统一声明 `font-family="system-ui, sans-serif"`，子元素全部继承；画布宽建议 640-680（正文栏宽约 688px，接近满幅），不写死 width/height，让图随容器自适应缩放。
+3. 图题写在 SVG 之前一行，格式 `**图 N-M｜图名**（括号内一句话交代关键要素与读图线索）：`，编号与章号对应（第 2 章的图编 图 2-1、图 2-2……）。
+4. 图要自明：要素旁直接标注名称与数值，不画「谜语图」；图底部加一行灰色小字（font-size 12-13、fill #666/#999）给出结论；正文再用一两句话衔接（「如图，请求先经过 X 再到 Y」），三者互为印证。
+5. 配色用浅色系（与本站亮色主题一致）：强调色 `#4a90d9`、节点底 `#f0f7ff` 或 `#fafafa`、正文 `#333`、次级 `#555/#666`、辅助线 `#999/#ccc`；最小字号 12（按 viewBox 比例等比缩放）。
+6. 常用件放 `<defs>` 集中定义：箭头用 `<marker>`，重复网格/纹理用 `<pattern>`，多图共用的样式收敛声明，避免逐元素重复属性。
+7. 禁止 `<script>`、外部图片与外部字体引用；允许简单 CSS/SMIL 动画演示状态流转，但静止状态下图必须自明，动画只是补充。
+8. 单图控制在一屏内读完，要素 ≤ 15 个；塞不下就拆成两张，或改用「表格 + 短图」组合。整图建议带浅色底色块，避免暗色主题下深色文字不可读。
 
 最小骨架（可复制后改造）：
 
 ```xml
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
-  <rect x="0" y="0" width="800" height="240" rx="8" fill="#0A192F"/>
-  <rect x="60" y="80" width="180" height="70" rx="8" fill="#112240" stroke="#1E90FF"/>
-  <text x="150" y="120" text-anchor="middle" fill="#CCD6F6"
-        font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16">用户请求</text>
-  <!-- 连线、箭头与其余节点…… -->
+<svg viewBox="0 0 680 150" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#666"/>
+    </marker>
+  </defs>
+  <rect x="10" y="30" width="180" height="70" rx="8" fill="#f0f7ff" stroke="#4a90d9"/>
+  <text x="100" y="60" font-size="13" text-anchor="middle" fill="#333" font-weight="bold">节点一</text>
+  <text x="100" y="82" font-size="12" text-anchor="middle" fill="#555">关键数值标注</text>
+
+  <rect x="310" y="30" width="180" height="70" rx="8" fill="#f0f7ff" stroke="#4a90d9"/>
+  <text x="400" y="60" font-size="13" text-anchor="middle" fill="#333" font-weight="bold">节点二</text>
+  <text x="400" y="82" font-size="12" text-anchor="middle" fill="#555">关键数值标注</text>
+
+  <line x1="190" y1="65" x2="306" y2="65" stroke="#666" marker-end="url(#arr)"/>
+  <text x="340" y="135" text-anchor="middle" font-size="12" fill="#666">图底部结论行：一句话交代整图要点</text>
 </svg>
 ```
 
@@ -270,9 +282,9 @@ sidebar（顶层 key 与教程目录一致）：
 - [ ] `##` 均为 `N.x` 编号格式，`###` 及以下都在某个 `##` 之下
 - [ ] 每章有 `## 本章小结` + 下一章预告（末章为结束语），文件以 `---` 结尾
 - [ ] 所有 ``` 围栏成对闭合（数量为偶数）
-- [ ] mermaid 图语法自查：双引号标签、`\n` 换行、子图嵌套 ≤ 2 层
+- [ ] mermaid 图（如有）语法自查：双引号标签、`\n` 换行、子图嵌套 ≤ 2 层
 - [ ] 提示框格式正确且每章 1-3 个
-- [ ] 无 frontmatter、无 emoji、无 TODO 占位；位图仅限截图素材，SVG 图已按专项规范自查（viewBox、中文字体栈、站点色板、亮/暗主题可读、无 `<script>`）
+- [ ] 无 frontmatter、无 emoji、无 TODO 占位；位图仅限截图素材；解释/分析/总结类图示用内嵌 SVG，并已按专项规范自查（viewBox + xmlns、根元素字体栈、图题编号、图内标注、浅色配色、无 `<script>`）
 - [ ] 示例项目与数字与 ch00 设定一致
 - [ ] 篇幅在基准区间内
 - [ ] `config.mts` 的 nav 与 sidebar 已注册且条目无缺漏
