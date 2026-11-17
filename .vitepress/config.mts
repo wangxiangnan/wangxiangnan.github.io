@@ -1427,6 +1427,7 @@ export default withMermaid({
         {
           text: "Linux命令行完全教程",
           items: [
+            { text: "第0章 Linux命令行全景", link: "/linux-command/ch00" },
             { text: "第一章 走进Linux世界", link: "/linux-command/ch01" },
             { text: "第二章 文件系统导航", link: "/linux-command/ch02" },
             { text: "第三章 文件与目录操作", link: "/linux-command/ch03" },
