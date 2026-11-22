@@ -53,6 +53,7 @@ export default withMermaid({
           { text: "Flutter常用 Widget", link: "/flutter/flutter" },
           { text: "深入理解Flutter主题", link: "/flutter/flutter-theme" },
           { text: "React从零到实战", link: "/react/ch00" },
+          { text: "Remotion 完全教程", link: "/remotion/ch00" },
           {
             text: "移动端像素与viewport完全解析",
             link: "/pixels-viewport/ch00",
@@ -834,6 +835,19 @@ export default withMermaid({
             { text: "第十六章 状态管理进阶", link: "/react/ch16" },
             { text: "第十七章 实战项目", link: "/react/ch17" },
             { text: "第十八章 测试与部署", link: "/react/ch18" },
+          ],
+        },
+      ],
+
+      "/remotion/": [
+        {
+          text: "Remotion 完全教程",
+          items: [
+            { text: "第0章 Remotion 完全教程概览", link: "/remotion/ch00" },
+            { text: "第一章 帧时间轴——Remotion 的世界观", link: "/remotion/ch01" },
+            { text: "第二章 动画工具箱——interpolate、spring、random 与 noise", link: "/remotion/ch02" },
+            { text: "第三章 音画同步——用时间戳驱动一部视频", link: "/remotion/ch03" },
+            { text: "第四章 预览、渲染与发布——Studio、Player 与工程化", link: "/remotion/ch04" },
           ],
         },
       ],
