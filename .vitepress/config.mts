@@ -40,6 +40,7 @@ export default withMermaid({
         items: [
           { text: "TypeScript", link: "/ts/ch00" },
           { text: "网络协议完全教程", link: "/network-protocol/ch00" },
+          { text: "VPN 配置完全教程", link: "/vpn/ch00" },
           { text: "Linux命令行完全教程", link: "/linux-command/ch00" },
           { text: "软件架构完全教程", link: "/architecture/ch00" },
           { text: "Git与SSH完全教程", link: "/git-ssh/ch00" },
@@ -848,6 +849,23 @@ export default withMermaid({
             { text: "第二章 动画工具箱——interpolate、spring、random 与 noise", link: "/remotion/ch02" },
             { text: "第三章 音画同步——用时间戳驱动一部视频", link: "/remotion/ch03" },
             { text: "第四章 预览、渲染与发布——Studio、Player 与工程化", link: "/remotion/ch04" },
+          ],
+        },
+      ],
+
+      "/vpn/": [
+        {
+          text: "VPN 配置完全教程",
+          items: [
+            { text: "第0章 VPN 配置完全教程概览", link: "/vpn/ch00" },
+            { text: "第一章 WireGuard 世界观——密钥即身份的隧道网络", link: "/vpn/ch01" },
+            { text: "第二章 隧道原理——Noise 握手、加密与内核态", link: "/vpn/ch02" },
+            { text: "第三章 服务端搭建——把云服务器变成 VPN 网关", link: "/vpn/ch03" },
+            { text: "第四章 客户端接入——笔记本与手机安全回内网", link: "/vpn/ch04" },
+            { text: "第五章 配置脚本自动化——一键初始化与客户端发放", link: "/vpn/ch05" },
+            { text: "第六章 进阶组网与选型——分流、站点互联与 OpenVPN", link: "/vpn/ch06" },
+            { text: "第七章 mihomo 客户端入门——从界面到连上自建 VPN", link: "/vpn/ch07" },
+            { text: "第八章 mihomo 高级设置——规则、脚本与订阅管理", link: "/vpn/ch08" },
           ],
         },
       ],
