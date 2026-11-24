@@ -1199,7 +1199,7 @@ export default withMermaid({
               link: "/network-protocol/ch07",
             },
             {
-              text: "第八章 TCP 基础——建立连接与可靠传输",
+              text: "第八章 TCP 基础——连接的一生",
               link: "/network-protocol/ch08",
             },
             {
