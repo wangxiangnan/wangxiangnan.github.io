@@ -1,6 +1,6 @@
 # 深入理解 Flutter 主题系统：从 API 到设计哲学
 
-![M3 主题](./images/flutter_theme_cover.png)
+![M3 主题](./images/flutter_theme_cover.webp)
 
 Flutter 的主题系统远不止是"定义几个颜色变量"那么简单。它的背后是 Material Design 3 和 Human Interface Guidelines 两套完整设计规范的工程化实现。本文将从表层 API 出发，逐步深入到设计规范层面，帮助你建立对 Flutter 主题系统的完整认知。
 
@@ -60,7 +60,7 @@ colorScheme.primaryContainer // 主色的柔和容器变体
 colorScheme.onPrimaryContainer // 放在容器上的内容色
 ```
 
-![M3 ColorScheme 颜色角色配对示意图](./images/m3_color_roles_diagram.png)
+![M3 ColorScheme 颜色角色配对示意图](./images/m3_color_roles_diagram.webp)
 
 ### on* 配对机制的精妙设计
 
@@ -116,7 +116,7 @@ M3 不再为每个状态定义独立颜色，而是引入**状态层（State Lay
 | Pressed | 10% |
 | Dragged | 16% |
 
-![M3 State Layer 状态层机制示意图](./images/m3_state_layer_diagram.png)
+![M3 State Layer 状态层机制示意图](./images/m3_state_layer_diagram.webp)
 
 一个 Filled Button 的 hover 效果：在 `primary` 背景上叠加 `onPrimary` 的 8% 透明层。视觉上按钮微微"亮"了一点，这就是 hover 反馈。你不需要定义 `buttonHoverColor`——它是算法生成的。
 
@@ -236,7 +236,7 @@ static ColorScheme _buildColorScheme(Brightness brightness) {
 
 Flutter 同时实现了 Google 的 Material Design 和 Apple 的 Human Interface Guidelines 两套规范，分别对应 `material.dart` 和 `cupertino.dart` 两个组件库。
 
-![Material Design 与 Cupertino 风格对比](./images/material_vs_cupertino.png)
+![Material Design 与 Cupertino 风格对比](./images/material_vs_cupertino.webp)
 
 ### 设计哲学根本分歧
 
@@ -271,7 +271,7 @@ Flutter 同时实现了 Google 的 Material Design 和 Apple 的 Human Interface
 
 ## 七、学习路径：三层认知模型
 
-![Flutter 主题学习三层模型](./images/theme_learning_path.png)
+![Flutter 主题学习三层模型](./images/theme_learning_path.webp)
 
 ### 底层：设计规范（WHY）
 
