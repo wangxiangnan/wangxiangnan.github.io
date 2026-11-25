@@ -67,6 +67,9 @@ jobs:
         with:
           # Upload entire repository
           path: './dist'
+      # deploy-pages@v5 查工件零条即抛错且无重试，留缓冲规避工件索引延迟毛刺
+      - name: 等待工件索引收敛
+        run: sleep 15
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
