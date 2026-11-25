@@ -137,3 +137,22 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Component: mermaid
+ * 正文 p 的 1.75 行高会渗进图内标签，而 mermaid 按 1.5 行高测量节点高度，
+ * 行数多的标签末行会越过边框、顶部节点文字被裁；统一回 1.5 并对齐边距即可
+ * -------------------------------------------------------------------------- */
+
+.mermaid .nodeLabel,
+.mermaid .nodeLabel p,
+.mermaid .edgeLabel,
+.mermaid .edgeLabel p {
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+.mermaid foreignObject,
+.mermaid foreignObject .nodeLabel {
+  overflow: visible !important;
+}
+
