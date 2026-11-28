@@ -1,53 +1,16 @@
 # 全书毕业测试
 
-25 个章词、四条 Part 词链、五条跨篇硬依赖——这张卷子只考你能不能把它们带走。闭卷作答：全部做完再看 `<details>` 里的答案；每题答案都带一句推导与回指小节，错了就按回指重读对应章的「本章小结」。
+四个 Part、二十五章、五条跨篇硬依赖——这张卷子只考你能不能把它们带走。闭卷作答：全部做完再看 `<details>` 里的答案；每题答案都带一句推导与回指小节，错了就按回指重读对应章的「本章小结」。
 
-**图 F-1｜全书词链总图**（四条 Part 词链自上而下、按章序排列，虚线为五条跨篇硬依赖；图上只有词与章号——正是你要默写默说的全部内容）：
-
-```mermaid
-flowchart TB
-    P1["P1 command line"] ~~~ c01["01 shell"]
-    c01 --> c02["02 navigation"]
-    c02 --> c03["03 namespace"]
-    c03 --> c04["04 content"]
-    c04 --> c05["05 access control"]
-    c05 --> c06["06 redirection"]
-    P2["P2 administration"] ~~~ c07["07 lifecycle"]
-    c07 --> c08["08 package"]
-    c08 --> c09["09 mount"]
-    c09 --> c10["10 account"]
-    c10 --> c11["11 service"]
-    c11 --> c12["12 schedule"]
-    c12 --> c13["13 observability"]
-    P3["P3 network"] ~~~ c14["14 layers"]
-    c14 --> c15["15 tunnel"]
-    c15 --> c16["16 firewall"]
-    c16 --> c17["17 dispatch"]
-    c17 --> c18["18 request"]
-    c18 --> c19["19 resolution"]
-    P4["P4 automation"] ~~~ c20["20 script"]
-    c20 --> c21["21 fail-fast"]
-    c21 --> c22["22 stream"]
-    c22 --> c23["23 regex"]
-    c23 --> c24["24 bottleneck"]
-    c24 --> c25["25 container"]
-    c05 -.-> c10
-    c06 -.-> c20
-    c11 -.-> c17
-    c13 -.-> c24
-    c14 -.-> c25
-    c17 -.-> c25
-```
-
-通过线：词柄八题对 6（每词说满 3 个坑为满分，说出 2 个算对），且综合操作三题作答完整。不过线不丢人——回 [第 0 章 · 词链](./ch00.md#词链) 找到没拿住的词，重读那几章的小结，隔一周再来。
+通过线：第一组八题对 6（每题说满 3 个坑为满分，说出 2 个算对），且综合操作三题作答完整。不过线不丢人——回 [第 0 章 · 学习路径与复习节奏](./ch00.md#学习路径与复习节奏) 找到没拿住的章，重读那几章的小结，隔一周再来。
 
 ---
 
 ## 题目
 
-**第一组 · 词柄八题（T1–T8）**：乱序抽 8 个词。每题只给词，合上书说出它的 3 个坑（能从核心句推出来的、最容易翻车的判断）。
+**第一组 · 章节八题（T1–T8）**：乱序抽 8 章。每题只给章号与主题，合上书说出这一章的 3 个坑（最容易翻车的判断）。
 
-**T1（词柄）**：**navigation**——说出它的 3 个坑。
+**T1（第 2 章 文件系统导航）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -59,7 +22,7 @@ flowchart TB
 推导：定位只从「当前所在」起算，所以一切随脚下变化。回指：2.3–2.5、2.10–2.11。
 </details>
 
-**T2（词柄）**：**access control**——说出它的 3 个坑。
+**T2（第 5 章 用户与权限）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -71,7 +34,7 @@ flowchart TB
 推导：门是「属主/属组/其他 × 读/写/执行」的静态位，命中即停。回指：5.5–5.7、5.12。
 </details>
 
-**T3（词柄）**：**lifecycle**——说出它的 3 个坑。
+**T3（第 7 章 进程管理）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -83,7 +46,7 @@ flowchart TB
 推导：进程生死由信号调度，信号能不能被处理决定终止形态。回指：7.3–7.6。
 </details>
 
-**T4（词柄）**：**mount**——说出它的 3 个坑。
+**T4（第 9 章 磁盘与存储）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -95,7 +58,7 @@ flowchart TB
 推导：可见性来自「块设备↔目录树」的接入，接入断了或被遮住，用量口径就分裂。回指：9.2–9.4、9.8。
 </details>
 
-**T5（词柄）**：**service**——说出它的 3 个坑。
+**T5（第 11 章 Systemd 与服务）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -107,7 +70,7 @@ flowchart TB
 推导：systemd 按 unit 描述托管，缓存的 unit 定义与环境都和你的终端不是一套。回指：11.2–11.4、11.9。
 </details>
 
-**T6（词柄）**：**firewall**——说出它的 3 个坑。
+**T6（第 16 章 防火墙与安全）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -119,7 +82,7 @@ flowchart TB
 推导：准入是规则列表自上而下命中即停，谁的规则先被走到谁说了算。回指：16.2–16.4、16.8。
 </details>
 
-**T7（词柄）**：**script**——说出它的 3 个坑。
+**T7（第 20 章 Shell 脚本入门）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -131,7 +94,7 @@ flowchart TB
 推导：脚本只是把命令写进文件，展开时机与执行环境都还是 Shell 的规矩。回指：20.2–20.4。
 </details>
 
-**T8（词柄）**：**bottleneck**——说出它的 3 个坑。
+**T8（第 24 章 性能调优与排障）**：说出这一章的 3 个坑。
 
 <details>
 <summary>答案</summary>
@@ -143,51 +106,51 @@ flowchart TB
 推导：排障按 USE 方法逐资源问「利用率、饱和度、错误」，先定资源再看进程。回指：24.2–24.5。
 </details>
 
-**第二组 · 词链默写（T9–T12）**：合上书，默写该 Part 的词链（词序不能乱），并把这几个词串成一句话。
+**第二组 · 主线串联（T9–T12）**：合上书，说出该 Part 覆盖的章节顺序，再把这条主线串成一句话。
 
-**T9**：Part 1 词链。
+**T9**：Part 1 的主线（六章）。
 
 <details>
 <summary>参考答案</summary>
 
-词序：shell → navigation → namespace → content → access control → redirection。
+章节顺序：第 1 章 走进 Linux 世界 → 第 2 章 文件系统导航 → 第 3 章 文件与目录操作 → 第 4 章 查看与编辑文件 → 第 5 章 用户与权限 → 第 6 章 管道与重定向。
 
 串句：一条命令从终端走到硬件再回来；文件系统给地址、权限给许可、管道给去路——后面一切章节都站在这几样上。
 </details>
 
-**T10**：Part 2 词链。
+**T10**：Part 2 的主线（七章）。
 
 <details>
 <summary>参考答案</summary>
 
-词序：lifecycle → package → mount → account → service → schedule → observability。
+章节顺序：第 7 章 进程管理 → 第 8 章 软件包管理 → 第 9 章 磁盘与存储 → 第 10 章 用户与组管理 → 第 11 章 Systemd 与服务 → 第 12 章 计划任务 → 第 13 章 日志与监控。
 
 串句：从「会用」到「归我管」：进程、软件、磁盘、账号、服务、时间、日志，七件事各有台账。
 </details>
 
-**T11**：Part 3 词链。
+**T11**：Part 3 的主线（六章）。
 
 <details>
 <summary>参考答案</summary>
 
-词序：layers → tunnel → firewall → dispatch → request → resolution。
+章节顺序：第 14 章 网络基础命令 → 第 15 章 SSH 远程访问 → 第 16 章 防火墙与安全 → 第 17 章 Web 服务搭建 → 第 18 章 下载与 API 调试 → 第 19 章 DNS 与域名解析。
 
 串句：连得上 → 进得来 → 拦得住 → 开得了门 → 用得上 → 找得到，六关全过才算一台对外的机器。
 </details>
 
-**T12**：Part 4 词链。
+**T12**：Part 4 的主线（六章）。
 
 <details>
 <summary>参考答案</summary>
 
-词序：script → fail-fast → stream → regex → bottleneck → container。
+章节顺序：第 20 章 Shell 脚本入门 → 第 21 章 Shell 脚本进阶 → 第 22 章 文本三剑客 → 第 23 章 正则与文本进阶 → 第 24 章 性能调优与排障 → 第 25 章 Docker 与现代化。
 
 串句：重复劳动交给脚本与三剑客，突发故障交给方法论，环境漂移交给容器。
 </details>
 
-**第三组 · 跨篇硬依赖（T13–T17）**：五条虚线，每条出一道情景题——答案必须同时用上两端的词。
+**第三组 · 跨篇硬依赖（T13–T17）**：五条硬依赖，每条出一道情景题——答案必须同时用上两端的章。
 
-**T13（access control → account）**：`/srv/app/config.ini` 属主 root、属组 wheel、权限 640。新建的账号 `deploy` 读了报 Permission denied——门卡在哪一档？给出两种放行办法并说明各自动了什么。
+**T13（第 5 章 权限 → 第 10 章 账号）**：`/srv/app/config.ini` 属主 root、属组 wheel、权限 640。新建的账号 `deploy` 读了报 Permission denied——门卡在哪一档？给出两种放行办法并说明各自动了什么。
 
 <details>
 <summary>答案</summary>
@@ -195,7 +158,7 @@ flowchart TB
 卡在属组档：deploy 不是属主、不在 wheel 组，other 档是 `0`——按「属主→属组→其他」命中即停，落在属组档就出局。放行一：`usermod -aG wheel deploy`——把人放进名单，动的是账号（-a 忘了会清掉其他附加组）；放行二：`chgrp wheel` 换门牌或 `chmod g+r` 开门缝——动的是文件本身的门。推导：门跟着文件走不跟人走，所以要么改人（组名单）要么改门（权限位）。回指：5.5–5.6、10.4。
 </details>
 
-**T14（redirection → script）**：脚本里同一行命令的两种写法——`cmd 2>&1 > run.log` 与 `cmd > run.log 2>&1`——stderr 分别去了哪？为什么？
+**T14（第 6 章 重定向 → 第 20 章 脚本）**：脚本里同一行命令的两种写法——`cmd 2>&1 > run.log` 与 `cmd > run.log 2>&1`——stderr 分别去了哪？为什么？
 
 <details>
 <summary>答案</summary>
@@ -203,7 +166,7 @@ flowchart TB
 `cmd 2>&1 > run.log`：stderr 去屏幕（终端），stdout 去 run.log；`cmd > run.log 2>&1`：两个都进 run.log。推导：重定向先开后合、从左到右生效——`2>&1` 把 stderr 接到「stdout 当前的位置」，先写它时 stdout 还指着终端；把 `> run.log` 放前面，stdout 先换到文件，stderr 再接过来才是文件。回指：6.3、20.6。
 </details>
 
-**T15（service → dispatch）**：`systemctl enable --now nginx` 成功，`curl -I localhost` 却返回 502。502 说明 nginx 本身怎样？下一步查什么？
+**T15（第 11 章 服务 → 第 17 章 Web 服务）**：`systemctl enable --now nginx` 成功，`curl -I localhost` 却返回 502。502 说明 nginx 本身怎样？下一步查什么？
 
 <details>
 <summary>答案</summary>
@@ -211,7 +174,7 @@ flowchart TB
 502 = 总机活着、上游死了：nginx 的分诊正常，但 `proxy_pass` 指的上游没起来或端口不对。下一步：`ss -ltnp` 看上游端口有没有人监听、`systemctl status` 查上游服务、`nginx -t` 复核配置；403 才是文件门（权限/root/index）的问题，别查错方向。推导：dispatch 按路径把请求转给上游，上游这一段不在 nginx 的生死里，而在 service 的托管里。回指：11.3、17.6–17.8。
 </details>
 
-**T16（observability → bottleneck）**：凌晨告警 load 高达 12，但 `top` 里 CPU 使用率只有 15%。给出两步定位与要看的东西。
+**T16（第 13 章 日志 → 第 24 章 排障）**：凌晨告警 load 高达 12，但 `top` 里 CPU 使用率只有 15%。给出两步定位与要看的东西。
 
 <details>
 <summary>答案</summary>
@@ -219,7 +182,7 @@ flowchart TB
 第一步 `vmstat 1`：看 `b` 列与 `wa`（iowait）——load 高、CPU 闲，多半是任务在排队等磁盘；第二步带着方向取证据：`iostat -x` 看哪块盘忙、`df -h` 查是不是磁盘满，`journalctl -p err -b` 与 `dmesg` 翻这一时段的错误留痕（OOM、IO error）。推导：load 数的是「在跑 + 在等」的任务，等的对象不一定是 CPU——观测（看得见）先给线索，USE 方法（找堵点）再收口。回指：13.6–13.8、24.2–24.4。
 </details>
 
-**T17（layers / dispatch → container）**：`docker run -d -p 8080:80` 起了 Web 容器，宿主机 `curl localhost:8080` 通，外网访问 `http://服务器IP:8080` 不通。按分层链路从底往上说出每一关，并指出最可能的断点。
+**T17（第 14 章 分层 / 第 17 章 分诊 → 第 25 章 容器）**：`docker run -d -p 8080:80` 起了 Web 容器，宿主机 `curl localhost:8080` 通，外网访问 `http://服务器IP:8080` 不通。按分层链路从底往上说出每一关，并指出最可能的断点。
 
 <details>
 <summary>答案</summary>
@@ -227,14 +190,14 @@ flowchart TB
 从底往上：网卡/IP 通不通（`ping`、`ip addr`）→ 端口有没有人听（`ss -ltnp` 应能看到 docker-proxy 或 8080 监听）→ 防火墙放没放行（云安全组、`ufw status`）→ 应用层分诊对不对。本例宿主机本机通、外网不通，断点在准入：云安全组没放 8080 或 ufw 没放行；若 `ufw allow 8080` 之后还不通——注意容器 `-p` 发布的端口走 Docker 自己插的 DOCKER 链、绕过 ufw，此时要查的是 Docker 的 iptables 规则与发布方式，而不是继续加 ufw 规则。推导：本机通、外网不通 = 链路断在「进得来」这一关，先查准入再查应用。回指：14.4–14.6、17.9、25.5–25.6。
 </details>
 
-**第四组 · 综合操作（T18–T20）**：完整情景，答出每一步用到的词与命令要点，说明为什么是这个顺序。
+**第四组 · 综合操作（T18–T20）**：完整情景，答出每一步属于哪一章、命令要点是什么，说明为什么是这个顺序。
 
-**T18**：把一台全新 Ubuntu 服务器变成对外可访问的 Web 站点。按顺序说出每一步的章词与关键命令（至少六步）。
+**T18**：把一台全新 Ubuntu 服务器变成对外可访问的 Web 站点。按顺序说出每一步属于哪一章、关键命令是什么（至少六步）。
 
 <details>
 <summary>答案</summary>
 
-package：`apt update && apt install nginx`（动包前先取索引）→ service：`systemctl enable --now nginx`（登记开机并启动，enable≠start 所以两个都要）→ firewall：`ufw allow 'Nginx Full'`（默认拒绝下先开门再验证）→ resolution：到 DNS 服务商把 A 记录指向服务器 IP（TTL 生效要等）→ request：`curl -I http://域名` 自测（-L 跟重定向）→ dispatch：改 server_name、配站点后 `nginx -t && systemctl reload nginx`（先测语法再 reload）。推导：装包 → 托管 → 准入 → 名字 → 验货 → 分诊，正是「归我管」接「六关」的词链走向。回指：8.2、11.3、16.3、19.3、18.2、17.5。
+第 8 章 软件包：`apt update && apt install nginx`（动包前先取索引）→ 第 11 章 服务：`systemctl enable --now nginx`（登记开机并启动，enable≠start 所以两个都要）→ 第 16 章 防火墙：`ufw allow 'Nginx Full'`（默认拒绝下先开门再验证）→ 第 19 章 DNS：到 DNS 服务商把 A 记录指向服务器 IP（TTL 生效要等）→ 第 18 章 请求：`curl -I http://域名` 自测（-L 跟重定向）→ 第 17 章 Web 服务：改 server_name、配站点后 `nginx -t && systemctl reload nginx`（先测语法再 reload）。推导：装包 → 托管 → 准入 → 名字 → 验货 → 分诊，正是「归我管」接上「六关」的顺序。回指：8.2、11.3、16.3、19.3、18.2、17.5。
 </details>
 
 **T19**：从 `/var/log/syslog` 统计出现次数最多的 5 个进程名。写出完整管道并解释每一段。
@@ -245,18 +208,18 @@ package：`apt update && apt install nginx`（动包前先取索引）→ servic
 `grep -oE '[a-zA-Z0-9_-]+\[[0-9]+\]' /var/log/syslog | awk -F'[' '{print $1}' | sort | uniq -c | sort -nr | head -5`。每段：grep 先用正则抠出 `进程名[pid]` 形态减量（流上先减后算）；awk -F 定分隔符取 `[` 前的进程名（流式按列加工）；sort 把同名字排一起（uniq 只认相邻）；uniq -c 计数；sort -nr 按次数倒排；head -5 取前五。推导：三剑客在同一条流上各做一次手术，管道把去路接成下一条的来路；顺序错了 uniq 就数不到一起。回指：6.4、22.3–22.5、23.3。
 </details>
 
-**T20**：磁盘告警：某挂载点用量 95%。给出完整处置链（定位 → 清理 → 防复发），每步标注章词。
+**T20**：磁盘告警：某挂载点用量 95%。给出完整处置链（定位 → 清理 → 防复发），每步标注章号。
 
 <details>
 <summary>答案</summary>
 
-mount：`df -h` 定位是哪个挂载点满的（du/du 对不上时记得挂载遮盖与已删仍占）→ bottleneck/observability：`du -x --max-depth=1 /` 逐层缩小找大头；大文件多半是日志——`journalctl --disk-usage` 看日志占用、`dmesg` 确认有无报错 → observability：清理用 `journalctl --vacuum-size=200M`、删除已轮转日志 → script/fail-fast：写成脚本固化清理，`set -euo pipefail` + trap + mktemp，先过 shellcheck → schedule：crontab 每周跑一次（注意 cron 环境精简，路径用绝对路径）。推导：先定现场（挂载点口径）再找根因（谁在吃盘），清理固化成到点任务才是闭环。回指：9.3–9.4、24.4、13.4、21.3–21.5、12.2。
+第 9 章 挂载：`df -h` 定位是哪个挂载点满的（df/du 对不上时记得挂载遮盖与已删仍占）→ 第 24 章 排查 + 第 13 章 日志：`du -x --max-depth=1 /` 逐层缩小找大头；大文件多半是日志——`journalctl --disk-usage` 看日志占用、`dmesg` 确认有无报错 → 第 13 章 日志：清理用 `journalctl --vacuum-size=200M`、删除已轮转日志 → 第 20/21 章 脚本与健壮性：写成脚本固化清理，`set -euo pipefail` + trap + mktemp，先过 shellcheck → 第 12 章 定时：crontab 每周跑一次（注意 cron 环境精简，路径用绝对路径）。推导：先定现场（挂载点口径）再找根因（谁在吃盘），清理固化成到点任务才是闭环。回指：9.3–9.4、24.4、13.4、21.3–21.5、12.2。
 </details>
 
 ---
 
 ## 下一步
 
-毕业不是终点。回 [第 0 章 · 学习路径与复习节奏](./ch00.md#学习路径与复习节奏)：每月抽 5 个词乱序自测，隔 7 天默一遍四条词链——词链在手里，命令手册随时可查，机器永远归你管。
+毕业不是终点。回 [第 0 章 · 学习路径与复习节奏](./ch00.md#学习路径与复习节奏)：每月抽 5 章乱序自测，隔 7 天默一遍四个 Part 的主线——主线在手里，命令手册随时可查，机器永远归你管。
 
 ---

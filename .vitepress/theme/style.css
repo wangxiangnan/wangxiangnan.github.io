@@ -156,19 +156,10 @@
   overflow: visible !important;
 }
 
-/* 图随容器撑满：mermaid 默认按 naturalWidth 给 svg 设 max-width，窄图会缩在左侧留白 */
-.mermaid svg {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-}
-
-/* 图注放在 svg 外：若留在图里当隐形节点，会把画布撑得比图形宽，图形就撑不满行宽 */
+/* 图注放在 svg 外：若留在图里当隐形节点，会把画布撑得比图形宽；放图外则画布宽度 = 图形宽度 */
 .vp-doc p.figure-note {
   margin: 10px 0 0;
   color: #666;
   font-size: 14px;
   line-height: 1.6;
 }
-
-

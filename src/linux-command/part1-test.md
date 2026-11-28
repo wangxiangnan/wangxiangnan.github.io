@@ -1,36 +1,12 @@
 # Part 1 自测
 
-本卷覆盖 Part 1 的六个词：**shell、navigation、namespace、content、access control、redirection**。玩法：闭卷——合上书从第 1 题做到最后，全部做完再逐题打开 `<details>` 对答案；每题答案带一句推导与回指小节，答错的按回指重读该章「本章小结」的①②③，隔 1 天重做错题。
-
-**图 P1-1｜Part 1 词链**（Part 词打头，六个章词按章序成链——第 1 题要默写的就是它）：
-
-```mermaid
-flowchart TB
-    P["Part 1<br>command line（命令行）"] ~~~ c1["01 shell"]
-    c1 --> c2["02 navigation<br>导航"]
-    c2 --> c3["03 namespace<br>名字空间"]
-    c3 --> c4["04 content<br>内容"]
-    c4 --> c5["05 access control<br>访问控制"]
-    c5 --> c6["06 redirection<br>重定向"]
-```
+本卷覆盖 Part 1 的六章：走进 Linux 世界、文件系统导航、文件与目录操作、查看与编辑文件、用户与权限、管道与重定向。玩法：闭卷——合上书从第 1 题做到最后，全部做完再逐题打开 `<details>` 对答案；每题答案带一句推导与回指小节，答错的按回指重读该章「本章小结」的要点，隔 1 天重做错题。
 
 ---
 
 ## 题目
 
-**T1**：合上书，默写 Part 1 词链（六个章词的顺序不能乱），并把这些词串成一句话。
-
-<details>
-<summary>答案</summary>
-
-词序：shell → navigation → namespace → content → access control → redirection。
-
-串句：一条命令从终端走到硬件再回来；文件系统给地址、权限给许可、管道给去路——后面一切章节都站在这几样上。
-
-推导：先有翻译官（shell），再认路（navigation）、分清名字与数据（namespace）、读写内容（content），路上有门禁（access control）、出口有去路（redirection）。回指：ch00 词链表、第 1–6 章本章小结。
-</details>
-
-**T2**：目录的 r、w、x 与文件的 r、w、x 含义有何不同？目录权限为 400 时能 cd 进去吗？100 呢？
+**T1**：目录的 r、w、x 与文件的 r、w、x 含义有何不同？目录权限为 400 时能 cd 进去吗？100 呢？
 
 <details>
 <summary>答案</summary>
@@ -40,7 +16,7 @@ flowchart TB
 推导：目录的内容是一张「文件名列表」——r 读这张表、w 改这张表（增删条目）、x 允许路径穿过这一层。回指：5.5。
 </details>
 
-**T3**：硬链接和软链接有什么区别？删掉源文件后各自会怎样？写出创建软链接、强制切换版本、查看真实路径的命令。
+**T2**：硬链接和软链接有什么区别？删掉源文件后各自会怎样？写出创建软链接、强制切换版本、查看真实路径的命令。
 
 <details>
 <summary>答案</summary>
@@ -50,7 +26,7 @@ flowchart TB
 推导：硬链是「同一份数据的多个名字」，软链是「名字的名字」——数据在不在，取决于还有没有硬链名指着它。回指：3.6。
 </details>
 
-**T4**：预测：`cat file.txt | sort > file.txt` 执行后 file.txt 变成什么？为什么？怎么修复？另外，`;`、`&&`、`||` 三个组合符各是什么语义？
+**T3**：预测：`cat file.txt | sort > file.txt` 执行后 file.txt 变成什么？为什么？怎么修复？另外，`;`、`&&`、`||` 三个组合符各是什么语义？
 
 <details>
 <summary>答案</summary>
@@ -60,7 +36,7 @@ flowchart TB
 推导：写是「改完整体回写」、`>` 先截断再写——读与写指向同一文件时，截断发生在读之前，数据就没了。回指：6.9（配合 6.2）。
 </details>
 
-**T5**：`ls file?.txt`、`ls file[123].txt`、`echo file{1,2,3}.txt` 各是什么效果？`{}` 和前两者有什么本质区别？
+**T4**：`ls file?.txt`、`ls file[123].txt`、`echo file{1,2,3}.txt` 各是什么效果？`{}` 和前两者有什么本质区别？
 
 <details>
 <summary>答案</summary>
@@ -70,7 +46,7 @@ flowchart TB
 推导：`*`/`?`/`[]` 是通配符，只匹配已存在的文件名；`{}` 是花括号展开，在 Shell 层直接生成字符串——一个「筛选器」、一个「生成器」。回指：2.6。
 </details>
 
-**T6**：预测输出：`echo -e "a\nb\na\nc\nb" | uniq` 输出什么？为什么第二个 a 没被去掉？正确去重怎么做？
+**T5**：预测输出：`echo -e "a\nb\na\nc\nb" | uniq` 输出什么？为什么第二个 a 没被去掉？正确去重怎么做？
 
 <details>
 <summary>答案</summary>
@@ -80,7 +56,7 @@ flowchart TB
 推导：uniq 逐行与上一行比较、只合并相邻重复——不相邻就各算一组；先 sort 让相同行挨在一起才能全并。回指：4.6。
 </details>
 
-**T7**：遇到 Permission denied，排查的前几步是什么？为什么「永远不要习惯性 chmod 777」？
+**T6**：遇到 Permission denied，排查的前几步是什么？为什么「永远不要习惯性 chmod 777」？
 
 <details>
 <summary>答案</summary>
@@ -90,7 +66,7 @@ flowchart TB
 推导：权限按「属主→属组→其他」自上而下命中即停——先确定自己是哪一类，再看那一类三位，最后别忘路径上每级目录都要有 x。回指：5.13（配合 5.12、5.5）。
 </details>
 
-**T8**：`mv` 在同一分区内移动和跨文件系统移动，底层行为有什么不同？`-i` 与 `-n` 各做什么？
+**T7**：`mv` 在同一分区内移动和跨文件系统移动，底层行为有什么不同？`-i` 与 `-n` 各做什么？
 
 <details>
 <summary>答案</summary>
@@ -100,7 +76,7 @@ flowchart TB
 推导：名字只是 inode 的目录项引用，同分区内改引用瞬间完成；换了文件系统 inode 体系不同，「引用」搬不过去，只能搬数据。回指：3.4。
 </details>
 
-**T9**：tee 和 `>` 都能把输出存进文件，区别是什么？为什么往 /etc/hosts 追加内容要用 `echo "..." | sudo tee -a /etc/hosts`，而不是 `sudo echo "..." >> /etc/hosts`？
+**T8**：tee 和 `>` 都能把输出存进文件，区别是什么？为什么往 /etc/hosts 追加内容要用 `echo "..." | sudo tee -a /etc/hosts`，而不是 `sudo echo "..." >> /etc/hosts`？
 
 <details>
 <summary>答案</summary>
@@ -110,7 +86,7 @@ flowchart TB
 推导：重定向在命令执行前由当前 Shell 完成——提权必须落在真正写文件的那一环（tee），而不是被重定向的命令上。回指：6.6（配合 6.9）。
 </details>
 
-**T10**：为什么 `ls *` 看不到 `.bashrc`？怎么只列出隐藏文件（不含 `.` 和 `..`）？
+**T9**：为什么 `ls *` 看不到 `.bashrc`？怎么只列出隐藏文件（不含 `.` 和 `..`）？
 
 <details>
 <summary>答案</summary>
@@ -120,7 +96,7 @@ flowchart TB
 推导：`*` 跳过点开头文件是刻意保护——配置文件不该被批量操作误伤；要用模式匹配就得自己写出 `.`。回指：2.6（配合 2.11 坑 2）。
 </details>
 
-**T11**：查看大文件该怎么选工具？`tail -f` 和 `tail -F` 有什么区别？
+**T10**：查看大文件该怎么选工具？`tail -f` 和 `tail -F` 有什么区别？
 
 <details>
 <summary>答案</summary>
@@ -134,6 +110,6 @@ flowchart TB
 
 ## 下一站
 
-Part 1 的词都能闭卷说清了，就从「会用」走向「归我管」——Part 2 的 Part 词是 **administration**（系统管理）：进程、软件、磁盘、账号、服务、时间、日志，七件事各有台账。从[第 7 章 lifecycle](./ch07.md) 开始。
+Part 1 的六章都能闭卷说清了，就从「会用」走向「归我管」——Part 2 接管整机：进程、软件、磁盘、账号、服务、时间、日志，七件事各有台账。从[第 7 章 进程管理](./ch07.md) 开始。
 
 ---

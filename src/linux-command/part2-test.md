@@ -1,37 +1,12 @@
 # Part 2 自测
 
-本卷覆盖 Part 2 的七个词：**lifecycle、package、mount、account、service、schedule、observability**。玩法：闭卷——合上书从第 1 题做到最后，全部做完再逐题打开 `<details>` 对答案；每题答案带一句推导与回指小节，答错的按回指重读该章「本章小结」的①②③，隔 1 天重做错题。
-
-**图 P2-1｜Part 2 词链**（Part 词打头，七个章词按章序成链——第 1 题要默写的就是它）：
-
-```mermaid
-flowchart TB
-    P["Part 2<br>administration（系统管理）"] ~~~ c1["07 lifecycle<br>生命周期"]
-    c1 --> c2["08 package<br>软件包"]
-    c2 --> c3["09 mount<br>挂载"]
-    c3 --> c4["10 account<br>账号"]
-    c4 --> c5["11 service<br>服务"]
-    c5 --> c6["12 schedule<br>调度"]
-    c6 --> c7["13 observability<br>可观测性"]
-```
+本卷覆盖 Part 2 的七章：进程管理、软件包管理、磁盘与存储、用户与组管理、Systemd 与服务、计划任务、日志与监控。玩法：闭卷——合上书从第 1 题做到最后，全部做完再逐题打开 `<details>` 对答案；每题答案带一句推导与回指小节，答错的按回指重读该章「本章小结」的要点，隔 1 天重做错题。
 
 ---
 
 ## 题目
 
-**T1**：合上书，默写 Part 2 词链（七个章词的顺序不能乱），并把这些词串成一句话。
-
-<details>
-<summary>答案</summary>
-
-词序：lifecycle → package → mount → account → service → schedule → observability。
-
-串句：从「会用」到「归我管」：进程、软件、磁盘、账号、服务、时间、日志，七件事各有台账。
-
-推导：先看清谁在跑、怎么生死的进程（lifecycle），装齐软件（package）、安顿磁盘（mount）、建好身份（account），把长活托管给 systemd（service）、到点的活交给时间（schedule），最后日志与计数器兜底（observability）。回指：ch00 词链表、第 7–13 章本章小结。
-</details>
-
-**T2**：预测输出：实战里用 `sudo kill -9 $(systemctl show -p MainPID myapp --value)` 杀掉主进程，`sleep 6` 后执行 `systemctl is-active myapp`，输出什么？为什么？这体现了 unit 文件里哪条配置？
+**T1**：预测输出：实战里用 `sudo kill -9 $(systemctl show -p MainPID myapp --value)` 杀掉主进程，`sleep 6` 后执行 `systemctl is-active myapp`，输出什么？为什么？这体现了 unit 文件里哪条配置？
 
 <details>
 <summary>答案</summary>
@@ -41,7 +16,7 @@ flowchart TB
 推导：异常被杀属 failure，systemd 等 5 秒重启，6 秒后已恢复——托管在 systemd 手里，kill -9 也拦不住重新拉起。回指：11.8（配置定义见 11.4）。
 </details>
 
-**T3**：`dpkg -S` 和 `dpkg -L` 的方向正好相反，分别是什么？写出「查 /etc/nginx/nginx.conf 属于哪个包」的命令。
+**T2**：`dpkg -S` 和 `dpkg -L` 的方向正好相反，分别是什么？写出「查 /etc/nginx/nginx.conf 属于哪个包」的命令。
 
 <details>
 <summary>答案</summary>
@@ -51,7 +26,7 @@ flowchart TB
 推导：「这包装了什么」用 -L，「这文件归谁管」用 -S，方向相反场景互补。回指：8.3。
 </details>
 
-**T4**：三种状况：有人疑似在暴力破解 SSH、nginx 服务起不来、U 盘插上没反应。分别先查哪里？
+**T3**：三种状况：有人疑似在暴力破解 SSH、nginx 服务起不来、U 盘插上没反应。分别先查哪里？
 
 <details>
 <summary>答案</summary>
@@ -61,17 +36,17 @@ SSH 爆破查 auth.log + lastb；服务起不来查 journalctl -u nginx -p err�
 推导：登录异常在认证日志、服务异常在 unit 日志、硬件异常在内核消息——先按来源选对入口。回指：13.1–13.4。
 </details>
 
-**T5**：把新盘上架的步骤排序：写入 fstab、mkfs.ext4 格式化、lsblk 确认新盘、mount 挂载、parted 分区。
+**T4**：把新盘上架的步骤排序：写入 fstab、mkfs.ext4 格式化、lsblk 确认新盘、mount 挂载、parted 分区。
 
 <details>
 <summary>答案</summary>
 
 lsblk → parted → mkfs.ext4 → mount → fstab（mount -a 验证）。
 
-推导：先认盘再分区，格式化后才能挂进目录树，最后写 fstab 持久化——正是图 9-3 链路。回指：9.10（贯穿 9.1–9.8）。
+推导：先认盘再分区，格式化后才能挂进目录树，最后写 fstab 持久化——正是 9.10 实战那条链路。回指：9.10（贯穿 9.1–9.8）。
 </details>
 
-**T6**：SIGTERM 和 SIGKILL 的编号各是多少？哪个能被进程捕获？为什么终止进程要先 kill 再 kill -9？
+**T5**：SIGTERM 和 SIGKILL 的编号各是多少？哪个能被进程捕获？为什么终止进程要先 kill 再 kill -9？
 
 <details>
 <summary>答案</summary>
@@ -81,7 +56,7 @@ SIGTERM=15 可捕获；SIGKILL=9 不可捕获；先礼后兵给清理机会。
 推导：kill 默认发 TERM，进程可清理后优雅退出；等几秒仍在才 kill -9，内核直接回收无法挽留，9 是最后手段。回指：7.5。
 </details>
 
-**T7**：对比 cron 和 systemd timer：错过执行、日志、精度三方面各有什么差别？生产环境为什么倾向 timer？
+**T6**：对比 cron 和 systemd timer：错过执行、日志、精度三方面各有什么差别？生产环境为什么倾向 timer？
 
 <details>
 <summary>答案</summary>
@@ -91,7 +66,7 @@ SIGTERM=15 可捕获；SIGKILL=9 不可捕获；先礼后兵给清理机会。
 推导：timer 另有依赖管理与 cgroup 限制，可靠性整体更高，生产倾向 timer。回指：12.7。
 </details>
 
-**T8**：`su - alice` 里的 `-` 起什么作用？`sudo -u alice ls -la /home/alice` 与 `sudo -i` 各做什么？
+**T7**：`su - alice` 里的 `-` 起什么作用？`sudo -u alice ls -la /home/alice` 与 `sudo -i` 各做什么？
 
 <details>
 <summary>答案</summary>
@@ -101,7 +76,7 @@ SIGTERM=15 可捕获；SIGKILL=9 不可捕获；先礼后兵给清理机会。
 推导：带 `-` 才按登录顺序加载目标用户环境；sudo 是单条授权、su 是整段会话，按需选。回指：10.7、10.8。
 </details>
 
-**T9**：unit 文件里 After、Wants、WantedBy 三条指令各起什么作用？哪条决定「顺带拉起」，哪条由 enable 建立？
+**T8**：unit 文件里 After、Wants、WantedBy 三条指令各起什么作用？哪条决定「顺带拉起」，哪条由 enable 建立？
 
 <details>
 <summary>答案</summary>
@@ -111,7 +86,7 @@ After 只定先后；Wants 顺带拉起；WantedBy 由 enable 建立挂入。
 推导：After=network.target 只保证顺序不拉起；Wants 才顺带启动 mysql；enable 依 WantedBy 挂入 multi-user.target 实现开机自启。回指：11.4。
 </details>
 
-**T10**：预测：df -h 显示某分区 Use% 只有 50%，创建新文件却报 "No space left on device"。可能是什么原因？用哪条命令验证？
+**T9**：预测：df -h 显示某分区 Use% 只有 50%，创建新文件却报 "No space left on device"。可能是什么原因？用哪条命令验证？
 
 <details>
 <summary>答案</summary>
@@ -121,7 +96,7 @@ inode 耗尽；`df -i`。
 推导：每文件至少占一个 inode，海量小文件可先耗光 inode——空间有余也建不了文件，IUse%=100% 即证实。回指：9.3。
 </details>
 
-**T11**：为什么退出终端时后台进程也会跟着死？写出用 nohup 后台运行 backup.py、把标准输出和错误都写进 backup.log 的命令。disown 和 nohup 的分工是什么？
+**T10**：为什么退出终端时后台进程也会跟着死？写出用 nohup 后台运行 backup.py、把标准输出和错误都写进 backup.log 的命令。disown 和 nohup 的分工是什么？
 
 <details>
 <summary>答案</summary>
@@ -131,7 +106,7 @@ inode 耗尽；`df -i`。
 推导：nohup 令进程忽略 SIGHUP，适合启动前已知要长跑；disown 把已在跑的后台作业移出作业表，忘了加 nohup 时补救。回指：7.7（承接 7.6）。
 </details>
 
-**T12**：预测判读：`vmstat 1 10` 的 si/so 持续不为 0、`iostat -xz 1` 里某块盘 %util 接近 100% 且 await 很高、vmstat 的 wa 列很高，各说明什么？
+**T11**：预测判读：`vmstat 1 10` 的 si/so 持续不为 0、`iostat -xz 1` 里某块盘 %util 接近 100% 且 await 很高、vmstat 的 wa 列很高，各说明什么？
 
 <details>
 <summary>答案</summary>
@@ -141,7 +116,7 @@ si/so≠0 内存不足换页；%util≈100%+await 高磁盘瓶颈；wa 高 CPU �
 推导：三个读数分别指向内存、磁盘、CPU-等存储三条路径，配合判读即可定位瓶颈类型。回指：13.9。
 </details>
 
-**T13**：源码编译安装的主要步骤是什么？`./configure --prefix=/usr/local` 指定了什么？`make -j$(nproc)` 里的 `$(nproc)` 起什么作用？
+**T12**：源码编译安装的主要步骤是什么？`./configure --prefix=/usr/local` 指定了什么？`make -j$(nproc)` 里的 `$(nproc)` 起什么作用？
 
 <details>
 <summary>答案</summary>
@@ -151,7 +126,7 @@ configure→make→make install→ldconfig；--prefix 定安装位置；$(nproc)
 推导：configure 生成 Makefile、make 并行编译、install 落盘后刷动态库缓存——仓库没有时的最后手段。回指：8.8。
 </details>
 
-**T14**：实战中共享目录执行 chmod 2775 /opt/projects，开头的 2 是什么？它解决了团队协作的什么问题？
+**T13**：实战中共享目录执行 chmod 2775 /opt/projects，开头的 2 是什么？它解决了团队协作的什么问题？
 
 <details>
 <summary>答案</summary>
@@ -161,7 +136,7 @@ configure→make→make install→ldconfig；--prefix 定安装位置；$(nproc)
 推导：配 chown root:developers 后新文件都归 developers 组，组内可读写——5.9 特殊权限位在共享目录的应用。回指：10.9（原理见 5.9）。
 </details>
 
-**T15**：`>> /var/log/backup.log 2>&1` 里 `2>&1` 是什么意思？为什么追加用 `>>` 而不是 `>`？
+**T14**：`>> /var/log/backup.log 2>&1` 里 `2>&1` 是什么意思？为什么追加用 `>>` 而不是 `>`？
 
 <details>
 <summary>答案</summary>
@@ -175,6 +150,6 @@ configure→make→make install→ldconfig；--prefix 定安装位置；$(nproc)
 
 ## 下一站
 
-Part 2 的七件事都有台账了——机器开始联网。Part 3 的 Part 词是 **network**（网络）：连得上 → 进得来 → 拦得住 → 开得了门 → 用得上 → 找得到，六关全过才算一台对外的机器。从[第 14 章 layers](./ch14.md) 开始。
+Part 2 的七件事都有台账了——机器开始联网。Part 3 把机器接上网：连得上 → 进得来 → 拦得住 → 开得了门 → 用得上 → 找得到，六关全过才算一台对外的机器。从[第 14 章 网络基础命令](./ch14.md) 开始。
 
 ---
